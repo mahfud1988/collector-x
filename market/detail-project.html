@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collector X - Market</title>
+    <!-- <link rel="stylesheet" href="../assets/css/market.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/detail-project.css">
+    <link href="https://api.fontshare.com/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="page">
+        <div class="navbar pcflex mflex">
+            <div class="logo content-left">
+                <a href="../index.html">
+                    <img src="../assets/images/cx-logo.png" alt="collector-x">
+                </a>
+            </div>
+            <div class="search pc">
+                <div class="cov-search">
+                    <img src="../assets/images/searchicon.png" alt="collector-x">
+                    <input type="text" placeholder="Search Collections" />
+                </div>
+            </div>
+            <div class="menu pcflex pc">
+                <div class=""><a class="menu-button" id="menu-button-home" onclick="menuButton('menu-button-home');" href="index.html">Home</a></div>
+                <div class=""><a class="menu-button menu-button-active" id="menu-button-market" onclick="menuButton('menu-button-market');" href="market.html">Market</a></div>
+                <div class=""><a class="menu-button" id="menu-button-callendar" onclick="menuButton('menu-button-callendar');" href="">Callendar</a></div>
+                <div class=""><a class="menu-button" id="menu-button-collection" onclick="menuButton('menu-button-collection');" href="">Collector</a></div>
+                <div class=""><a class="menu-button" id="menu-button-gallery" onclick="menuButton('menu-button-gallery');" href="">Gallery</a></div>
+            </div>
+            <div class="account pc">
+                <div class="account-inner pcflex">
+                    <a class="account-button flex-10 mflex-10 login-button" href="login.html">Login</a>
+                    <a class="account-button flex-10 mflex-10 signup-button" href="signup.html">Sign Up</a>
+                </div>
+            </div>
+            <div class="srmenu mobile mflex">
+                <div class="srmenu-sr flex-10 mflex-10">
+                    <img src="../assets/images/srmob.png" alt="collector-x">
+                </div>
+                <div class="srmenu-bar flex-10 mflex-10">
+                    <img src="../assets/images/mbmenu.png" alt="collector-x">
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="section section1">
+            <div class="section1-head">
+                <div class="breadcrumb">
+                    <a href="">
+                        <span class="bc-text1">Market</span>
+                    </a>
+                    <span>
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                    <span class="bc-text2">Wondeful artwork#1</span>
+                </div>
+                <div class="section1-content pcflex">
+                    <div class="section1-content-left pcflex">
+                        <div class="scl-image">
+                            <img src="../assets/images/pltdi1.png" alt="collector-x">
+                        </div>
+                        <div class="scl-detail">
+                            <div class="section1-title">
+                                <h1>Wonderful Artwork#1</h1>
+                            </div>
+                            <div class="section1-rfm pcflex">
+                                <div class="sfm-ratings pcflex">
+                                    <div class="sfm-icon sfm-ratings-icon">
+                                        <img src="../assets/images/glstar.png" alt="collector-x">
+                                    </div>
+                                    <div class="sfm-text1 sfm-ratings-value">4.0</div>
+                                    <div class="sfm-text2 sfm-ratings-count">(124 Ratings)</div>
+                                </div>
+                                <div class="sfm-space"></div>
+                                <div class="sfm-followers pcflex">
+                                    <div class="sfm-icon sfm-followers-icon">
+                                        <img src="../assets/images/twitterhl.png" alt="">
+                                    </div>
+                                    <div class="sfm-text1 sfm-followers-value">32,345</div>
+                                    <div class="sfm-text2 sfm-followers-text">Followers</div>
+                                </div>
+                                <div class="sfm-space"></div>
+                                <div class="sfm-members pcflex">
+                                    <div class="sfm-icon sfm-members-icon">
+                                        <img src="../assets/images/discord2.png" alt="collector-x">
+                                    </div>
+                                    <div class="sfm-text1 sfm-members-value">123,345</div>
+                                    <div class="sfm-text2 sfm-members-text">Members</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section1-content-right content-right">
+                        <div class="cov-scr-inner">
+                            <div class="scr-inner scr-inner-tt content-right">Current Floor</div>
+                            <div class="scr-inner scr-inner-prcch pcflex">
+                                <div class="scr-price content-right">Ξ 368</div>
+                                <div class="scr-prchange content-right">
+                                    <span class="scr-prchange-text">+1,49%</span>
+                                </div>
+                            </div>
+                            <div class="scr-inner scr-inner-bottom content-right">$124.23</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section1-body">
+                <div class="section1-tab">
+                    <div class="section1-tab-nav">
+                        <div class="stn-inner pcflex">
+                            <div class="stn-part stn-part-active">
+                                <span class="stn-part-text">Info</span>
+                            </div>
+                            <div class="stn-part">
+                                <span class="stn-part-text">Listing</span>
+                            </div>
+                            <div class="stn-part">
+                                <span class="stn-part-text">Insight</span>
+                            </div>
+                            <div class="stn-part">
+                                <span class="stn-part-text">Floor by Traits</span>
+                            </div>
+                            <div class="stn-part">
+                                <span class="stn-part-text">Rarity Traits</span>
+                            </div>
+                            <div class="stn-part">
+                                <span class="stn-part-text">Sales History</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section1-tab-content">
+                        <div class="stc-inner">
+                            <div class="stc-part">
+                                <div class="stcp-inner pcflex">
+                                    <div class="stcp-prosu pcflex">
+                                        <div class="prosu-image">
+                                            <img src="../assets/images/prosuimg.png" alt="collector-x">
+                                        </div>
+                                        <div class="prosu-detail">
+                                            <h2 class="prosu-title">Project Summary</h2>
+                                            <div class="prosu-ac pcflex">
+                                                <div class="prosu-ac-part">
+                                                    <h3 class="prosu-subtitle">Artist</h3>
+                                                    <p class="prosu-subval">KungfuBoy</p>
+                                                </div>
+                                                <div class="prosu-ac-part">
+                                                    <h3 class="prosu-subtitle">Category</h3>
+                                                    <p class="prosu-subval">Art</p>
+                                                </div>
+                                            </div>
+                                            <div class="prosu-ratings pcflex">
+                                                <div class="prosu-ratings-l">
+                                                    <div class="prl-inner">
+                                                        <div class="prl-numtext pcflex">
+                                                            <div class="prl-num">
+                                                                <div class="prl-num-val">4.0</div>
+                                                            </div>
+                                                            <div class="prl-detail">
+                                                                <p class="prl-p1">Good</p>
+                                                                <p class="prl-p2">based on 124 ratings</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prl-button content-center">Add your rating</div>
+                                                    </div>
+                                                </div>
+                                                <div class="prosu-ratings-r">
+                                                    <div class="prr-inner pcflex">
+                                                        <div class="prr-param">Art</div>
+                                                        <div class="prr-value">
+                                                            <span class="prr-valnum">4.0</span>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prr-inner pcflex">
+                                                        <div class="prr-param">Community</div>
+                                                        <div class="prr-value">
+                                                            <span class="prr-valnum">4.0</span>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prr-inner pcflex">
+                                                        <div class="prr-param">Team</div>
+                                                        <div class="prr-value">
+                                                            <span class="prr-valnum">4.0</span>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prr-inner pcflex">
+                                                        <div class="prr-param">Road Map</div>
+                                                        <div class="prr-value">
+                                                            <span class="prr-valnum">4.0</span>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stcp-procom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section footer" id="footer">
+            <div class="footer-inner pcflex mflex">
+                <div class="footer-logo flex-10 mflex-10">
+                    <img src="../assets/images/cx-logo.png" alt="collector-x">
+                </div>
+                <div class="flex-45 content-center pc">
+                    <p class="footer-cr" id="footer-crtop">Copyright © 2021. CollectorX. All rights reserved.</p>
+                </div>
+                <div class="footer-button flex-10 mflex-10 content-right m-content-right">
+                    <div class="cf-button content-right mflex" id="cf-button" onclick="cfooter();">
+                        <div class="cf-text pc" id="cf-text">Expand Footer</div>
+                        <div class="cf-icon" id="cf-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-inner footer-collapse" id="footer-inner-2">
+                <div class="footer-content pcflex">
+                    <div class="footer-left">
+                        <p class="footer-p">CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way</p>
+                        <div class="footer-socials content-left m-content-left">
+                            <a href="">
+                                <img src="../assets/images/facebook.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="../assets/images/twitter.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="../assets/images/instagram.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="../assets/images/discord.png" alt="collector-x">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-right pcflex mflex mflex-wrap">
+                        <div class="fr-part flex-10 mflex-45">
+                            <h5>Platform</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Collectors</a></li>
+                                <li class="footer-link"><a href="">Galleries</a></li>
+                                <li class="footer-link"><a href="">Collections</a></li>
+                                <li class="footer-link"><a href="">Markets (Coming Soon)</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10 mflex-45">
+                            <h5>Resources</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Sign Up</a></li>
+                                <li class="footer-link"><a href="">Login</a></li>
+                                <li class="footer-link"><a href="">Terms of use</a></li>
+                                <li class="footer-link"><a href="">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10 mflex-45">
+                            <h5>Support</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Wallets</a></li>
+                                <li class="footer-link"><a href="">Community</a></li>
+                                <li class="footer-link"><a href="">Guidelines</a></li>
+                                <li class="footer-link"><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10 mflex-45">
+                            <h5>Company</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">About Us</a></li>
+                                <li class="footer-link"><a href="">Carrers</a></li>
+                                <li class="footer-link"><a href="">Guidelines</a></li>
+                                <li class="footer-link"><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-cr content-center pc">Copyright © 2021. CollectorX. All rights reserved.</p>
+            </div>
+            <p class="footer-cr m-content-center mobile">Copyright © 2021. CollectorX. All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+        function menuButton(id){
+            var mb = document.getElementsByClassName('menu-button');
+            for(i = 0; i < mb.length; i++){
+                mb[i].classList.remove('menu-button-active');
+            }
+            document.getElementById(id).classList.add('menu-button-active');
+        }
+        function cfooter(){
+            var ftctp = document.getElementById('footer-crtop');
+            var footerc = document.getElementById('footer-inner-2');
+            var cftext = document.getElementById('cf-text');
+            var cficon = document.getElementById('cf-icon');
+            if (footerc.style.maxHeight) {
+                footerc.style.maxHeight = null;
+                cftext.innerHTML = 'Expand Footer';
+                cficon.innerHTML = '<i class="fas fa-chevron-up"></i>';
+                ftctp.style.display = 'block';
+            }else{
+                footerc.style.maxHeight = footerc.scrollHeight + "px";
+                cftext.innerHTML = 'Collapse Footer';
+                cficon.innerHTML = '<i class="fas fa-chevron-down"></i>';
+                ftctp.style.display = 'none';
+            }
+        }
+        window.onload = function(){
+            document.getElementById('cf-button').click();
+        }
+    </script>
+</body>
+</html>
