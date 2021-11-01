@@ -1,0 +1,20 @@
+.search-box {
+    width: toRem(320);
+    height: toRem(41);
+    display: flex;
+    align-items: center;
+    padding: toRem(10) toRem(14);
+    border: toRem(1) solid $color-neutral-20;
+    border-radius: toRem(5);
+
+    &__input{
+        outline: none;
+        margin-left: toRem(8.5);
+        border: none;
+    }
+
+    &__img{
+        width: toRem(15.83);
+        height: toRem(15.83);
+    }
+}

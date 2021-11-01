@@ -1,0 +1,47 @@
+$color-brand-primary: #EB5749;
+$color-brand-secondary: #EE8935;
+$color-brand-tertiary: #F3CE17;
+
+$color-neutral-100: #230604;
+$color-neutral-80: #4F3836;
+$color-neutral-60: #7B6A68;
+$color-neutral-40: #A79B9B;
+$color-neutral-20: #D3CDCD;
+$color-neutral-10: #E9E6E6;
+$color-neutral-0: #FFFFFF;
+
+$color-accent-green: #40B78D;
+$color-accent-red: #DF496E;
+$color-accent-purple: #A761D5;
+$color-accent-pink: #E776BD;
+$color-accent-blue: #4B65DA;
+
+$color-light-accent-red: #FFE0DE;
+$color-light-accent-grey: #FAFAFA;
+$color-light-accent-green: #DDF9EF;
+$color-light-accent-orange: #FFECDD;
+$color-light-accent-purple: #F6E8FF;
+$color-light-accent-pink: #FEE5F4;
+$color-light-accent-blue: #D9DEF9;
+
+$color-action-default: #52AFB2;
+$color-action-hover: #479C9F;
+$color-action-press: #3C8486;
+$color-action-disable: #DED4D3;
+
+$color-action-outline-hover: #F1FCF8;
+$color-action-outline-press: #DDF9EF;
+
+
+// Breakpoints
+$grid-breakpoints: (
+    xs-1: 425px,
+    xs: 480px,
+    sm: 576px,
+    sm-2: 640px,
+    md: 768px,
+    md-2: 992px,
+    lg-1: 1024px,
+    lg: 1200px,
+    lg-2: 1400px
+);
