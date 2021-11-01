@@ -1,19 +1,4 @@
-@import url('../css/satoshi.css');
-@font-face {
-    font-family: 'poppins';
-    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-}
-@font-face {
-    font-family: 'poppins-regular';
-    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-}
-@media screen and (min-width: 950px){
+@media screen and (max-width: 949px){
     html{
         scroll-behavior: smooth;
     }
