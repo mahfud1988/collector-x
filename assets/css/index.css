@@ -41,7 +41,6 @@
         box-sizing: border-box;
         height: 74px;
         min-width: 1000px;
-        /* max-width: 1750px; */
         border-bottom: 1px solid lightgrey;
         padding-top: 15px;
         background: white;
@@ -1134,26 +1133,17 @@
         width: 33%;
         padding-right: 50px;
     }
-    .ctopco-title{
-        /* max-width: 410px; */
-    }
     .ctopco-sticky{
         position: fixed;
         top: 50px;
         left: 0;
         width: 100vw;
-        /* max-width: 28%; */
-        /* border: 1px solid green; */
-        /* margin: auto; */
-        /* display: flex; */
-        /* justify-content: center; */
     }
     .ctopco-sticky-inner{
         box-sizing: border-box;
         width: 100%;
         max-width: 1750px;
         margin: auto;
-        /* border: 1px solid yellow; */
         padding-left: 50px;
     }
     .topco-title{
@@ -1378,7 +1368,6 @@
         bottom: 0;
         width: 100%;
         height: 250px;
-        /* border: 1px solid green; */
     }
     .glbt-left{
         box-sizing: border-box;
@@ -1396,13 +1385,11 @@
         height: 100%;
         width: 64%;
         background: white;
-        /* border:  1px solid blue; */
     }
     .glbt-right-top{
         box-sizing: border-box;
         height: 50%;
         width: 100%;
-        /* border: 1px solid yellow; */
     }
     .glbt-right-top-part{
         box-sizing: border-box;
@@ -1419,7 +1406,6 @@
         box-sizing: border-box;
         height: 50%;
         width: 100%;
-        /* border: 1px solid red; */
     }
     .glbt-right-bottom-part{
         box-sizing: border-box;
@@ -1452,9 +1438,7 @@
         box-sizing: border-box;
         width: 100%;
         height: 50%;
-        /* padding-bottom: 15px; */
         margin-bottom: 15px;
-        /* border: 1px solid blue; */
     }
     .gr-content{
         height: 100%;
@@ -1463,12 +1447,10 @@
     .gr-left{
         width: 47.5%;
         margin-right: 5%;
-        /* border: 1px solid red; */
     }
     .gr-content-top{
         width: 100%;
         height: 65%;
-        /* border:  1px solid yellow; */
     }
     .gr-content-top-text{
         top: 15px;
@@ -1497,7 +1479,6 @@
         height: 30%;
         padding-top: 2px;
         background: white;
-        /* border: 1px solid green; */
     }
     .grc-bottom-part{
         box-sizing: border-box;
@@ -1518,8 +1499,6 @@
     .gr-bottom{
         box-sizing: border-box;
         height: 50%;
-        /* padding-top: 15px; */
-        /* border: 1px solid green; */
     }
     .inspiration{
         padding-top: 72px;
@@ -1816,7 +1795,7 @@
     .footer-bottom{
         padding-top: 35px;
     }
-    /* extra */
+    /* adclass */
     .absolute{
         position: absolute;
     }
