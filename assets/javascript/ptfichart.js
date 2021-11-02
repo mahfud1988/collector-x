@@ -37,8 +37,8 @@ var options = {
   }
   };
 
-  var chart = new ApexCharts(document.querySelector("#avchart"), options);
-  chart.render();
+  // var chart = new ApexCharts(document.querySelector("#avchart"), options);
+  // chart.render();
 
   var tnoptions = {
     series: [44, 55, 41, 17, 15],

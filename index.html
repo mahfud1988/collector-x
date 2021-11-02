@@ -5,14 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collector X - Home</title>
-    <!-- <link rel="stylesheet" href="assets/css/index.min.css"> -->
     <link rel="stylesheet" href="assets/css/index.css">
-    <!-- <link href="https://api.fontshare.com/css?f[]=satoshi@400&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" /> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" /> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="assets/css/index-mobile.css">
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
 </head>
 <body>
@@ -33,7 +27,7 @@
                 <div class="menu pcflex">
                     <div class=""><a class="menu-button menu-button-active" id="menu-button-home" onclick="menuButton('menu-button-home');" href="index.html">Home</a></div>
                     <div class=""><a class="menu-button" id="menu-button-market" onclick="menuButton('menu-button-market');" href="market.html">Market</a></div>
-                    <div class=""><a class="menu-button" id="menu-button-callendar" onclick="menuButton('menu-button-callendar');" href="">Callendar</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-callendar" onclick="menuButton('menu-button-callendar');" href="calendar.html">Callendar</a></div>
                     <div class=""><a class="menu-button" id="menu-button-collection" onclick="menuButton('menu-button-collection');" href="">Collector</a></div>
                     <div class=""><a class="menu-button" id="menu-button-gallery" onclick="menuButton('menu-button-gallery');" href="">Gallery</a></div>
                 </div>
@@ -47,7 +41,6 @@
         </div>
         <div class="content">
             <div class="section carousel" id="home">
-                <div class="space"></div>
                 <div class="carousel-inner relative">
                     <div class="carousel-control absolute content-center">
                         <div class="cc-circle cc-circle-active" onclick="showCarousel(0);"></div>
@@ -150,110 +143,165 @@
             <div class="section explore">
                 <div class="explore-head pcflex">
                     <div class="flex-45">
-                        <h2 class="explore-title"><span class="font-normal">Explore NFT on </span>Marketplace</h2>
-                        <p class="explore-p">Get updated project prices from various marketplaces in just one platform</p>
+                        <h2 class="explore-title">Featured collection <span class="font-normal">on marketplace</span></h2>
+                        <p class="explore-p">Monitor and get the best prices from featured collections</p>
                     </div>
                     <div class="cov-explore-view flex-10">
                         <a class="explore-view float-r" href="">
-                            <span>View All</span>
-                            <img class="" src="assets/images/goarrow.png" alt="collector-x">
+                            <div class="pcflex">
+                                <div class="ev-text pr10">View All</div>
+                                <img class="ev-icon" src="assets/images/goarrow.png" alt="collector-x">
+                            </div>
                         </a>
                     </div>
                 </div>
                 <div class="explore-body relative">
-                    <div class="explore-body-inner pcflex mflex">
+                    <div class="explore-body-inner pcflex mflex relative">
                         <div class="explore-body-part relative ml0">
                             <div class="cov-explore-bg">
-                                <img class="explore-bg" src="assets/images/feacoimg1.png" alt="collector-x">
+                                <img class="explore-bg" src="assets/images/explimg1.png" alt="collector-x">
                             </div>
                             <div class="feabp-text">
                                 <p class="feabp-p">Wonderfull Artwork #1</p>
-                                <p class="feabp-p2">2,345 holders</p>
-                            </div>
-                            <div class="explore-body-caption absolute">
-                                <div class="fbc-inner">
-                                    <div class="pcflex mflex">
-                                        <img class="explore-pricon" src="assets/images/puicirbl.png" alt="collector-x">
-                                        <span class="explore-body-caption-text cl-upblue">+4% (1 days)</span>
-                                    </div>
-                                    <div class="explore-body-caption-text2">Ξ 3 ($12,000)</div>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="explore-body-part relative">
+                        <div class="explore-body-part relative ml0">
                             <div class="cov-explore-bg">
-                                <img class="explore-bg" src="assets/images/feacoimg2.png" alt="collector-x">
+                                <img class="explore-bg" src="assets/images/explimg2.png" alt="collector-x">
                             </div>
                             <div class="feabp-text">
                                 <p class="feabp-p">Wonderfull Artwork #2</p>
-                                <p class="feabp-p2">1,216 holders</p>
-                            </div>
-                            <div class="explore-body-caption absolute">
-                                <div class="fbc-inner">
-                                    <div class="pcflex mflex">
-                                        <img class="explore-pricon" src="assets/images/pdicir.png" alt="collector-x">
-                                        <span class="explore-body-caption-text cl-error">-3% (1 days)</span>
-                                    </div>
-                                    <div class="explore-body-caption-text2">Ξ 3 ($12,000)</div>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="explore-body-part relative">
+                        <div class="explore-body-part relative ml0">
                             <div class="cov-explore-bg">
-                                <img class="explore-bg" src="assets/images/feacoimg3.png" alt="collector-x">
+                                <img class="explore-bg" src="assets/images/explimg3.png" alt="collector-x">
                             </div>
                             <div class="feabp-text">
                                 <p class="feabp-p">Wonderfull Artwork #3</p>
-                                <p class="feabp-p2">1,322 holders</p>
-                            </div>
-                            <div class="explore-body-caption absolute">
-                                <div class="fbc-inner">
-                                    <div class="pcflex mflex">
-                                        <img class="explore-pricon" src="assets/images/pdicir.png" alt="collector-x">
-                                        <span class="explore-body-caption-text cl-error">-3% (1 days)</span>
-                                    </div>
-                                    <div class="explore-body-caption-text2">Ξ 3 ($12,000)</div>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="explore-body-part relative">
+                        <div class="explore-body-part relative ml0">
                             <div class="cov-explore-bg">
-                                <img class="explore-bg" src="assets/images/feacoimg4.png" alt="collector-x">
+                                <img class="explore-bg" src="assets/images/explimg4.png" alt="collector-x">
                             </div>
                             <div class="feabp-text">
                                 <p class="feabp-p">Wonderfull Artwork #4</p>
-                                <p class="feabp-p2">1,322 holders</p>
-                            </div>
-                            <div class="explore-body-caption absolute">
-                                <div class="fbc-inner">
-                                    <div class="pcflex mflex">
-                                        <img class="explore-pricon" src="assets/images/puicirbl.png" alt="collector-x">
-                                        <span class="explore-body-caption-text cl-upblue">+4% (1 days)</span>
-                                    </div>
-                                    <div class="explore-body-caption-text2">Ξ 3 ($12,000)</div>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="explore-body-part relative mr0">
+                        <div class="explore-body-part relative ml0">
                             <div class="cov-explore-bg">
-                                <img class="explore-bg" src="assets/images/feacoimg5.png" alt="collector-x">
+                                <img class="explore-bg" src="assets/images/explimg5.png" alt="collector-x">
                             </div>
                             <div class="feabp-text">
                                 <p class="feabp-p">Wonderfull Artwork #5</p>
-                                <p class="feabp-p2">1,322 holders</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
+                                </div>
                             </div>
-                            <div class="explore-body-caption absolute">
-                                <div class="fbc-inner">
-                                    <div class="pcflex mflex">
-                                        <img class="explore-pricon" src="assets/images/puicirbl.png" alt="collector-x">
-                                        <span class="explore-body-caption-text cl-upblue">+13% (1 days)</span>
-                                    </div>
-                                    <div class="explore-body-caption-text2">Ξ 3 ($12,000)</div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg6.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #6</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg1.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #1</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg2.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #2</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg3.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #3</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg4.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #4</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg5.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #5</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg6.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #6</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-upblue">+4% (1 days)</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="orline"></div>
                 </div>
             </div>
             <div class="section realtime" id="market">
@@ -265,8 +313,10 @@
                     </div>
                     <div class="flex-10">
                         <a class="realtime-view float-r mx10" href="">
-                            <span>View All</span>
-                            <img class="px5" src="assets/images/goarrow.png" alt="collector-x">
+                            <div class="pcflex">
+                                <div class="ev-text pr10">View All</div>
+                                <img class="ev-icon" src="assets/images/goarrow.png" alt="collector-x">
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -276,16 +326,6 @@
                             <div class="rtab-head-row pcflex mflex">
                                 <div class="rtab-th rtab-bx pcflex mflex">
                                     <div class="rtab-th-text ptths">#</div>
-                                    <!-- <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                    </div> -->
                                 </div>
                                 <div class="rtab-th rtab-bw pcflex mflex">
                                     <div class="rtab-th-text ptths">Projects</div>
@@ -327,7 +367,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text">Avg Price (24 hrs)</div>
+                                    <div class="rtab-th-text">Avg Price <br/>(24 hrs)</div>
                                     <div class="content-right">
                                         <div class="rtab-th-icon">
                                             <div class="rtab-th-icon-up">
@@ -340,7 +380,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text">Previous Floor</div>
+                                    <div class="rtab-th-text">Previous <br/>Floor</div>
                                     <div class="content-right">
                                         <div class="rtab-th-icon">
                                             <div class="rtab-th-icon-up">
@@ -353,7 +393,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text">Current Floor</div>
+                                    <div class="rtab-th-text">Current <br/>Floor</div>
                                     <div class="content-right">
                                         <div class="rtab-th-icon">
                                             <div class="rtab-th-icon-up">
@@ -379,7 +419,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text">Market Cap</div>
+                                    <div class="rtab-th-text ptths">Market Cap</div>
                                     <div class="content-right">
                                         <div class="rtab-th-icon">
                                             <div class="rtab-th-icon-up">
@@ -434,7 +474,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt">$1,392,418.00</div>
+                                    <div class="rtab-td-text lhtdt cl-dark">$1,392,418.00</div>
                                 </div>
                                 <div class="rtab-td rtab-bx rtab-td-button content-left pc">
                                     <div class="rtab-button rtab-td-text lhtdt">
@@ -479,7 +519,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt">$989,222.00</div>
+                                    <div class="rtab-td-text lhtdt cl-dark">$989,222.00</div>
                                 </div>
                                 <div class="rtab-td rtab-bx rtab-td-button content-left pc">
                                     <div class="rtab-button rtab-td-text lhtdt">
@@ -524,7 +564,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt">$880,456.00</div>
+                                    <div class="rtab-td-text lhtdt cl-dark">$880,456.00</div>
                                 </div>
                                 <div class="rtab-td rtab-bx rtab-td-button content-left pc">
                                     <div class="rtab-button rtab-td-text lhtdt">
@@ -569,7 +609,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt">$709,651.00</div>
+                                    <div class="rtab-td-text lhtdt cl-dark">$709,651.00</div>
                                 </div>
                                 <div class="rtab-td rtab-bx rtab-td-button content-left pc">
                                     <div class="rtab-button rtab-td-text lhtdt">
@@ -614,7 +654,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt">$702,651.00</div>
+                                    <div class="rtab-td-text lhtdt cl-dark">$702,651.00</div>
                                 </div>
                                 <div class="rtab-td rtab-bx rtab-td-button content-left pc">
                                     <div class="rtab-button rtab-td-text lhtdt">
@@ -659,7 +699,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt">$109,651.00</div>
+                                    <div class="rtab-td-text lhtdt cl-dark">$109,651.00</div>
                                 </div>
                                 <div class="rtab-td rtab-bx rtab-td-button content-left pc">
                                     <div class="rtab-button rtab-td-text lhtdt">
@@ -704,7 +744,7 @@
                                     </div>
                                 </div>
                                 <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt">$69,651.00</div>
+                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
                                 </div>
                                 <div class="rtab-td rtab-bx rtab-td-button content-left pc">
                                     <div class="rtab-button rtab-td-text lhtdt">
@@ -713,6 +753,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="rtab-footer pcflex"></div>
                     </div>
                 </div>
             </div>
@@ -750,109 +791,8 @@
                         </div>
                     </div>
                     <div class="ptfi-right relative">
-                        <div class="pr-inner">
-                            <div class="ptfi-chart">
-                                <div class="ptfi-chart-head">
-                                    <h3 class="ptfi-chart-title">NET Asset Value</h3>
-                                    <div class="pch-content pcflex">
-                                        <div class="pchco-left">
-                                            <p class="pchco-p">Current Asset Value</p>
-                                            <div class="pchco-text">Ξ 31.45</div>
-                                        </div>
-                                        <div class="pchco-right">
-                                            <p class="pchco-p">Average Asset Value</p>
-                                            <div class="pchco-text">Ξ 32.05</div>
-                                        </div>
-                                    </div>
-                                    <p class="ptfi-chart-p">Last update : 2 min ago</p>
-                                </div>
-                                <div class="ptfi-chart-body">
-                                    <div class="avchart" id="avchart"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="topnfchart">
-                            <h3 class="tnchart-title">Top NFT Collections</h3>
-                            <div class="tnchart" id="tnchart"></div>
-                            <div class="tnchartval">
-                                <div class="tcv-num">1,235</div>
-                                <div class="tcv-text">Collections</div>
-                            </div>
-                            <div class="tnktr">
-                                <div class="tnktr-inner">
-                                    <div class="tnktr-part">
-                                        <div class="tnkt-cl">
-                                            <div class="tnkt-sqdot sqdot1"></div>
-                                        </div>
-                                        <div class="tnkt-dt">
-                                            <div class="tnkt-title">ASTRO</div>
-                                            <div class="tnkt-pc">10%</div>
-                                        </div>
-                                    </div>
-                                    <div class="tnktr-part">
-                                        <div class="tnkt-cl">
-                                            <div class="tnkt-sqdot sqdot2"></div>
-                                        </div>
-                                        <div class="tnkt-dt">
-                                            <div class="tnkt-title">BAYC</div>
-                                            <div class="tnkt-pc">15%</div>
-                                        </div>
-                                    </div>
-                                    <div class="tnktr-part">
-                                        <div class="tnkt-cl">
-                                            <div class="tnkt-sqdot sqdot3"></div>
-                                        </div>
-                                        <div class="tnkt-dt">
-                                            <div class="tnkt-title">Punk</div>
-                                            <div class="tnkt-pc">20%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tnktr-inner">
-                                    <div class="tnktr-part">
-                                        <div class="tnkt-cl">
-                                            <div class="tnkt-sqdot sqdot4"></div>
-                                        </div>
-                                        <div class="tnkt-dt">
-                                            <div class="tnkt-title">AXIE</div>
-                                            <div class="tnkt-pc">35%</div>
-                                        </div>
-                                    </div>
-                                    <div class="tnktr-part">
-                                        <div class="tnkt-cl">
-                                            <div class="tnkt-sqdot sqdot5"></div>
-                                        </div>
-                                        <div class="tnkt-dt">
-                                            <div class="tnkt-title">VEE</div>
-                                            <div class="tnkt-pc">10%</div>
-                                        </div>
-                                    </div>
-                                    <div class="tnktr-part">
-                                        <div class="tnkt-cl">
-                                            <div class="tnkt-sqdot sqdot6"></div>
-                                        </div>
-                                        <div class="tnkt-dt">
-                                            <div class="tnkt-title">Others</div>
-                                            <div class="tnkt-pc">10%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ptasimg">
-                            <div class="ptasimg-ci relative">
-                                <img src="assets/images/ptasimg.png" alt="collector-x">
-                                <div class="ptasimg-pc">
-                                    <div class="ptasimg-pr">
-                                        <div class="ptapr-img">
-                                            <img src="assets/images/puicir.png" alt="collector-x">
-                                        </div>
-                                        <div class="ptapr-text">+4% (1 days)</div>
-                                    </div>
-                                    <p class="ptasimg-prctx">Ξ 3 ($12,000)</p>
-                                </div>
-                            </div>
-                            <p class="ptasimg-p">Wonderfull Artwork #1</p>
+                        <div class="ptfcharts">
+                            <embed src="assets/images/ptfcharts.svg" type="">
                         </div>
                     </div>
                 </div>
@@ -914,11 +854,15 @@
                     </div>
                 </div>
             </div>
-            <div class="topco">
+            <div class="topco" id="topco">
                 <div class="topco-inner pcflex">
                     <div class="topco-left">
-                        <h2 class="topco-title">Get inspired from Top collectors</h2>
-                        <p class="topco-p">You can get inspired & insight from +100 top collectors on our platform</p>
+                        <div class="ctopco-title" id="ctopco-title">
+                            <div class="" id="ctopco-sticky-inner">
+                                <h2 class="topco-title"><span class="font-normal">Get inspired from <br/></span>Top collectors</h2>
+                                <p class="topco-p">You can get inspired & insight from <br/>+100 top collectors on our platform</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="topco-right">
                         <div class="topco-row content-right">
@@ -928,7 +872,7 @@
                                 </div>
                                 <div class="tcrtt">
                                     <div class="tcrank-icon">
-                                        <img src="assets/images/tcrank1.png" alt="collector-x">
+                                        <img src="assets/images/tcrank1.svg" alt="collector-x">
                                     </div>
                                     <div class="cov-collname">
                                         <h3 class="collname">Sally Fadel</h3>
@@ -958,7 +902,7 @@
                                 </div>
                                 <div class="tcrtt">
                                     <div class="tcrank-icon">
-                                        <img src="assets/images/tcrank2.png" alt="collector-x">
+                                        <img src="assets/images/tcrank2.svg" alt="collector-x">
                                     </div>
                                     <div class="cov-collname">
                                         <h3 class="collname">Geoffrey Mott</h3>
@@ -988,7 +932,7 @@
                                 </div>
                                 <div class="tcrtt">
                                     <div class="tcrank-icon">
-                                        <img src="assets/images/tcrank3.png" alt="collector-x">
+                                        <img src="assets/images/tcrank3.svg" alt="collector-x">
                                     </div>
                                     <div class="cov-collname">
                                         <h3 class="collname">Elmer Laverty</h3>
@@ -1018,7 +962,7 @@
                                 </div>
                                 <div class="tcrtt">
                                     <div class="tcrank-icon">
-                                        <img src="assets/images/tcrank4.png" alt="collector-x">
+                                        <img src="assets/images/tcrank4.svg" alt="collector-x">
                                     </div>
                                     <div class="cov-collname">
                                         <h3 class="collname">Florencio Dorrance</h3>
@@ -1048,7 +992,7 @@
                                 </div>
                                 <div class="tcrtt">
                                     <div class="tcrank-icon">
-                                        <img src="assets/images/tcrank5.png" alt="collector-x">
+                                        <img src="assets/images/tcrank5.svg" alt="collector-x">
                                     </div>
                                     <div class="cov-collname">
                                         <h3 class="collname">Daryl Nehls</h3>
@@ -1071,164 +1015,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section bestcoll" id="collector">
-                <div class="bestcoll-head pcflex">
-                    <div class="flex-45">
-                        <h2 class="bestcoll-title"><span class="font-normal">Get inspired from </span>best collectors</h2>
-                    </div>
-                    <div class="flex-10">
-                        <a class="bestcoll-view float-r mx10" href="">
-                            <span>View All</span>
-                            <img class="px5" src="assets/images/goarrow.png" alt="collector-x">
-                        </a>
-                    </div>
-                </div>
-                <div class="bestcoll-body">
-                    <div class="bslider relative">
-                        <div class="bslider-inner pcflex">
-                            <div class="bslider-part">
-                                <div class="bslider-content">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg1.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Wolfgang Slashhaut</p>
-                                        <p class="bslider-p2">12.8k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content mt100">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg2.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Geoffrey Mott</p>
-                                        <p class="bslider-p2">13.4k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg3.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto3.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Darron Kulikowski</p>
-                                        <p class="bslider-p2">14.6k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content mt100">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg4.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto4.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Clinton Mcclure</p>
-                                        <p class="bslider-p2">15.2k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg1.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Wolfgang Slashhaut</p>
-                                        <p class="bslider-p2">12.8k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content mt100">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg2.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Geoffrey Mott</p>
-                                        <p class="bslider-p2">13.4k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg3.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto3.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Darron Kulikowski</p>
-                                        <p class="bslider-p2">14.6k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content mt100">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg4.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto4.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Clinton Mcclure</p>
-                                        <p class="bslider-p2">15.2k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg1.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Wolfgang Slashhaut</p>
-                                        <p class="bslider-p2">12.8k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bslider-part">
-                                <div class="bslider-content mt100">
-                                    <div class="bslider-image relative">
-                                        <img class="bslider-bg" src="assets/images/bsliderbg2.png" alt="collector-x">
-                                        <div class="bcphoto absolute content-center">
-                                            <img src="assets/images/bcphoto2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="bslider-text">
-                                        <p class="bslider-p">Geoffrey Mott</p>
-                                        <p class="bslider-p2">13.4k Followers</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="topco-row-button">
+                            <button class="topco-more-button">View more collector</button>
                         </div>
                     </div>
                 </div>
@@ -1240,8 +1028,10 @@
                     </div>
                     <div class="flex-10">
                         <a class="galleries-view float-r mx10" href="">
-                            <span>View All</span>
-                            <img class="px5" src="assets/images/goarrow.png" alt="collector-x">
+                            <div class="pcflex">
+                                <div class="ev-text pr10">View All</div>
+                                <img class="ev-icon" src="assets/images/goarrow.png" alt="collector-x">
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -1302,7 +1092,7 @@
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/graimg2.png" alt="collector-x">
                                         </div>
-                                        <div class="grc-bottom-part">
+                                        <div class="grc-bottom-part pxgbp">
                                             <img src="assets/images/graimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
@@ -1325,7 +1115,7 @@
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/grbimg2.png" alt="collector-x">
                                         </div>
-                                        <div class="grc-bottom-part">
+                                        <div class="grc-bottom-part pxgbp">
                                             <img src="assets/images/grbimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
@@ -1350,7 +1140,7 @@
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/grcimg2.png" alt="collector-x">
                                         </div>
-                                        <div class="grc-bottom-part">
+                                        <div class="grc-bottom-part pxgbp">
                                             <img src="assets/images/grcimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
@@ -1373,7 +1163,7 @@
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/grdimg2.png" alt="collector-x">
                                         </div>
-                                        <div class="grc-bottom-part">
+                                        <div class="grc-bottom-part pxgbp">
                                             <img src="assets/images/grdimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
@@ -1393,17 +1183,6 @@
                 <div class="inspiration-head">
                     <h2 class="inspiration-title"><span class="font-normal">More NFTs </span>inspiration</h2>
                     <div class="inspiration-button pcflex">
-                        <!-- <div class="insbt-part flex-10 content-left">
-                            <div class="relative btselect">
-                                <div class="insbt insbt1">
-                                    <span class="pr10">Recently Added</span><i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="btoption absolute" style="display: none;">
-                                    <div class="btoptlist">Recently Added</div>
-                                    <div class="btoptlist">Option 2</div>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="insbt-part flex-10 pcflex">
                             <div class="content-left">
                                 <div class="insbt insbt2">
@@ -1418,99 +1197,100 @@
                         </div>
                         <div class="insbt-part flex-10 content-right">
                             <div class="relative btselect">
-                                <div class="insbt insbt4">
-                                    <span class="pr10">Filter</span><i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div class="btoption absolute" style="display: none;">
-                                    <div class="btoptlist">Filter</div>
-                                    <div class="btoptlist">Option 2</div>
+                                <div class="insbt insbt4" id="filter-cb" onclick="insort();">
+                                    <span class="pr10">Filter</span>
+                                    <span id="filter-cbtxt">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="inspiration-sort pcflex">
-                        <div class="insort flex-10">
-                            <p class="insort-title">Price</p>
-                            <div class="relative btselect">
-                                <div class="insort-button pcflex">
-                                    <div class="insort-button-text flex-45 content-left">
-                                        <span>Highest Price</span>
+                    <div class="inspiration-sort" id="inspiration-sort">
+                        <div class="inspiration-sort-inner pcflex">
+                            <div class="insort flex-10">
+                                <p class="insort-title">Price</p>
+                                <div class="relative btselect">
+                                    <div class="insort-button pcflex">
+                                        <div class="insort-button-text flex-45 content-left">
+                                            <span>Highest Price</span>
+                                        </div>
+                                        <div class="insort-button-icon flex-10 content-right">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
                                     </div>
-                                    <div class="insort-button-icon flex-10 content-right">
-                                        <i class="fas fa-chevron-down"></i>
+                                    <div class="btoption absolute" style="display: none;">
+                                        <div class="btoptlist">Highest Price</div>
+                                        <div class="btoptlist">Option 2</div>
                                     </div>
-                                </div>
-                                <div class="btoption absolute" style="display: none;">
-                                    <div class="btoptlist">Highest Price</div>
-                                    <div class="btoptlist">Option 2</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="insort flex-10">
-                            <p class="insort-title">Category</p>
-                            <div class="relative btselect">
-                                <div class="insort-button pcflex">
-                                    <div class="insort-button-text flex-45 content-left">
-                                        <span>All Category</span>
+                            <div class="insort flex-10">
+                                <p class="insort-title">Category</p>
+                                <div class="relative btselect">
+                                    <div class="insort-button pcflex">
+                                        <div class="insort-button-text flex-45 content-left">
+                                            <span>All Category</span>
+                                        </div>
+                                        <div class="insort-button-icon flex-10 content-right">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
                                     </div>
-                                    <div class="insort-button-icon flex-10 content-right">
-                                        <i class="fas fa-chevron-down"></i>
+                                    <div class="btoption absolute" style="display: none;">
+                                        <div class="btoptlist">All Category</div>
+                                        <div class="btoptlist">Option 2</div>
+                                        <div class="btoptlist">Option 3</div>
                                     </div>
-                                </div>
-                                <div class="btoption absolute" style="display: none;">
-                                    <div class="btoptlist">All Category</div>
-                                    <div class="btoptlist">Option 2</div>
-                                    <div class="btoptlist">Option 3</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="insort flex-10">
-                            <p class="insort-title">Likes</p>
-                            <div class="relative btselect">
-                                <div class="insort-button pcflex">
-                                    <div class="insort-button-text flex-45 content-left">
-                                        <span>Most Liked</span>
+                            <div class="insort flex-10">
+                                <p class="insort-title">Likes</p>
+                                <div class="relative btselect">
+                                    <div class="insort-button pcflex">
+                                        <div class="insort-button-text flex-45 content-left">
+                                            <span>Most Liked</span>
+                                        </div>
+                                        <div class="insort-button-icon flex-10 content-right">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
                                     </div>
-                                    <div class="insort-button-icon flex-10 content-right">
-                                        <i class="fas fa-chevron-down"></i>
+                                    <div class="btoption absolute" style="display: none;">
+                                        <div class="btoptlist">Most Liked</div>
+                                        <div class="btoptlist">Option 2</div>
+                                        <div class="btoptlist">Option 3</div>
+                                        <div class="btoptlist">Option 4</div>
                                     </div>
-                                </div>
-                                <div class="btoption absolute" style="display: none;">
-                                    <div class="btoptlist">Most Liked</div>
-                                    <div class="btoptlist">Option 2</div>
-                                    <div class="btoptlist">Option 3</div>
-                                    <div class="btoptlist">Option 4</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="insort flex-10">
-                            <p class="insort-title">Collector</p>
-                            <div class="relative btselect">
-                                <div class="insort-button pcflex">
-                                    <div class="insort-button-text flex-45 content-left">
-                                        <span>Featured</span>
+                            <div class="insort flex-10">
+                                <p class="insort-title">Collector</p>
+                                <div class="relative btselect">
+                                    <div class="insort-button pcflex">
+                                        <div class="insort-button-text flex-45 content-left">
+                                            <span>Featured</span>
+                                        </div>
+                                        <div class="insort-button-icon flex-10 content-right">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
                                     </div>
-                                    <div class="insort-button-icon flex-10 content-right">
-                                        <i class="fas fa-chevron-down"></i>
+                                    <div class="btoption absolute" style="display: none;">
+                                        <div class="btoptlist">Featured</div>
+                                        <div class="btoptlist">Option 2</div>
+                                        <div class="btoptlist">Option 3</div>
+                                        <div class="btoptlist">Option 4</div>
+                                        <div class="btoptlist">Option 5</div>
                                     </div>
-                                </div>
-                                <div class="btoption absolute" style="display: none;">
-                                    <div class="btoptlist">Featured</div>
-                                    <div class="btoptlist">Option 2</div>
-                                    <div class="btoptlist">Option 3</div>
-                                    <div class="btoptlist">Option 4</div>
-                                    <div class="btoptlist">Option 5</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="insort flex-10">
-                            <p class="insort-title">Price range</p>
-                            <div class="pcflex">
-                                <div class="insort-range">
-                                    <input type="range" class="inrange" min="1" max="100" value="50">
-                                    <div class="inrange-value pcflex">
-                                        <div class="flex-10 content-left">0.1 ETH</div>
-                                        <div class="flex-10 content-right">10 ETH</div>
+                            <div class="insort flex-10">
+                                <p class="insort-title">Price range</p>
+                                <div class="pcflex">
+                                    <div class="insort-range">
+                                        <input type="range" class="inrange" min="1" max="100" value="50">
+                                        <div class="inrange-value pcflex">
+                                            <div class="flex-10 content-left">0.1 ETH</div>
+                                            <div class="flex-10 content-right">10 ETH</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1623,88 +1403,86 @@
                     </div>
                 </div>
             </div>
-            <div class="section footer" id="footer">
-                <div class="footer-inner pcflex">
-                    <div class="footer-logo flex-10">
-                        <img src="assets/images/cx-logo.png" alt="collector-x">
-                    </div>
-                    <div class="flex-45 content-center">
-                        <p class="footer-cr" id="footer-crtop">Copyright © 2021. CollectorX. All rights reserved.</p>
-                    </div>
-                    <div class="flex-10 content-right">
-                        <div class="cf-button content-right" id="cf-button" onclick="cfooter();">
-                            <div class="cf-text" id="cf-text">Expand Footer</div>
-                            <div class="cf-icon" id="cf-icon">
-                                <i class="fas fa-chevron-up"></i>
-                            </div>
+        </div>
+        <div class="section footer" id="footer">
+            <div class="footer-inner pcflex">
+                <div class="footer-logo flex-10">
+                    <img src="assets/images/cx-logo.png" alt="collector-x">
+                </div>
+                <div class="flex-45 content-center">
+                    <p class="footer-cr" id="footer-crtop">Copyright © 2021. CollectorX. All rights reserved.</p>
+                </div>
+                <div class="flex-10 content-right">
+                    <div class="cf-button content-right" id="cf-button" onclick="cfooter();">
+                        <div class="cf-text" id="cf-text">Expand Footer</div>
+                        <div class="cf-icon" id="cf-icon">
+                            <i class="fas fa-chevron-up"></i>
                         </div>
                     </div>
                 </div>
-                <div class="footer-inner footer-collapse" id="footer-inner-2">
-                    <div class="footer-content pcflex">
-                        <div class="footer-left">
-                            <p class="footer-p">CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way</p>
-                            <div class="footer-socials content-left">
-                                <a href="">
-                                    <img src="assets/images/facebook.png" alt="collector-x">
-                                </a>
-                                <a href="">
-                                    <img src="assets/images/twitter.png" alt="collector-x">
-                                </a>
-                                <a href="">
-                                    <img src="assets/images/instagram.png" alt="collector-x">
-                                </a>
-                                <a href="">
-                                    <img src="assets/images/discord.png" alt="collector-x">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="footer-right pcflex">
-                            <div class="fr-part flex-10">
-                                <h5 class="fr-part-title">Platform</h5>
-                                <ul class="footer-ul">
-                                    <li class="footer-link"><a href="">Collectors</a></li>
-                                    <li class="footer-link"><a href="">Galleries</a></li>
-                                    <li class="footer-link"><a href="">Collections</a></li>
-                                    <li class="footer-link"><a href="">Markets (Coming Soon)</a></li>
-                                </ul>
-                            </div>
-                            <div class="fr-part flex-10">
-                                <h5 class="fr-part-title">Resources</h5>
-                                <ul class="footer-ul">
-                                    <li class="footer-link"><a href="">Sign Up</a></li>
-                                    <li class="footer-link"><a href="">Login</a></li>
-                                    <li class="footer-link"><a href="">Terms of use</a></li>
-                                    <li class="footer-link"><a href="">Privacy policy</a></li>
-                                </ul>
-                            </div>
-                            <div class="fr-part flex-10">
-                                <h5 class="fr-part-title">Support</h5>
-                                <ul class="footer-ul">
-                                    <li class="footer-link"><a href="">Wallets</a></li>
-                                    <li class="footer-link"><a href="">Community</a></li>
-                                    <li class="footer-link"><a href="">Guidelines</a></li>
-                                    <li class="footer-link"><a href="">Help</a></li>
-                                </ul>
-                            </div>
-                            <div class="fr-part flex-10">
-                                <h5 class="fr-part-title">Company</h5>
-                                <ul class="footer-ul">
-                                    <li class="footer-link"><a href="">About Us</a></li>
-                                    <li class="footer-link"><a href="">Carrers</a></li>
-                                    <li class="footer-link"><a href="">Guidelines</a></li>
-                                    <li class="footer-link"><a href="">Help</a></li>
-                                </ul>
-                            </div>
+            </div>
+            <div class="footer-inner footer-collapse" id="footer-inner-2">
+                <div class="footer-content pcflex">
+                    <div class="footer-left">
+                        <p class="footer-p">CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way</p>
+                        <div class="footer-socials content-left">
+                            <a href="">
+                                <img src="assets/images/facebook.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="assets/images/twitter.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="assets/images/instagram.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="assets/images/discord.png" alt="collector-x">
+                            </a>
                         </div>
                     </div>
-                    <p class="footer-cr content-center">Copyright © 2021. CollectorX. All rights reserved.</p>
+                    <div class="footer-right pcflex">
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Platform</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Collectors</a></li>
+                                <li class="footer-link"><a href="">Galleries</a></li>
+                                <li class="footer-link"><a href="">Collections</a></li>
+                                <li class="footer-link"><a href="">Markets (Coming Soon)</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Resources</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Sign Up</a></li>
+                                <li class="footer-link"><a href="">Login</a></li>
+                                <li class="footer-link"><a href="">Terms of use</a></li>
+                                <li class="footer-link"><a href="">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Support</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Wallets</a></li>
+                                <li class="footer-link"><a href="">Community</a></li>
+                                <li class="footer-link"><a href="">Guidelines</a></li>
+                                <li class="footer-link"><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Company</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">About Us</a></li>
+                                <li class="footer-link"><a href="">Carrers</a></li>
+                                <li class="footer-link"><a href="">Guidelines</a></li>
+                                <li class="footer-link"><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <p class="footer-cr content-center">Copyright © 2021. CollectorX. All rights reserved.</p>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="assets/javascript/ptfichart.js"></script>
     <script>
         function menuButton(id){
             var mb = document.getElementsByClassName('menu-button');
@@ -1727,59 +1505,33 @@
             }
             ccircle[count].classList.add('cc-circle-active');
         }
+        const slider = document.querySelector('.explore-body-inner');
         let isDown = false;
         let startX;
         let scrollLeft;
-        const slider = document.querySelector('.bslider-inner');
-        const end = () => {
-            isDown = false;
-        slider.classList.remove('active');
-        }
-        const start = (e) => {
+
+        slider.addEventListener('mousedown', (e) => {
         isDown = true;
-        slider.classList.add('active');
-        startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;	
-        }
-        const move = (e) => {
-            if(!isDown) return;
-
+        slider.classList.add('ebinn-active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('ebinn-active');
+        });
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('ebinn-active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
         e.preventDefault();
-        const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
-        const dist = (x - startX);
-        slider.scrollLeft = scrollLeft - dist;
-        }
-        (() => {
-            slider.addEventListener('mousedown', start);
-            slider.addEventListener('touchstart', start);
-
-            slider.addEventListener('mousemove', move);
-            slider.addEventListener('touchmove', move);
-
-            slider.addEventListener('mouseleave', end);
-            slider.addEventListener('mouseup', end);
-            slider.addEventListener('touchend', end);
-        })();
-        var btsel = document.getElementsByClassName('btselect');
-        var i;
-        for(i = 0; i < btsel.length; i++){
-            btsel[i].addEventListener('mouseover', function(){
-                var bsbtn = this.children[0];
-                var btopt = this.children[1];
-                btopt.style.display = 'block';
-                bsbtn.style.borderBottom = 'none';
-                bsbtn.style.borderBottomLeftRadius = '0px';
-                bsbtn.style.borderBottomRightRadius = '0px';
-            });
-            btsel[i].addEventListener('mouseleave', function(){
-                var bsbtn = this.children[0];
-                var btopt = this.children[1];
-                btopt.style.display = 'none';
-                bsbtn.style.borderBottom = '1px solid lightgrey';
-                bsbtn.style.borderBottomLeftRadius = '5px';
-                bsbtn.style.borderBottomRightRadius = '5px';
-            });
-        }
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1;
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+        });
         document.querySelectorAll(".inrange").forEach(function(el) {       
         el.oninput =function(){            
         var valPercent = (el.valueAsNumber  - parseInt(el.min)) / (parseInt(el.max) - parseInt(el.min));
@@ -1788,6 +1540,35 @@
         };
         el.oninput();
         });
+        function insort(){
+            var insort = document.getElementById('inspiration-sort');
+            var fcbtx = document.getElementById('filter-cbtxt');
+            if (insort.style.maxHeight) {
+                insort.style.maxHeight = null;
+                fcbtx.innerHTML = '<i class="fas fa-chevron-down"></i>';
+            }else{
+                insort.style.maxHeight = insort.scrollHeight + "px";
+                fcbtx.innerHTML = '<i class="fas fa-chevron-up"></i>';
+            }
+        }
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction(){
+            var section = document.getElementsByClassName('section');
+            var heighna = section[0].offsetHeight + section[1].offsetHeight + section[2].offsetHeight + section[3].offsetHeight + section[4].offsetHeight + section[5].offsetHeight;
+            var heighnb = section[0].offsetHeight + section[1].offsetHeight + section[2].offsetHeight + section[3].offsetHeight + section[4].offsetHeight + section[5].offsetHeight + section[6].offsetHeight - 290;
+            var topcoel = document.getElementById('topco');
+            var ctctt = document.getElementById('ctopco-title');
+            var ctctx = document.getElementById('ctopco-sticky-inner');
+            if(document.body.scrollTop > heighna & document.body.scrollTop < heighnb || document.documentElement.scrollTop > heighna & document.documentElement.scrollTop < heighnb){
+                ctctt.classList.add('ctopco-sticky');
+                ctctx.classList.add('ctopco-sticky-inner');
+            }else{
+                if(ctctt.classList.contains('ctopco-sticky')){
+                    ctctt.classList.remove('ctopco-sticky');
+                    ctctx.classList.remove('ctopco-sticky-inner');
+                }
+            }
+        }
         function cfooter(){
             var ftctp = document.getElementById('footer-crtop');
             var footerc = document.getElementById('footer-inner-2');
