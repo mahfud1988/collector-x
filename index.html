@@ -858,8 +858,10 @@
                 <div class="topco-inner pcflex">
                     <div class="topco-left">
                         <div class="ctopco-title" id="ctopco-title">
-                            <h2 class="topco-title"><span class="font-normal">Get inspired from <br/></span>Top collectors</h2>
-                            <p class="topco-p">You can get inspired & insight from +100 top collectors on our platform</p>
+                            <div class="" id="ctopco-sticky-inner">
+                                <h2 class="topco-title"><span class="font-normal">Get inspired from <br/></span>Top collectors</h2>
+                                <p class="topco-p">You can get inspired & insight from <br/>+100 top collectors on our platform</p>
+                            </div>
                         </div>
                     </div>
                     <div class="topco-right">
@@ -1619,11 +1621,14 @@
             var heighnb = section[0].offsetHeight + section[1].offsetHeight + section[2].offsetHeight + section[3].offsetHeight + section[4].offsetHeight + section[5].offsetHeight + section[6].offsetHeight - 290;
             var topcoel = document.getElementById('topco');
             var ctctt = document.getElementById('ctopco-title');
+            var ctctx = document.getElementById('ctopco-sticky-inner');
             if(document.body.scrollTop > heighna & document.body.scrollTop < heighnb || document.documentElement.scrollTop > heighna & document.documentElement.scrollTop < heighnb){
                 ctctt.classList.add('ctopco-sticky');
+                ctctx.classList.add('ctopco-sticky-inner');
             }else{
                 if(ctctt.classList.contains('ctopco-sticky')){
                     ctctt.classList.remove('ctopco-sticky');
+                    ctctx.classList.remove('ctopco-sticky-inner');
                 }
             }
         }
