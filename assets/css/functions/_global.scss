@@ -50,25 +50,49 @@ section {
     margin-left: toRem(24);
 }
 
+.my-16 {
+    margin: toRem(16) 0;
+}
+
+.mt-16 {
+    margin-top: toRem(16);
+}
+
+.mb-16 {
+    margin-bottom: toRem(16);
+}
+
+.mx-16 {
+    margin: 0 toRem(16);
+}
+
+.mr-16 {
+    margin-right: toRem(16);
+}
+
+.ml-16 {
+    margin-left: toRem(16);
+}
+
 .space {
     height: toRem(74);
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     width: 16px;
     height: 16px;
     border: 1px solid $color-neutral-40;
     border-radius: 2px;
     cursor: pointer;
-    -moz-appearance:none;
-	-webkit-appearance:none;
-	-o-appearance:none;
-	outline: none;
-	content: none;	
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    outline: none;
+    content: none;
     transition: color .2s ease, background-color .1s ease;
 }
 
-input[type="checkbox"]:hover{
+input[type="checkbox"]:hover {
     border: 1px solid $color-action-hover;
 }
 
@@ -80,21 +104,21 @@ input[type="checkbox"]:checked {
     background-position: center;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     width: 16px;
     height: 16px;
     border: 1px solid $color-neutral-40;
     border-radius: 50%;
     cursor: pointer;
-    -moz-appearance:none;
-	-webkit-appearance:none;
-	-o-appearance:none;
-	outline: none;
-	content: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    outline: none;
+    content: none;
     transition: color .2s ease, background-color .1s ease;
 }
 
-input[type="radio"]:hover{
+input[type="radio"]:hover {
     border: 1px solid $color-action-hover;
 }
 
@@ -121,12 +145,15 @@ input[type="radio"]:checked {
 
 .nav {
     &-pills {
+        font-family: 'Poppins-Medium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
         border-bottom: 1px solid $color-neutral-20;
+
         .nav-link {
             color: $color-neutral-80;
             padding-bottom: toRem(24);
             transition: color .5s ease;
             text-decoration-line: none;
+            border-radius: 0;
 
             &.active {
                 color: $color-action-default;
@@ -141,14 +168,23 @@ input[type="radio"]:checked {
     }
 }
 
-.table-2 {
+.table{
     th{
+        font-family: 'Poppins-Medium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+        padding-top: toRem(24);
+        padding-bottom: toRem(16);
+        font-weight: 500;
+    }
+}
+
+.table-2 {
+    th {
         padding-top: toRem(24);
         padding-bottom: toRem(16);
         border-top: none;
     }
 
-    tr td{
+    tr td {
         border-top: 1px solid $color-neutral-10;
     }
 
@@ -157,7 +193,8 @@ input[type="radio"]:checked {
     }
 }
 
-a, a:link {
+a,
+a:link {
     text-decoration: none;
     color: $color-action-default;
     text-decoration-line: underline;
@@ -167,12 +204,13 @@ a:hover {
     color: $color-action-hover;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
     color: $color-action-press;
 }
 
 .badge {
-    padding: 4px 8px;
+    padding: 5.5px 8px;
     border-radius: 32px;
     font-size: 14px;
     text-align: center;
@@ -181,6 +219,11 @@ a:focus, a:active {
     &-upcoming {
         background-color: $color-light-accent-orange;
         color: $color-brand-secondary;
+    }
+
+    &-success {
+        background-color: $color-light-accent-green;
+        color: $color-accent-green;
     }
 }
 
@@ -194,16 +237,19 @@ a:focus, a:active {
     padding-left: 15px;
     padding-right: 15px;
 
-    @include media-query(lg){
+    @include media-query(lg) {
         max-width: 1140px;
     }
-    @include media-query(md-2){
+
+    @include media-query(md-2) {
         max-width: 960px;
     }
-    @include media-query(md){
+
+    @include media-query(md) {
         max-width: 720px;
     }
-    @include media-query(sm){
+
+    @include media-query(sm) {
         max-width: 540px;
     }
 }

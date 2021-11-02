@@ -1,0 +1,267 @@
+.wallet-main-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.wallet-sidebar {
+    margin: 0;
+    background-image: url('../images/fmcolor.png');
+    position: relative;
+    width: 100%;
+    max-width: 456px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    &__logo {
+        position: absolute;
+        top: 48px;
+        left: 48px;
+        height: 40px;
+        width: auto;
+    }
+
+    @include media-query("md-2") {
+        display: none;
+    }
+}
+
+.wallet-content {
+    flex-grow: 1;
+    margin: 0;
+    padding: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wallet-back-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    text-decoration: none !important;
+
+    &__icon {
+        margin-right: 14px;
+        height: 11.6px;
+    }
+
+    &__text {
+        color: $color-neutral-100;
+        font-family: 'Poppins-Medium';
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+}
+
+.wallet-wizard-header {
+    display: flex;
+    align-items: center;
+    margin: 0 -4px;
+    padding: 0;
+
+    &__item {
+        list-style: none;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 4px;
+        color: $color-neutral-20;
+        font-family: 'Satoshi-Variable';
+        font-size: 20px;
+        line-height: 120%;
+        padding-bottom: 16px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 4px;
+            bottom: 0;
+            left: 4px;
+            height: 4px;
+            background-color: $color-neutral-20;
+        }
+
+        &--active {
+            color: $color-action-default;
+
+            &::after {
+                background-color: $color-action-default;
+            }
+        }
+
+        &--complete {
+            display: flex;
+            align-items: center;
+            color: $color-action-default;
+
+            &::after {
+                background-color: $color-action-default;
+            }
+        }
+
+        &:hover {
+            color: $color-action-hover;
+
+            &::after {
+                background-color: $color-action-hover;
+            }
+        }
+    }
+}
+
+.wallet-wizard-header-check-icon {
+    margin-right: 10px;
+    height: 20px;
+    width: auto;
+}
+
+.wallet-wizard-content {
+    padding: 40px 0 0;
+}
+
+.wallet-wizard-content-header {
+    margin-bottom: 40px;
+
+    &__heading {
+        color: $color-neutral-100;
+        font-family: 'Satoshi-Variable';
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 8px;
+    }
+
+    &__subheading {
+        color: $color-neutral-60;
+        font-family: 'Poppins-Regular';
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+.wallet-radio-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 0 12px;
+        margin-bottom: 24px;
+
+        @include media-query("sm-2") {
+            flex: 0 0 100%;
+            max-width: 100%;
+            // margin-bottom: 24px;
+
+            // &:last-child {
+            //     margin-bottom: 0;
+            // }
+        }
+    }
+
+    &__input {
+        display: block;
+        color: $color-neutral-100;
+        font-family: 'Poppins-Regular';
+        font-size: 14px;
+        line-height: 150%;
+        padding: 10px 14px;
+        background-color: $color-neutral-0;
+        border: 1px solid $color-neutral-20;
+        border-radius: 5px;
+        width: 44%;
+
+        &::placeholder {
+            color: $color-neutral-40;
+        }
+    }
+}
+
+.wallet-radio {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid $color-neutral-20;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    &--selected {
+        border-color: $color-action-default;
+    }
+
+    &__input {
+        border: 2px solid $color-neutral-40 !important;
+        position: absolute !important;
+        top: 16px;
+        left: 16px;
+        width: 32px !important;
+        height: 32px !important;
+
+        &:checked {
+            border: 2px solid $color-action-default !important;
+            // &~.wallet-radio__image {
+            //     border: 1px solid $color-action-default;
+            // }
+
+            // &~.wallet-radio__text {
+            //     -webkit-text-stroke-width: 1px;
+            //     -webkit-text-stroke-color: $color-action-default;
+            // }
+        }
+    }
+
+    &__image {
+        width: 96px;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: #000000;
+        font-family: 'Poppins-Regular';
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+.radio-image {
+    &__image {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.wallet-btn-submit {
+    padding: 10px 51px;
+    margin-top: 16px;
+}
+
+.wallet-help {
+    color: $color-neutral-80;
+    font-family: 'Poppins-Regular';
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 48px;
+
+    &__link {
+        text-decoration: none !important;
+    }
+}

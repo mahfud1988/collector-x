@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collector X - Wallet</title>
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="wallet-main-wrapper">
+        <section class="wallet-sidebar">
+            <img src="./assets/images/cx-logo.png" alt="" class="wallet-sidebar__logo">
+        </section>
+
+        <section class="wallet-content">
+            <div>
+                <a class="wallet-back-btn" href="#">
+                    <img class="wallet-back-btn__icon" src="./assets/images/arrow-left.png" alt="Go Back">
+                    <div class="wallet-back-btn__text">Go Back</div>
+                </a>
+
+                <ul class="wallet-wizard-header">
+                    <li class="wallet-wizard-header__item wallet-wizard-header__item--active">1. Choose Network</li>
+                    <li class="wallet-wizard-header__item">2. Choose Wallet</li>
+                </ul>
+
+                <section class="wallet-wizard-content">
+                    <div class="wallet-wizard-content-header">
+                        <h2 class="wallet-wizard-content-header__heading">Choose Network</h2>
+                        <p class="wallet-wizard-content-header__subheading">Choose on of available network</p>
+                    </div>
+
+                    <div class="wallet-radio-wrapper">
+                        <div class="wallet-radio-wrapper__item">
+                            <label class="wallet-radio">
+                                <input class="wallet-radio__input" type="radio" name="network" value="" checked>
+                                <div class="wallet-radio__image radio-image">
+                                    <img class="radio-image__image" src="./assets/images/network1.png">
+                                </div>
+                                <span class="wallet-radio__text">Polygon</span>
+                            </label>
+                        </div>
+                        <div class="wallet-radio-wrapper__item">
+                            <label class="wallet-radio">
+                                <input class="wallet-radio__input" type="radio" name="network" value="">
+                                <div class="wallet-radio__image radio-image">
+                                    <img class="radio-image__image" src="./assets/images/network2.png">
+                                </div>
+                                <span class="wallet-radio__text">Solana</span>
+                            </label>
+                        </div>
+                        <div class="wallet-radio-wrapper__item">
+                            <label class="wallet-radio">
+                                <input class="wallet-radio__input" type="radio" name="network" value="">
+                                <div class="wallet-radio__image radio-image">
+                                    <img class="radio-image__image" src="./assets/images/network3.png">
+                                </div>
+                                <span class="wallet-radio__text">Polygon</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-default wallet-btn-submit">Continue</button>
+                </section>
+            </div>
+
+            <div>
+                <p class="wallet-help">First time setting up wallet? <a class="wallet-help__link" href="#">Get help
+                        now</a></p>
+            </div>
+
+
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/vendor.js"></script>
+    <script type="text/javascript" src="assets/javascript/custom.js"></script>
+</body>
+
+</html>
