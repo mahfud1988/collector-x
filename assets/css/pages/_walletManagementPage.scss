@@ -1,0 +1,129 @@
+.list-wallet-name {
+    display: flex;
+    align-items: center;
+
+    &__image {
+        height: 40px;
+        width: auto;
+        margin-right: 8px;
+    }
+}
+
+.list-wallet-hide {
+
+    // Replace bootstrap switches
+    .custom-switch .custom-control-label::before {
+        top: -4px;
+        width: 48px !important;
+        height: 28px !important;
+        border-radius: 32px;
+    }
+
+    .custom-control-input:checked~.custom-control-label::before {
+        color: #fff !important;
+        border-color: $color-action-default !important;
+        background-color: $color-action-default !important;
+    }
+
+    .custom-control-input:disabled~.custom-control-label::before {
+        color: #fff !important;
+        border-color: $color-light-accent-green !important;
+        background-color: $color-light-accent-green !important;
+    }
+
+    .custom-switch .custom-control-label::after {
+        top: 0px !important;
+        left: -26px !important;
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 50% !important;
+    }
+
+    .custom-switch .custom-control-input:checked~.custom-control-label::after {
+        background-color: #ffffff !important;
+        -webkit-transform: translateX(18px) !important;
+        transform: translateX(18px) !important;
+    }
+
+    .custom-switch .custom-control-input:disabled~.custom-control-label::after {
+        background-color: #ffffff !important;
+    }
+}
+
+.list-wallet-actions {
+    display: flex;
+    align-items: center;
+
+    &__btn-text {
+        width: 143px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    &__btn-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.share-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+
+    &__heading {
+        color: $color-neutral-100;
+        font-family: 'Poppins-SemiBold';
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    &__subheading {
+        color: $color-neutral-100;
+        font-family: 'Poppins-Regular';
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid $color-action-default;
+        background-color: $color-neutral-0;
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.copybox {
+    color: $color-action-default;
+    font-family: 'Poppins-Medium';
+    font-size: 14px;
+    line-height: 150%;
+    background-color: $color-light-accent-green;
+    border: 1px solid $color-action-default;
+    border-radius: 32px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__button {
+        margin-left: 8px;
+        height: 16px;
+        width: auto;
+    }
+}

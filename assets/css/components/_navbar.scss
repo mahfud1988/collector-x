@@ -19,33 +19,123 @@
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+        justify-content: space-between;
+        align-items: unset;
+
+        @include media-query(xl) {
+            // justify-content: flex-start;
+        }
+
+        @include media-query(lg) {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        
+        &__logo-box {
+            max-width: 186.64px;
+            margin-right: toRem(30);
+            padding-top: toRem(7.5);
+            padding-bottom: toRem(17.5);
+
+            @include media-query(xl-1) {
+                margin-right: toRem(15);
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        &__search-box {
+            padding-top: toRem(6.5);
+            margin-left: toRem(24);
+            margin-right: toRem(24);
+
+            @include media-query(xl-1) {
+                margin-left: toRem(12);
+                margin-right: toRem(12);
+            }
+
+            @include media-query(lg) {
+                flex: 0 0 auto;
+                width: 50%;
+                justify-content: flex-end;;
+                margin-right: 0;
+            }
+        }
+
         &__menu-box {
-            padding-top: toRem(16);
+            padding-top: toRem(6.5);
+            margin-left: toRem(59.68);
+            margin-right: toRem(85);
+
+            @include media-query(xl) {
+                margin-left: toRem(35);
+                margin-right: toRem(75);
+            }
+
+            @include media-query(xl-1) {
+                margin-right: toRem(65);
+            }
+
+            @include media-query(lg) {
+                flex: 0 0 auto;
+                width: 55%;
+                margin-left: 0;
+                margin-right: 0;
+            }
 
             .nav-link{
-                color: $color-neutral-80;
-                padding-bottom: toRem(24.5);
-                // margin-top: toRem(23);
-                border-bottom: toRem(2) solid transparent;
-    
-                &:hover{
-                    color: $color-action-hover;
+                padding: 0 toRem(12);
+
+                @include media-query(lg) {
+                    &:first-child {
+                        padding-left: 0;
+                    }
                 }
-    
+
+                &__item {
+                    display: block;
+                    color: $color-neutral-80;
+                    padding: toRem(9) 0 toRem(29);
+                    border-bottom: toRem(2) solid transparent;
+        
+                    &:hover{
+                        color: $color-action-hover;
+                    }
+                }
+
                 &.active {
-                    color: $color-action-default;
-                    border-bottom-color: $color-action-default;
+                    .nav-link__item {
+                        color: $color-action-default;
+                        border-bottom-color: $color-action-default;
+                    }
                 }
             }
         }
     
         &__account-box {
+            padding-top: toRem(6.5);
+            align-items: flex-start;
+
+            @include media-query(lg) {
+                flex: 0 0 auto;
+                width: 45%;
+            }
+
             .nav-link{
                 color: $color-action-default;
+                padding: toRem(10) toRem(32);
     
                 &:hover{
                     color: $color-action-hover;
                 }
+            }
+            .btn {
+                color: $color-neutral-0;
+                display: block;
             }
         }
 

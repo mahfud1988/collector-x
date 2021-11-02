@@ -4,3 +4,8 @@
     $remValue: math.div($value, 14) * 1rem; 
     @return $remValue;
 }
+
+@function toEm($value) {
+    $emValue: math.div($value, 16) * 1em; 
+    @return $emValue;
+}

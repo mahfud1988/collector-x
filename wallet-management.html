@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collector X - Calendar</title>
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <nav class="container-navbar">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar__logo-box align-items-center">
+                    <a href="#">
+                        <img src="assets/images/cx-logo.png" alt="collector-x">
+                    </a>
+                </div>
+                <div class="navbar__search-box align-items-center">
+                    <div class="search-box">
+                        <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                        <input type="text" class="search-box__input" placeholder="Search Collections">
+                    </div>
+                </div>
+                <div class="navbar__menu-box nav align-items-center">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">Market</a>
+                    <a href="#" class="nav-link">Calendar</a>
+                    <a href="#" class="nav-link">Collector</a>
+                    <a href="#" class="nav-link">Gallery</a>
+                </div>
+                <div class="navbar__account-box nav justify-content-end align-items-center">
+                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" class="btn btn--md btn-default">Sign Up</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="space"></div>
+    <main>
+        <section class="wallet-management">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between my-32">
+                    <h2>My Wallet</h2>
+                    <button type="button" class="btn btn-default btn--md">Add new wallet</button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table custom-table-1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Wallet Name</th>
+                                <th scope="col">Wallet Address</th>
+                                <th scope="col">Balance</th>
+                                <th scope="col">Hide from Profile</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active">
+                                <td>
+                                    <div class="list-wallet-name">
+                                        <img class="list-wallet-name__image" src="./assets/images/wallet2.png">
+                                        Wallet 1
+                                    </div>
+                                </td>
+                                <td>123456234fdgrtyrver</td>
+                                <td>456 ETH</td>
+                                <td>
+                                    <div class="list-wallet-hide">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="wallet1-checkbox"
+                                                checked>
+                                            <label class="custom-control-label" for="wallet1-checkbox"></label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="list-wallet-actions">
+                                        <button type="button"
+                                            class="btn btn-outline-default list-wallet-actions__btn-text">Default</button>
+                                        <button type="button"
+                                            class="btn btn-outline-danger list-wallet-actions__btn-icon">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="list-wallet-name">
+                                        <img class="list-wallet-name__image" src="./assets/images/wallet4.png">
+                                        Wallet 2
+                                    </div>
+                                </td>
+                                <td>123456234fdgrtyrver</td>
+                                <td>456 ETH</td>
+                                <td>
+                                    <div class="list-wallet-hide">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="wallet1-checkbox"
+                                                disabled>
+                                            <label class="custom-control-label" for="wallet1-checkbox"></label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="list-wallet-actions">
+                                        <button type="button"
+                                            class="btn btn-outline-default list-wallet-actions__btn-text">Default</button>
+                                        <button type="button"
+                                            class="btn btn-outline-danger list-wallet-actions__btn-icon">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <section class="share-profile">
+                    <h6 class="share-profile__heading mb-16">Share my profile</h6>
+                    <div class="share-profile__icon mb-16">
+                        <div class="social-media">
+                            <a class="social-media__item btn-outline-default" href="#">
+                                <img src="./assets/images/social4.png" alt="Twitter">
+                            </a>
+                            <a class="social-media__item btn-outline-default" href="#">
+                                <img src="./assets/images/social1.png" alt="Twitter">
+                            </a>
+                            <a class="social-media__item btn-outline-default" href="#">
+                                <img src="./assets/images/social2.png" alt="Twitter">
+                            </a>
+                            <a class="social-media__item btn-outline-default" href="#">
+                                <img src="./assets/images/social3.png" alt="Twitter">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="share-profile__subheading mb-16">Or copy this link, and share everywhere</p>
+                    <div class="copybox">
+                        CollectorX.com/zephyrus123
+                        <img src="./assets/images/copy-icon.png" class="copybox__button">
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="container-footer">
+        <div class="container">
+            <div class="footer d-flex flex-column my-32">
+                <div class="footer__box d-flex flex-row justify-content-between align-items-center">
+                    <div class="footer__box--left">
+                        <a href="#">
+                            <img src="assets/images/cx-logo-footer.png" class="img-fluid" alt="collector-x">
+                        </a>
+                    </div>
+                    <div class="footer__box--middle" id="copyrightFooter">
+                        <p>Copyright © 2021. CollectorX. All rights reserved.</p>
+                    </div>
+                    <div class="footer__box--right">
+                        <button class="btn btn-dropdown" type="button" data-toggle="collapse"
+                            data-target="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse">Expand
+                            Footer</button>
+                    </div>
+                </div>
+                <div class="collapse mt-24" id="footerCollapse">
+                    <div class="footer__box d-flex flex-row justify-content-between align-items-start">
+                        <div class="footer__box--left d-flex flex-column">
+                            <p class="footer__box--left-desc">
+                                CollectorX is a platform where NFT enthusiast and art collector gather around to curate
+                                their collection in the best possible way
+                            </p>
+                            <div class="footer__box--left-social d-flex flex-row align-items-center">
+                                <a href="" class="mr-32">
+                                    <img src="assets/images/facebook.svg" alt="collector-x">
+                                </a>
+                                <a href="" class="mr-32">
+                                    <img src="assets/images/twitter.svg" alt="collector-x">
+                                </a>
+                                <a href="" class="mr-32">
+                                    <img src="assets/images/instagram.svg" alt="collector-x">
+                                </a>
+                                <a href="" class="">
+                                    <img src="assets/images/discord.svg" alt="collector-x">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__box--right d-flex flex-row">
+                            <ul class="footer__box--right-link">
+                                <li class="footer__box--right-link-title">Platform</li>
+                                <li><a href="">Collectors</a></li>
+                                <li><a href="">Galleries</a></li>
+                                <li><a href="">Collections</a></li>
+                                <li><a href="">Markets (Coming Soon)</a></li>
+                            </ul>
+                            <ul class="footer__box--right-link">
+                                <li class="footer__box--right-link-title">Resources</li>
+                                <li><a href="">Sign Up</a></li>
+                                <li><a href="">Login</a></li>
+                                <li><a href="">Terms of use</a></li>
+                                <li><a href="">Privacy policy</a></li>
+                            </ul>
+                            <ul class="footer__box--right-link">
+                                <li class="footer__box--right-link-title">Support</li>
+                                <li><a href="">Wallets</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Guidelines</a></li>
+                                <li><a href="">Help</a></li>
+                            </ul>
+                            <ul class="footer__box--right-link">
+                                <li class="footer__box--right-link-title">Company</li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Carrers</a></li>
+                                <li><a href="">Guidelines</a></li>
+                                <li><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__box d-flex justify-content-center mt-32">
+                        <div class="footer__box--middle">
+                            <p>Copyright © 2021. CollectorX. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/vendor.js"></script>
+    <script type="text/javascript" src="assets/javascript/custom.js"></script>
+</body>
+
+</html>
