@@ -1,8 +1,24 @@
+@import url('../css/satoshi.css');
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
 @media screen and (max-width: 949px){
     body{
         margin: 0;
         font-family: poppins;
         box-sizing: border-box;
+        color: #230604;
     }
     .btest{
         border: 1px solid green;
@@ -42,7 +58,7 @@
         width: 100%;
     }
     .main-title{
-        font-family: 'Satoshi', sans-serif;
+        font-family: Satoshi-Regular;
         font-weight: normal;
         font-size: 32px;
         color: rgba(35, 6, 4, 1);
@@ -180,64 +196,84 @@
         margin-right: 100px;
     }
     .main-title{
-        font-family: 'Satoshi', sans-serif;
+        font-family: Satoshi-Regular;
         font-weight: normal;
         font-size: 48px;
         width: 364px;
         color: rgba(35, 6, 4, 1);
-        margin-top: 0;
+        margin: 0;
+        /* margin-top: 0; */
+        margin-bottom: 32px;
     }
     .content-p{
         font-size: 20px;
         color: #7B6A68;
+        margin: 0;
+        margin-bottom: 20px;
     }
     .content-form{
         width: auto;
     }
     .cov-input{
-        width: 100%;
+        width: 448px;
         margin-bottom: 35px;
         box-sizing: border-box;
+        /* border: 1px solid green; */
     }
     .label{
         margin-bottom: 10px;
         font-weight: bold;
         color: rgba(35, 6, 4, 1);
+        /* border: 1px solid green; */
     }
     .input{
-        width: 97%;
-        height: 35px;
-        padding: 1%;
-        padding-left: 10px;
+        box-sizing: border-box;
+        width: 448px;
+        height: 41px;
+        padding: 12px;
+        padding-left: 16px;
         border: 1px solid lightgrey;
         outline: none;
-        font-size: 100%;
+        /* font-size: 100%; */
+        font-family: poppins;
     }
     .button{
-        width: 100%;
+        box-sizing: border-box;
+        width: 448px;
         height: 50px;
-        background: rgba(235, 87, 73, 1);
+        background: #52AFB2;
         color: white;
         border: none;
         border-radius: 2px;
-        font-size: 100%;
+        font-size: 14px;
+        font-family: poppins;
         transition: 0.2s;
         cursor: pointer;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
     .button:hover{
-        background: rgb(240, 111, 102);
+        background: #479C9F;
     }
     .content-p2{
         text-align: center;
         color: #230604;
         margin-bottom: 35px;
         font-weight: bold;
+        /* border: 1px solid green; */
+    }
+    .cov-sc{
+        width: 448px;
+        margin-bottom: 35px;
+        box-sizing: border-box;
+        /* border: 1px solid green; */
     }
     .sc-button{
-        border: 1px solid lightgrey;
+        box-sizing: border-box;
+        /* border: 1px solid lightgrey; */
         cursor: pointer;
-        height: 35px;
-        border-radius: 2px;
+        height: 41px;
+        border-radius: 4px;
         line-height: 35px;
     }
     .sc-button img{
@@ -252,10 +288,14 @@
     }
     .gg-button{
         margin-left: 5px;
-        color: #EB5749;
+        color: #52AFB2;
+        border: 1px solid #52AFB2;
     }
     .login-link{
-        color: #EB5749;
+        color: #52AFB2;
         text-decoration: none;
+        font-family: poppins;
+        font-weight: 400;
+        font-size: 14px;
     }
 }
