@@ -1,0 +1,33 @@
+.breadcrumb {
+    background-color: transparent;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    &-item {
+        color: $color-neutral-100;
+
+        &.active {
+            a{
+                color: $color-neutral-60;
+            }
+        }
+
+        a {
+            color: $color-neutral-100;
+            text-decoration: none;
+        }
+    }
+
+    &-item + &-item::before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f054';
+        font-weight: 900;
+        font-size: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        color: $color-neutral-100;
+        padding: toRem(3) toRem(14);
+        padding-left: toRem(7);
+    }
+}

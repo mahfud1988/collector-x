@@ -1,6 +1,7 @@
 .custom-table-1 {
     border-collapse: separate;
     border-spacing: 0 16px;
+    margin: 0;
 
     thead {
 
@@ -52,5 +53,40 @@
                 }
             }
         }
+    }
+}
+
+
+.custom-table-2 {
+    th {
+        padding-top: toRem(24);
+        padding-bottom: toRem(16);
+        border-top: none;
+    }
+
+    tr td {
+        border-top: 1px solid $color-neutral-10;
+    }
+
+    tr:last-child td {
+        border-bottom: 1px solid $color-neutral-10;
+    }
+}
+
+.custom-table-3 {
+
+    thead th{
+        padding: 0;
+        padding-bottom: toRem(8);
+        color: $color-neutral-40;
+    }
+
+    tbody td {
+        padding: 0;
+    }
+
+    thead th, tbody td{
+        border: none;
+        border-bottom: none;
     }
 }

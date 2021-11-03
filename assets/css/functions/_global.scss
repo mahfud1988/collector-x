@@ -1,5 +1,54 @@
 section {
+    width: 100%;
     margin: 0 auto;
+}
+
+.my-48 {
+    margin: toRem(48) 0;
+}
+
+.mt-48 {
+    margin-top: toRem(48);
+}
+
+.mb-48 {
+    margin-bottom: toRem(48);
+}
+
+.mx-48 {
+    margin: 0 toRem(48);
+}
+
+.mr-48 {
+    margin-right: toRem(48);
+}
+
+.ml-48 {
+    margin-left: toRem(48);
+}
+
+.my-40 {
+    margin: toRem(40) 0;
+}
+
+.mt-40 {
+    margin-top: toRem(40);
+}
+
+.mb-40 {
+    margin-bottom: toRem(40);
+}
+
+.mx-40 {
+    margin: 0 toRem(40);
+}
+
+.mr-40 {
+    margin-right: toRem(40);
+}
+
+.ml-40 {
+    margin-left: toRem(40);
 }
 
 .my-32 {
@@ -26,6 +75,30 @@ section {
     margin-left: toRem(32);
 }
 
+.my-28 {
+    margin: toRem(28) 0;
+}
+
+.mt-28 {
+    margin-top: toRem(28);
+}
+
+.mb-28 {
+    margin-bottom: toRem(28);
+}
+
+.mx-28 {
+    margin: 0 toRem(28);
+}
+
+.mr-28 {
+    margin-right: toRem(28);
+}
+
+.ml-28 {
+    margin-left: toRem(28);
+}
+
 .my-24 {
     margin: toRem(24) 0;
 }
@@ -48,6 +121,30 @@ section {
 
 .ml-24 {
     margin-left: toRem(24);
+}
+
+.my-24 {
+    margin: toRem(24) 0;
+}
+
+.mt-20 {
+    margin-top: toRem(20);
+}
+
+.mb-20 {
+    margin-bottom: toRem(20);
+}
+
+.mx-20 {
+    margin: 0 toRem(20);
+}
+
+.mr-20 {
+    margin-right: toRem(20);
+}
+
+.ml-20 {
+    margin-left: toRem(20);
 }
 
 .my-16 {
@@ -177,22 +274,6 @@ input[type="radio"]:checked {
     }
 }
 
-.table-2 {
-    th {
-        padding-top: toRem(24);
-        padding-bottom: toRem(16);
-        border-top: none;
-    }
-
-    tr td {
-        border-top: 1px solid $color-neutral-10;
-    }
-
-    tr:last-child td {
-        border-bottom: 1px solid $color-neutral-10;
-    }
-}
-
 a,
 a:link {
     text-decoration: none;
@@ -225,10 +306,30 @@ a:active {
         background-color: $color-light-accent-green;
         color: $color-accent-green;
     }
+
+    &-rating {
+        padding: toRem(18) toRem(10);
+        background-color: $color-light-accent-orange;
+        color: $color-brand-secondary;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        text-align: center;
+    }
 }
 
-.text-success {
-    color: $color-action-default !important;
+.text {
+    &-success {
+        color: $color-action-default !important;
+    }
+
+    &-rating {
+        color: $color-brand-secondary !important;
+    }
+
+    &-muted {
+        color: $color-neutral-40 !important;
+    }
 }
 
 .container {

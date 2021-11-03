@@ -11,29 +11,39 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
     <nav class="container-navbar">
         <div class="container">
             <div class="navbar">
-                <div class="navbar__logo-box align-items-center">
+                <div class="navbar__logo-box">
                     <a href="#">
-                        <img src="assets/images/cx-logo.png" alt="collector-x">
+                        <img src="assets/images/collectorx-logo.png" alt="collector-x">
                     </a>
                 </div>
-                <div class="navbar__search-box align-items-center">
+                <div class="navbar__search-box">
                     <div class="search-box">
                         <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
                         <input type="text" class="search-box__input" placeholder="Search Collections">
                     </div>
                 </div>
-                <div class="navbar__menu-box nav align-items-center">
-                    <a href="#" class="nav-link active">Home</a>
-                    <a href="#" class="nav-link">Market</a>
-                    <a href="#" class="nav-link">Calendar</a>
-                    <a href="#" class="nav-link">Collector</a>
-                    <a href="#" class="nav-link">Gallery</a>
+                <div class="navbar__menu-box nav">
+                    <li class="nav-link">
+                        <a href="#" class="nav-link__item">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="nav-link__item">Market</a>
+                    </li>
+                    <li class="nav-link active">
+                        <a href="#" class="nav-link__item">Calendar</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="nav-link__item">Collector</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="nav-link__item">Gallery</a>
+                    </li>
                 </div>
-                <div class="navbar__account-box nav justify-content-end align-items-center">
+                <div class="navbar__account-box nav justify-content-end">
                     <a href="#" class="nav-link">Login</a>
                     <a href="#" class="btn btn--md btn-default">Sign Up</a>
                 </div>
@@ -42,11 +52,11 @@
         </div>
     </nav>
     <div class="space"></div>
-    <main>
+    <main style="flex-grow: 1;">
         <section class="wallet-management">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between my-32">
-                    <h2>My Wallet</h2>
+                    <h2 class="wallet-title">My Wallet</h2>
                     <button type="button" class="btn btn-default btn--md">Add new wallet</button>
                 </div>
 
@@ -83,7 +93,7 @@
                                 <td>
                                     <div class="list-wallet-actions">
                                         <button type="button"
-                                            class="btn btn-outline-default list-wallet-actions__btn-text">Default</button>
+                                            class="btn btn-outline-default list-wallet-actions__btn-text list-wallet-actions__btn-text--default">Default</button>
                                         <button type="button"
                                             class="btn btn-outline-danger list-wallet-actions__btn-icon">
                                             <i class="far fa-trash-alt"></i>
@@ -103,16 +113,16 @@
                                 <td>
                                     <div class="list-wallet-hide">
                                         <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input" id="wallet1-checkbox"
-                                                disabled>
-                                            <label class="custom-control-label" for="wallet1-checkbox"></label>
+                                            <input type="checkbox" class="custom-control-input" id="wallet2-checkbox">
+                                            <label class="custom-control-label" for="wallet2-checkbox"></label>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="list-wallet-actions">
                                         <button type="button"
-                                            class="btn btn-outline-default list-wallet-actions__btn-text">Default</button>
+                                            class="btn btn-outline-default list-wallet-actions__btn-text">Set
+                                            Default</button>
                                         <button type="button"
                                             class="btn btn-outline-danger list-wallet-actions__btn-icon">
                                             <i class="far fa-trash-alt"></i>

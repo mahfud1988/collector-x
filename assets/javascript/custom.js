@@ -9,6 +9,17 @@ $(document).ready(function () {
 
     // Trigger change input radio image
     $(document).find('.wallet-radio__input').trigger('change')
+
+    // Interval background change
+    const walletSidebar = $(document).find('.wallet-sidebar')
+    let walletSidebarIterator = 1
+    setInterval(() => {
+        if (walletSidebarIterator >= 5) walletSidebarIterator = 1
+        else walletSidebarIterator += 1
+
+        const imageSource = walletSidebar.data(`src-${walletSidebarIterator}`)
+        walletSidebar.css('background-image', `url(${imageSource})`)
+    }, 60000) // 60 second
 })
 
 $('.dropdown-menu').on("click.bs.dropdown", function (e) {

@@ -1,3 +1,9 @@
+.wallet-title {
+    font-family: 'Satoshi-Regular';
+    font-size: 32px;
+    line-height: 120%;
+}
+
 .list-wallet-name {
     display: flex;
     align-items: center;
@@ -58,6 +64,10 @@
         width: 143px;
         height: 40px;
         margin-right: 8px;
+
+        &--default {
+            background-color: $color-light-accent-green !important;
+        }
     }
 
     &__btn-icon {
@@ -70,7 +80,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
+    padding: 8px 24px 24px;
 
     &__heading {
         color: $color-neutral-100;
