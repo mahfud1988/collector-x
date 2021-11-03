@@ -68,10 +68,10 @@
     &__item {
         list-style: none;
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 448px;
         padding: 0 4px;
         color: $color-neutral-20;
-        font-family: 'Satoshi-Variable';
+        font-family: 'Satoshi-Regular';
         font-size: 20px;
         line-height: 120%;
         padding-bottom: 16px;
@@ -131,8 +131,8 @@
 
     &__heading {
         color: $color-neutral-100;
-        font-family: 'Satoshi-Variable';
-        font-size: 24px;
+        font-family: 'Satoshi-Regular';
+        font-size: 32px;
         line-height: 120%;
         margin-bottom: 8px;
     }
@@ -152,8 +152,8 @@
     flex-wrap: wrap;
 
     &__item {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+        flex: 0 0 304px;
+        max-width: 304px;
         padding: 0 12px;
         margin-bottom: 24px;
 
