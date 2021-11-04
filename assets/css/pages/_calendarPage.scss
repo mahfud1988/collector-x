@@ -22,12 +22,6 @@
     &-upcoming {
         &__header{
             margin-bottom: toRem(24);
-            &--right > *:not(:last-child) {
-                margin-right: toRem(8);
-            }
-            &--left > *:not(:last-child){
-                margin-right: toRem(24);
-            }
         }
     }
 }

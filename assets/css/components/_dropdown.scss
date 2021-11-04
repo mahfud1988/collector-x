@@ -39,10 +39,54 @@
     }
     
     .dropdown-toggle{
-        color: $color-neutral-80;
         transition: color .5s ease, transform .5s ease, background-color .5s ease;
+    }
+
+    .dropdown-toggle-1 {
+        width: 145px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        position: relative;
         &::after{
             border: none;
+            font-family: 'Font Awesome 5 Free';
+            content: '\f078';
+            font-weight: 900;
+            color: $color-neutral-100;
+            font-size: 12px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 14px;
+            display: inline-block;
+            box-sizing: border-box;
+            transition: all .5s ease;
+            backface-visibility: hidden;
+            margin: 0;
+        }
+
+        &:hover {
+            &::after{ 
+                color: $color-action-hover;
+            }
+        }
+
+        &:active {
+            &::after{ 
+                color: $color-action-press;
+            }
+        }
+
+        .text {
+            width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .badge {
+            margin-left: 4px;
+            vertical-align: middle;
         }
     }
 
@@ -56,7 +100,7 @@
         .dropdown-toggle{
             border: 1px solid $color-action-default;
             &::after{
-                transform: rotate(-180deg);
+                transform: translateY(-50%) rotate(-180deg);
             }
         }
     }

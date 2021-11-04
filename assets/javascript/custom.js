@@ -56,9 +56,9 @@ dropdownSort.forEach((value, index) => {
         var nameDropdown = $(btn).data('name');
         $(input).on('change', function(e) {
             if($(dropdown).find('input:checked').length > 0) {
-                $(btn).html(`${$(dropdown).find('input:checked').data('value')}`);
+                $(btn).html(`<span class="text">${$(dropdown).find('input:checked').data('value')}</span>`);
             }else{
-                $(btn).html(`${nameDropdown}`);
+                $(btn).html(`<span class="text">${nameDropdown}</span>`);
             }
         })
     });
@@ -79,4 +79,18 @@ $('#footerCollapse').on('hide.bs.collapse', function (e) {
     var button = $(`button[data-target='#${id}']`);
     button.removeClass('show');
     button.text('Expand Footer')
+});
+
+$('.js-navbar__humberger').on('click', function(){
+    $('.js-container-navbar').addClass('show');
+    $('.js-navbar__menu-box').addClass('show');
+    $('.js-navbar__shadow').addClass('show');
+    $('.js-space').hide();
+});
+
+$('.js-navbar__shadow-close').on('click', function(){
+    $('.js-container-navbar').removeClass('show');
+    $('.js-navbar__menu-box').removeClass('show');
+    $('.js-navbar__shadow').removeClass('show');
+    $('.js-space').show();
 });

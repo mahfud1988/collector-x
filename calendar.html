@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <nav class="container-navbar">
+    <nav class="container-navbar js-container-navbar">
         <div class="container">
             <div class="navbar">
                 <div class="navbar__logo-box">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="assets/images/collectorx-logo.png" alt="collector-x">
                     </a>
                 </div>
@@ -24,12 +24,15 @@
                         <input type="text" class="search-box__input" placeholder="Search Collections">
                     </div>
                 </div>
-                <div class="navbar__menu-box nav">
-                    <li class="nav-link">
-                        <a href="#" class="nav-link__item">Home</a>
+                <div class="navbar__menu-box js-navbar__menu-box nav">
+                    <li class="nav-link nav-link--logo">
+                        <a href="#" class="nav-link__item"><img src="assets/images/collectorx-logo.png" alt="collector-x"></a>
                     </li>
                     <li class="nav-link">
-                        <a href="#" class="nav-link__item">Market</a>
+                        <a href="index.html" class="nav-link__item">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="market.html" class="nav-link__item">Market</a>
                     </li>
                     <li class="nav-link active">
                         <a href="#" class="nav-link__item">Calendar</a>
@@ -45,10 +48,20 @@
                     <a href="#" class="nav-link">Login</a>
                     <a href="#" class="btn btn--md btn-default">Sign Up</a>
                 </div>
+                <div class="navbar__humberger js-navbar__humberger">
+                    <hr class="navbar__humberger-line navbar__humberger-line--top">
+                    <hr class="navbar__humberger-line navbar__humberger-line--middle">
+                    <hr class="navbar__humberger-line navbar__humberger-line--bottom">
+                </div>
 
             </div>
         </div>
     </nav>
+    <div class="navbar__shadow js-navbar__shadow">
+        <a href="#" class="navbar__shadow-close js-navbar__shadow-close">
+            <img src="assets/images/close.svg" alt="collector-x">
+        </a>
+    </div>
     <!-- <nav class="container-navbar" style="top: 75px;">
         <div class="navbar align-items-center">
             <div class="navbar__logo-box">
@@ -77,7 +90,7 @@
         </div>
     </nav> -->
     <!-- <div class="space"></div> -->
-    <div class="space"></div>
+    <div class="space js-space"></div>
     <section class="section-calendar mb-32">
         <div class="container">
             <h2 class="my-32">NFTs Drop Calendar</h2>
@@ -216,91 +229,99 @@
     <hr class="my-0">
     <section class="section-upcoming">
         <div class="container">
-            <div class="section-upcoming__header d-flex justify-content-between align-items-center mt-32 mb-24">
-                <div class="section-upcoming__header--left d-flex align-items-center">
-                    <h3>More Upcoming NFT</h3>
-                    <div class="search-box">
-                        <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
-                        <input type="text" class="search-box__input" placeholder="Search Project">
+            <div class="section-upcoming__header mt-32 mb-24">
+                <div class="row section-upcoming__row align-items-center">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-6 section-upcoming__col">
+                        <h3>More Upcoming NFT</h3>
                     </div>
-                </div>
-                <div class="section-upcoming__header--right d-flex align-items-center">
-                    <div class="dropdown" id="dropdown-filter">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" id="platformDropdown" data-name="Platform" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                            Platform
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="platformDropdown">
-                            <div class="dropdown-title">
+                    <div class="col-9 col-lg-4 col-md-6 col-sm-6 section-upcoming__col">
+                        <div class="search-box search-custom-1">
+                            <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                            <input type="text" class="search-box__input" placeholder="Search Project">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg col-md-4 col-sm-4 order-2 order-lg-1 order-md-1 section-upcoming__col">
+                        <div class="dropdown" id="dropdown-filter">
+                            <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1" type="button" id="platformDropdown" data-name="Platform" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
                                 Platform
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="platformDropdown">
+                                <div class="dropdown-title">
+                                    Platform
+                                </div>
+                                <label for="platform1" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform1" value="1">
+                                    knowOrigin
+                                </label>
+                                <label for="platform2" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform2" value="2">
+                                    Rarible
+                                </label>
+                                <label for="platform3" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform3" value="3">
+                                    Makersplace
+                                </label>
+                                <label for="platform4" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform4" value="4">
+                                    Snark.art
+                                </label>
                             </div>
-                            <label for="platform1" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="platform" id="platform1" value="1">
-                                knowOrigin
-                            </label>
-                            <label for="platform2" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="platform" id="platform2" value="2">
-                                Rarible
-                            </label>
-                            <label for="platform3" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="platform" id="platform3" value="3">
-                                Makersplace
-                            </label>
-                            <label for="platform4" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="platform" id="platform4" value="4">
-                                Snark.art
-                            </label>
                         </div>
                     </div>
-                    <div class="dropdown" id="dropdown-filter">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" id="categoryDropdown" data-name="Category" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                            Category
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="categoryDropdown">
-                            <div class="dropdown-title">
+                    <div class="col-6 col-lg col-md-4 col-sm-4 order-3 order-lg-2 order-md-2 section-upcoming__col">
+                        <div class="dropdown" id="dropdown-filter">
+                            <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1" type="button" id="categoryDropdown" data-name="Category" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
                                 Category
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="categoryDropdown">
+                                <div class="dropdown-title">
+                                    Category
+                                </div>
+                                <label for="category1" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category1" value="1">
+                                    Art
+                                </label>
+                                <label for="category2" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category2" value="2">
+                                    Games
+                                </label>
+                                <label for="category3" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category3" value="3">
+                                    Avatar
+                                </label>
+                                <label for="category4" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category4" value="4">
+                                    Photography
+                                </label>
                             </div>
-                            <label for="category1" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category1" value="1">
-                                Art
-                            </label>
-                            <label for="category2" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category2" value="2">
-                                Games
-                            </label>
-                            <label for="category3" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category3" value="3">
-                                Avatar
-                            </label>
-                            <label for="category4" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category4" value="4">
-                                Photography
-                            </label>
                         </div>
                     </div>
-                    <div class="dropdown" id="dropdown-sort">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" id="sortByDropdown" data-name="Sort by" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                            Sort by
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sortByDropdown">
-                            <div class="dropdown-title">
-                                Sort by
+                    <div class="col-3 col-lg col-md-4 col-sm-4 order-1 order-lg-3 order-md-3 section-upcoming__col">
+                        <div class="dropdown" id="dropdown-sort">
+                            <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1" type="button" id="sortByDropdown" data-name="Sort by" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
+                                <span class="text">Sort by</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sortByDropdown">
+                                <div class="dropdown-title">
+                                    Sort by
+                                </div>
+                                <label for="sort1" class="dropdown-item d-flex align-items-center">
+                                    <input type="radio" name="sort" id="sort1" value="1" data-value="Nearest Date">
+                                    Nearest Date
+                                </label>
+                                <label for="sort2" class="dropdown-item d-flex align-items-center">
+                                    <input type="radio" name="sort" id="sort2" value="2" data-value="Highest Cost">
+                                    Highest Cost
+                                </label>
+                                <label for="sort3" class="dropdown-item d-flex align-items-center">
+                                    <input type="radio" name="sort" id="sort3" value="3" data-value="Most Followed">
+                                    Most Followed
+                                </label>
+                                <label for="sort4" class="dropdown-item d-flex align-items-center">
+                                    <input type="radio" name="sort" id="sort4" value="4" data-value="Highest Members">
+                                    Highest Members
+                                </label>
                             </div>
-                            <label for="sort1" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort1" value="1" data-value="Nearest Date">
-                                Nearest Date
-                            </label>
-                            <label for="sort2" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort2" value="2" data-value="Highest Cost">
-                                Highest Cost
-                            </label>
-                            <label for="sort3" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort3" value="3" data-value="Most Followed">
-                                Most Followed
-                            </label>
-                            <label for="sort4" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort4" value="4" data-value="Highest Members">
-                                Highest Members
-                            </label>
                         </div>
                     </div>
                 </div>

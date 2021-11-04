@@ -9,11 +9,15 @@
     background-color: $color-neutral-0;
     padding: 0;
 
+    &.show {
+        @include media-query(md) {
+            position: inherit;
+            z-index: 9;
+        }
+    }
+
     .navbar{
         width: auto;
-        // max-width: 1440px;
-        // padding: toRem(0) toRem(48);
-        // height: toRem(74);
         margin: 0 auto;
         padding-top: toRem(10);
         padding-bottom: 0;
@@ -22,13 +26,14 @@
         justify-content: space-between;
         align-items: unset;
 
-        @include media-query(xl) {
-            // justify-content: flex-start;
-        }
-
         @include media-query(lg) {
             width: 100%;
             flex-wrap: wrap;
+        }
+
+        @include media-query(md) {
+            position: inherit;
+            // overflow-x: hidden;
         }
         
         &__logo-box {
@@ -39,6 +44,12 @@
 
             @include media-query(xl-1) {
                 margin-right: toRem(15);
+            }
+
+            @include media-query(md) {
+                padding-top: toRem(6);
+                padding-bottom: toRem(16);
+                margin-right: toRem(8);
             }
 
             img {
@@ -61,8 +72,24 @@
             @include media-query(lg) {
                 flex: 0 0 auto;
                 width: 50%;
-                justify-content: flex-end;;
+                justify-content: flex-end;
                 margin-right: 0;
+            }
+
+            @include media-query(md) {
+                flex: 2;
+                width: auto;
+                margin-left: toRem(8);
+                margin-right: toRem(8);
+            }
+
+            .search-box {
+                @include media-query(md) {
+                    width: auto;
+                    margin-left: 0;
+                    margin-right: auto;
+                    max-width: inherit;
+                }
             }
         }
 
@@ -87,12 +114,50 @@
                 margin-right: 0;
             }
 
+            @include media-query(md) {
+                // display: none;
+                position: absolute;
+                display: block;
+                width: 100%;
+                max-width: 275px;
+                height: auto;
+                min-height: 100vh;
+                flex: none;
+                background-color: $color-neutral-0;
+                top: 0;
+                left: 0;
+                z-index: 20;
+                transform: translateX(-275px);
+                transition: all 200ms ease-in-out;
+            }
+
+            &.show {
+                position: fixed;
+                transform: translateX(0);
+            }
+
             .nav-link{
                 padding: 0 toRem(12);
 
                 @include media-query(lg) {
                     &:first-child {
                         padding-left: 0;
+                    }
+                }
+
+                @include media-query(md) {
+                    padding: 0 toRem(15);
+                    
+                    &:first-child {
+                        padding-left: toRem(15);
+                    }
+                }
+
+                &--logo {
+                    display: none;
+
+                    @include media-query(md) {
+                        display: block;
                     }
                 }
 
@@ -104,6 +169,11 @@
         
                     &:hover{
                         color: $color-action-hover;
+                    }
+
+                    @include media-query(md) {
+                        padding-top: toRem(12);
+                        padding-bottom: toRem(12);
                     }
                 }
 
@@ -125,6 +195,10 @@
                 width: 45%;
             }
 
+            @include media-query(md) {
+                display: none;
+            }
+
             .nav-link{
                 color: $color-action-default;
                 padding: toRem(10) toRem(32);
@@ -142,5 +216,109 @@
         a{
             text-decoration-line: none;
         }
+
+        &__humberger {
+            display: none;
+            align-self: center;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 20px;
+            height: auto;
+            cursor: pointer;
+
+            @include media-query(md) {
+                display: flex;
+                padding: toRem(10) 0 toRem(12);
+                margin: 0 toRem(8);
+            }
+        }
+
+        &__humberger-line {
+            align-self: flex-start;
+            width: 100%;
+            // height: 2px;
+            border-top: 2px solid $color-neutral-100;
+            margin-bottom: 3px;
+            border-radius: 4px;
+            display: block;
+            margin-top: 0;
+
+            &--middle {
+                transition: all 200ms ease-in-out;
+            }
+
+            &--bottom {
+                width: 16px;
+                transition: all 400ms ease-in-out;
+            }
+        }
+
+        &__humberger:hover {
+            .navbar__humberger-line {
+                width: 20px;
+
+                &--top {
+                    animation: burger-hover 1s ease-in-out alternate;
+                }
+
+                &--middle {
+                    animation: burger-hover 1s ease-in-out alternate forwards 200ms;
+                }
+
+                &--bottom {
+                    animation: burger-hover 1s ease-in-out alternate forwards 400ms;
+                }
+            }
+        }
+
+        // Humberger menu animation
+        @-webkit-keyframes burger-hover {
+            0% {
+                width: 100%;
+            }
+            50% {
+                width: 50%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        @keyframes burger-hover {
+            0% {
+                width: 100%;
+            }
+            50% {
+                width: 50%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
     }
+}
+
+.navbar__shadow {
+    background-color: rgba($color-brand-black, 0.85);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+.navbar__shadow-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
 }

@@ -73,17 +73,17 @@ a.btn, .btn {
         border-radius: 5px;
         padding: toRem(10) toRem(14);
         &::after{
+            border: none;
             font-family: 'Font Awesome 5 Free';
             content: '\f078';
             font-weight: 900;
             color: $color-neutral-100;
-            margin-left: toRem(14);
             font-size: 12px;
             display: inline-block;
             box-sizing: border-box;
             transition: all .5s ease;
             backface-visibility: hidden;
-            vertical-align: middle;
+            margin-left: 14px;
         }
 
         &.show{
@@ -96,12 +96,18 @@ a.btn, .btn {
             color: $color-action-hover;
             background-color: $color-action-outline-hover;
             border-color: $color-action-hover;
+            &::after{
+                color: $color-action-hover;
+            }
         }
 
         &:active{
             color: $color-action-press;
             background-color: $color-action-outline-press;
             border-color: $color-action-press;
+            &::after{
+                color: $color-action-press;
+            }
         }
         &:focus {
             box-shadow: none;

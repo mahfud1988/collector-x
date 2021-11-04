@@ -1,6 +1,7 @@
 $color-brand-primary: #EB5749;
 $color-brand-secondary: #EE8935;
 $color-brand-tertiary: #F3CE17;
+$color-brand-black: #000000;
 
 $color-neutral-100: #230604;
 $color-neutral-80: #4F3836;
@@ -38,6 +39,7 @@ $grid-breakpoints: (
     xs-1: 425px,
     xs: 480px,
     sm: 576px,
+    sm-1: 596px,
     sm-2: 640px,
     md: 768px,
     md-2: 992px,
