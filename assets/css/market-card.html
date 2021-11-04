@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collector X - Market</title>
+    <link rel="stylesheet" href="assets/css/market-table.css">
+    <!-- <link rel="stylesheet" href="assets/css/index-mobile.css"> -->
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="page">
+        <div class="navbar">
+            <div class="navbar-inner pcflex">
+                <div class="logo content-left">
+                    <a href="index.html">
+                        <img src="assets/images/cx-logo.png" alt="collector-x">
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="cov-search">
+                        <img src="assets/images/searchicon.png" alt="collector-x">
+                        <input type="text" placeholder="Search Collections" />
+                    </div>
+                </div>
+                <div class="menu pcflex">
+                    <div class=""><a class="menu-button" id="menu-button-home" onclick="menuButton('menu-button-home');" href="index.html">Home</a></div>
+                    <div class=""><a class="menu-button menu-button-active" id="menu-button-market" onclick="menuButton('menu-button-market');" href="market.html">Market</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-callendar" onclick="menuButton('menu-button-callendar');" href="calendar.html">Callendar</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-collection" onclick="menuButton('menu-button-collection');" href="">Collector</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-gallery" onclick="menuButton('menu-button-gallery');" href="">Gallery</a></div>
+                </div>
+                <div class="account">
+                    <div class="account-inner pcflex">
+                        <a class="account-button flex-10 login-button" href="login.html">Login</a>
+                        <a class="account-button flex-10 signup-button" href="signup.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="main-title">NFT Market</h1>
+            <div class="section explore">
+                <div class="explore-head pcflex">
+                    <h2 class="explore-title">Featured Collections</h2>
+                </div>
+                <div class="explore-body relative">
+                    <div class="explore-body-inner pcflex mflex relative">
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg1.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #1</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg2.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #2</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg3.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #3</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg4.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #4</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg5.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #5</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg6.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #6</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg1.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #1</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg2.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #2</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg3.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #3</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-downpk">-3% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg4.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #4</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg5.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #5</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-body-part relative ml0">
+                            <div class="cov-explore-bg">
+                                <img class="explore-bg" src="assets/images/explimg6.png" alt="collector-x">
+                            </div>
+                            <div class="feabp-text">
+                                <p class="feabp-p">Wonderfull Artwork #6</p>
+                                <div class="feabp-prchg">
+                                    <div class="feprc">Ξ 3 ($12,000)</div>
+                                    <div class="fepch cl-green">+4% (1 days)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section prolist" id="market">
+                <!-- <div class="space"></div> -->
+                <div class="prolist-head pcflex relative">
+                    <div class="prolist-head-part pcflex">
+                        <div class="phpl-title flex-10">
+                            <h2 class="prolist-title">Project List</h2>
+                        </div>
+                        <div class="phpl-search content-left m-content-left mabs">
+                            <div class="cov-phpl-search">
+                                <img src="assets/images/searchicon.png" alt="collector-x">
+                                <input type="text" placeholder="Search Project" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prolist-head-part content-right">
+                        <div class="prolist-bta pcflex mflex mabs">
+                            <div class="prolist-bt prolist-bt1 pcflex mflex content-right">
+                                <span class="prolist-bt-text content-center">Category</span>
+                                <span class="prolist-bt-count content-center">2</span>
+                                <span class="prolist-bt-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </div>
+                            <div class="prolist-bt prolist-bt2 mflex">
+                                <span class="prolist-bt-text">Highest Avg Price</span>
+                                <span class="prolist-bt-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="prolist-btb pcflex mflex mabs content-right">
+                            <div class="prolist-bt prolist-bt3 content-center">
+                                <i class="fas fa-list-ul"></i>
+                            </div>
+                            <div class="prolist-bt prolist-bt4 content-center">
+                                <img src="assets/images/bt4img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prolist-body">
+                    <div class="prolist-table">
+                        <div class="rtab-head">
+                            <div class="rtab-head-row pcflex mflex">
+                                <div class="rtab-th rtab-bx pcflex mflex">
+                                    <div class="rtab-th-text ptths">#</div>
+                                </div>
+                                <div class="rtab-th rtab-bw pcflex mflex">
+                                    <div class="rtab-th-text ptths">Projects</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bc pcflex mflex">
+                                    <div class="rtab-th-text ptths">Category</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bc pcflex mflex">
+                                    <div class="rtab-th-text ptths">Holders</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bc pcflex mflex">
+                                    <div class="rtab-th-text">Avg Price <br/>(24 hrs)</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bc pcflex mflex">
+                                    <div class="rtab-th-text">Previous <br/>Floor</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bc pcflex mflex">
+                                    <div class="rtab-th-text">Current <br/>Floor</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bc pcflex mflex">
+                                    <div class="rtab-th-text ptths">Change</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bc pcflex mflex">
+                                    <div class="rtab-th-text ptths">Market Cap</div>
+                                    <div class="content-right">
+                                        <div class="rtab-th-icon">
+                                            <div class="rtab-th-icon-up">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </div>
+                                            <div class="rtab-th-icon-down">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-th rtab-bx pcflex mflex">
+                                    <div class="rtab-th-text"> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rtab-body">
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">1</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi1.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#1</div>
+                                        <div class="rtab-td-text2 pc">10,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Art</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">1969</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 395</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 395</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 385</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-down lhtdt rdprc">-2.54%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/prodown.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$1,392,418.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">2</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi2.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#2</div>
+                                        <div class="rtab-td-text2 pc">5,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Art</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">345</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 183</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 183</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 185</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-green lhtdt rdprc">+1.23%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/proup.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$989,222.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">3</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi3.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#3</div>
+                                        <div class="rtab-td-text2 pc">5,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Art</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">3456</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 140</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 140</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 138</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-down lhtdt rdprc">-1.54%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/prodown.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$880,456.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">4</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi4.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#4</div>
+                                        <div class="rtab-td-text2 pc">7,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Games</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">2341</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 100</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 100</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 102</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-green lhtdt rdprc">+2.3%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/proup.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$709,651.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">5</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi5.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#5</div>
+                                        <div class="rtab-td-text2 pc">4,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Avatar</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">10</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 35</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 35</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 35</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-stg lhtdt rdprc">0.00%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/prostg.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$702,651.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">6</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi6.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#6</div>
+                                        <div class="rtab-td-text2 pc">3,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Avatar</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">345</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 24</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 24</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 23</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-down lhtdt rdprc">-2.54%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/prodown.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$109,651.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">7</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi7.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#7</div>
+                                        <div class="rtab-td-text2 pc">6,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Games</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">1987</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-green lhtdt rdprc">+2.7%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/proup.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">8</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi8.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#8</div>
+                                        <div class="rtab-td-text2 pc">6,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Games</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">1987</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-green lhtdt rdprc">+2.7%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/proup.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">9</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi9.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#9</div>
+                                        <div class="rtab-td-text2 pc">6,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Games</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">1987</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-green lhtdt rdprc">+2.7%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/proup.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rtab-body-row pcflex mflex relative">
+                                <div class="rtab-td rtab-td-count rtab-bx pcflex mabs">
+                                    <div class="rtab-td-text td-count lhtdt">10</div>
+                                </div>
+                                <div class="rtab-td rtab-bw pcflex pl20">
+                                    <div class="cov-rtab-td-image">
+                                        <img class="rtab-td-image mabs" src="assets/images/pltdi10.png" alt="collector-x">
+                                    </div>
+                                    <div>
+                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#10</div>
+                                        <div class="rtab-td-text2 pc">6,000</div>
+                                    </div>
+                                </div>
+                                <div class="rtab-dt pcflex mflex mabs">
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Games</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">1987</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex pc">
+                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex">
+                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
+                                    </div>
+                                    <div class="rtab-td rtab-dt-part pcflex mflex">
+                                        <div class="rtab-td-text cl-green lhtdt rdprc">+2.7%</div>
+                                        <div class="rtab-td-icon lhtdt">
+                                            <img src="assets/images/proup.png" alt="collector-x">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rtab-td rtab-bc pcflex pc">
+                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
+                                </div>
+                                <div class="rtab-td rtab-bx rtab-td-button content-left pc">
+                                    <div class="rtab-button rtab-td-text lhtdt">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rtab-footer pcflex">
+                            <div class="flex-10 pcflex pc">
+                                <div class="rtab-footer-text">Show</div>
+                                <div class="rtab-footer-button">
+                                    <span>10</span>
+                                    <span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </span>
+                                </div>
+                                <div class="rtab-footer-text">of 45 entries</div>
+                            </div>
+                            <div class="rtab-footer-right flex-10 content-right mflex">
+                                <div class="rtab-ft-bt rtab-ft-bt-prevnext rtab-ft-bt-disabled">
+                                    <span class="pc">Previous</span>
+                                    <span class="mobile">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                </div>
+                                <div class="rtab-ft-bt rtab-ft-bt-num rtab-ft-bt-active">1</div>
+                                <div class="rtab-ft-bt rtab-ft-bt-num">2</div>
+                                <div class="rtab-ft-bt rtab-ft-bt-num">3</div>
+                                <div class="rtab-ft-bt rtab-ft-bt-num">...</div>
+                                <div class="rtab-ft-bt rtab-ft-bt-num">12</div>
+                                <div class="rtab-ft-bt rtab-ft-bt-prevnext">
+                                    <span class="pc">Next</span>
+                                    <span class="mobile">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section footer" id="footer">
+            <div class="footer-inner pcflex">
+                <div class="footer-logo flex-10">
+                    <img src="assets/images/cx-logo.png" alt="collector-x">
+                </div>
+                <div class="flex-45 content-center">
+                    <p class="footer-cr" id="footer-crtop">Copyright © 2021. CollectorX. All rights reserved.</p>
+                </div>
+                <div class="flex-10 content-right">
+                    <div class="cf-button content-right" id="cf-button" onclick="cfooter();">
+                        <div class="cf-text" id="cf-text">Expand Footer</div>
+                        <div class="cf-icon" id="cf-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-inner footer-collapse" id="footer-inner-2">
+                <div class="footer-content pcflex">
+                    <div class="footer-left">
+                        <p class="footer-p">CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way</p>
+                        <div class="footer-socials content-left">
+                            <a href="">
+                                <img src="assets/images/facebook.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="assets/images/twitter.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="assets/images/instagram.png" alt="collector-x">
+                            </a>
+                            <a href="">
+                                <img src="assets/images/discord.png" alt="collector-x">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-right pcflex">
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Platform</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Collectors</a></li>
+                                <li class="footer-link"><a href="">Galleries</a></li>
+                                <li class="footer-link"><a href="">Collections</a></li>
+                                <li class="footer-link"><a href="">Markets (Coming Soon)</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Resources</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">Sign Up</a></li>
+                                <li class="footer-link"><a href="">Login</a></li>
+                                <li class="footer-link"><a href="">Terms of use</a></li>
+                                <li class="footer-link"><a href="">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Support</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="wallet.html">Wallets</a></li>
+                                <li class="footer-link"><a href="">Community</a></li>
+                                <li class="footer-link"><a href="">Guidelines</a></li>
+                                <li class="footer-link"><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="fr-part flex-10">
+                            <h5 class="fr-part-title">Company</h5>
+                            <ul class="footer-ul">
+                                <li class="footer-link"><a href="">About Us</a></li>
+                                <li class="footer-link"><a href="">Carrers</a></li>
+                                <li class="footer-link"><a href="">Guidelines</a></li>
+                                <li class="footer-link"><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-cr content-center">Copyright © 2021. CollectorX. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const slider = document.querySelector('.explore-body-inner');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('ebinn-active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('ebinn-active');
+        });
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('ebinn-active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1;
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+        });
+        function cfooter(){
+            var ftctp = document.getElementById('footer-crtop');
+            var footerc = document.getElementById('footer-inner-2');
+            var cftext = document.getElementById('cf-text');
+            var cficon = document.getElementById('cf-icon');
+            if (footerc.style.maxHeight) {
+                footerc.style.maxHeight = null;
+                cftext.innerHTML = 'Expand Footer';
+                cficon.innerHTML = '<i class="fas fa-chevron-up"></i>';
+                ftctp.style.display = 'block';
+            }else{
+                footerc.style.maxHeight = footerc.scrollHeight + "px";
+                cftext.innerHTML = 'Collapse Footer';
+                cficon.innerHTML = '<i class="fas fa-chevron-down"></i>';
+                ftctp.style.display = 'none';
+            }
+        }
+        window.onload = function(){
+            document.getElementById('cf-button').click();
+        }
+    </script>
+</body>
+</html>

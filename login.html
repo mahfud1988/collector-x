@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collector X - Login</title>
-    <link rel="stylesheet" href="assets/css/login.min.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <link href="https://api.fontshare.com/css?f[]=satoshi@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
 </head>
@@ -35,8 +35,10 @@
                     </div>
                     <div class="cov-input input-check pcflex mflex">
                         <div class="flex-10 content-left">
-                            <input type="checkbox">
-                            <div class="remem">Remember me</div>
+                            <label class="remem">Remember me
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
                         </div>
                         <div class="flex-10 content-right">
                             <a class="fgpass" href="">Forgot Password</a>
@@ -46,14 +48,14 @@
                         <button class="button">Login</button>
                     </div>
                     <p class="content-p2">Or continue with</p>
-                    <div class="cov-input pcflex mflex">
+                    <div class="cov-sc pcflex mflex">
                         <div class="sc-button fb-button flex-10 content-center">
                             <img class="" src="assets/images/fblogo.png" alt="collector-x">
-                            <div>Facebook</div>
+                            <div class="scbtn-text">Facebook</div>
                         </div>
                         <div class="sc-button gg-button flex-10 content-center">
                             <img src="assets/images/gglogo.png" alt="collector-x">
-                            <div>Google</div>
+                            <div class="scbtn-text">Google</div>
                         </div>
                     </div>
                     <p class="content-p3">No account yet? <a class="login-link" href="signup.html">Sing Up Now</a></p>
