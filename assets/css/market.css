@@ -161,7 +161,7 @@
     .main-title{
         margin: 0;
         padding-top: 32px;
-        padding-left: 50px;
+        padding-left: 20px;
         padding-bottom: 32px;
         font-family: Satoshi-Regular;
         font-weight: 400;
@@ -179,8 +179,8 @@
     }
     .explore-head{
         box-sizing: border-box;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        /* padding-right: 20px; */
     }
     .explore-title{
         font-size: 24px;
@@ -191,8 +191,8 @@
     }
     .explore-body{
         padding-top: 15px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .explore-body-inner{
         box-sizing: border-box;
@@ -268,7 +268,7 @@
     .fepch{
         box-sizing: border-box;
         width: 50%;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         font-family: poppins;
         padding-top: 1px;
@@ -497,6 +497,47 @@
         width: 41px;
         height: 41px;
     }
+    .prolist-bt-day{
+        border: 1px solid #D3CDCD;
+        font-family: poppins;
+        font-family: 400;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .pbday-active{
+        border: 1px solid #52AFB2;
+        background: #DDF9EF;
+        color: #52AFB2;
+    }
+    .prolist-bt5{
+        box-sizing: border-box;
+        width: 41px;
+        height: 41px;
+        /* border: 1px solid #D3CDCD; */
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 8px;
+        color: #000000;
+    }
+    .prolist-bt6{
+        box-sizing: border-box;
+        width: 41px;
+        height: 41px;
+        /* border: 1px solid #D3CDCD; */
+        border-left: 1px solid white;
+        padding: 8px;
+        color: #000000;
+    }
+    .prolist-bt7{
+        box-sizing: border-box;
+        width: 41px;
+        height: 41px;
+        /* border: 1px solid #D3CDCD; */
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 8px;
+        color: #000000;
+    }
     .prolist-body{
         box-sizing: border-box;
         padding-top: 15px;
@@ -506,8 +547,9 @@
         box-sizing: border-box;
         width: 100%;
         display: none;
-        padding-left: 50px;
-        padding-right: 50px;
+        /* padding-left: 50px; */
+        /* padding-right: 50px; */
+        padding-bottom: 72px;
     }
     .prolist-table{
         border: 1px solid lightgrey;
@@ -532,14 +574,20 @@
         box-sizing: border-box;
         height: 70px;
     }
-    .rtab-bx{
+    .rtab-bn{
         width: 2%;
         padding-right: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
+    .rtab-bx{
+        width: 7%;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .rtab-bw{
-        width: 25%;
+        width: 24%;
         margin-left: 20px;
         margin-right: 10px;
         white-space: nowrap;
@@ -564,6 +612,7 @@
         cursor: pointer;
         font-size: 14px;
         padding-top: 10px;
+        padding-left: 10px;
     }
     .rtab-th-icon-up{
         height: 10px;
@@ -589,18 +638,20 @@
     .rtab-td{
         box-sizing: border-box;
         height: 80px;
-        margin-left: 10px;
-        margin-right: 10px;
+        /* margin-left: 10px; */
+        /* margin-right: 10px; */
+        color: #4F3836;
+        padding-right: 10px;
     }
     .rtab-td-image{
         height: 56px;
         width: 56px;
     }
     .rtab-td-icon{
-        padding-top: 7px;
-        padding-left: 10px;
+        /* padding-top: 7px; */
+        /* padding-left: 10px; */
         height: 50%;
-        margin-top: 2px;
+        /* margin-top: 2px; */
     }
     .rtab-td-text{
         font-family: poppins;
@@ -610,6 +661,7 @@
     }
     .td-title{
         padding-left: 10px;
+        font-weight: 400;
     }
     .lhtdt{
         line-height: 3.5;
@@ -635,22 +687,43 @@
     .rtab-td-button{
         margin-left: 0px;
     }
+    .rtab-button-follow{
+        box-sizing: border-box;
+        border: 1px solid #52AFB2;
+        border-radius: 5px;
+        width: auto;
+        height: 41px;
+        background: white;
+        color: #52AFB2;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+        font-family: poppins;
+        font-weight: 500;
+        margin-top: 10px;
+        outline: none;
+    }
+    .rb-followed{
+        background: #DDF9EF;
+    }
     .rtab-button i{
         border: 1px solid #52AFB2;
         border-radius: 5px;
         padding: 11px;
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
         color: #52AFB2;
         cursor: pointer;
+        height: 41px;
     }
     .rtab-footer{
         box-sizing: border-box;
-        height: 67px;
+        /* height: 67px; */
         border-top: 1px solid lightgrey;
         padding: 15px;
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 0;
         user-select: none;
         font-size: 16px;
     }
@@ -663,9 +736,9 @@
         border: 1px solid lightgrey;
         border-radius: 5px;
         padding: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        /* height: 25px; */
         cursor: pointer;
     }
     .rtab-footer-button i{
@@ -683,7 +756,7 @@
         cursor: pointer;
     }
     .rtab-ft-bt-prevnext{
-        height: 25px;
+        /* height: 25px; */
         padding: 5px;
         padding-left: 10px;
         padding-right: 10px;
@@ -692,8 +765,8 @@
         border: 1px solid #52AFB2;
     }
     .rtab-ft-bt-num{
-        height: 25px;
-        min-width: 25px;
+        /* height: 25px; */
+        min-width: 35px;
         padding: 5px;
         border: 1px solid lightgrey;
         color: #230604;
@@ -709,8 +782,8 @@
         border: 1px solid lightgrey;
     }
     .prolist-tab-card{
-        padding-left: 38px;
-        padding-right: 38px;
+        /* padding-left: 38px; */
+        /* padding-right: 38px; */
     }
     .prolist-card{
         min-width: 1200px;
@@ -786,10 +859,10 @@
     }
     /* footer */
     .footer{
-        box-sizing: border-box;
+        /* box-sizing: border-box;
         padding: 50px;
-        padding-top: 32px;
-        border-top: 1px solid lightgrey;
+        padding-top: 32px; */
+        /* border-top: 1px solid lightgrey; */
     }
     .cf-button{
         box-sizing: border-box;
@@ -989,6 +1062,9 @@
     .px10{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .text-nw{
+        white-space: nowrap;
     }
     .w20{
         width: 20%;
