@@ -34,6 +34,7 @@ dropdownFilter.forEach((value, index) => {
         var input = $(this).find('input');
         var btn = e.relatedTarget;
         var nameDropdown = $(btn).data('name');
+        var spanText = $(btn).find('span.text')
         $(input).on('change', function(e) {
             if($(dropdown).find('input:checked').length > 0) {
                 $(dropdown).addClass('filtered');
@@ -54,11 +55,13 @@ dropdownSort.forEach((value, index) => {
         var input = $(this).find('input');
         var btn = e.relatedTarget;
         var nameDropdown = $(btn).data('name');
+        var img = $(btn).find('img');
+        var spanText = $(btn).find('span.text')
         $(input).on('change', function(e) {
             if($(dropdown).find('input:checked').length > 0) {
-                $(btn).html(`<span class="text">${$(dropdown).find('input:checked').data('value')}</span>`);
+                $(spanText).text($(dropdown).find('input:checked').data('value'));
             }else{
-                $(btn).html(`<span class="text">${nameDropdown}</span>`);
+                $(spanText).text(nameDropdown);
             }
         })
     });
@@ -84,13 +87,21 @@ $('#footerCollapse').on('hide.bs.collapse', function (e) {
 $('.js-navbar__humberger').on('click', function(){
     $('.js-container-navbar').addClass('show');
     $('.js-navbar__menu-box').addClass('show');
-    $('.js-navbar__shadow').addClass('show');
+    // $('.js-navbar__shadow').addClass('show');
     $('.js-space').hide();
 });
 
-$('.js-navbar__shadow-close').on('click', function(){
+$('.js-nav-link__close').on('click', function(){
     $('.js-container-navbar').removeClass('show');
     $('.js-navbar__menu-box').removeClass('show');
     $('.js-navbar__shadow').removeClass('show');
     $('.js-space').show();
 });
+/*
+$('.js-navbar__close').on('click', function(){
+    $('.js-container-navbar').removeClass('show');
+    $('.js-navbar__menu-box').removeClass('show');
+    $('.js-navbar__shadow').removeClass('show');
+    $('.js-space').show();
+});
+*/
