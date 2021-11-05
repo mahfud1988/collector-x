@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <nav class="container-navbar">
+    <nav class="container-navbar js-container-navbar">
         <div class="container">
             <div class="navbar">
                 <div class="navbar__logo-box">
@@ -20,12 +20,18 @@
                     </a>
                 </div>
                 <div class="navbar__search-box">
+                    <div class="search-mob-button">
+                        <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                    </div>
                     <div class="search-box">
                         <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
-                        <input type="text" class="search-box__input" style="width: 90%;" placeholder="Search Collections">
+                        <input type="text" class="search-box__input" placeholder="Search Collections">
                     </div>
                 </div>
-                <div class="navbar__menu-box nav">
+                <div class="navbar__menu-box js-navbar__menu-box nav">
+                    <li class="nav-link nav-link--logo">
+                        <a href="#" class="nav-link__item"><img src="assets/images/collectorx-logo.png" alt="collector-x"></a>
+                    </li>
                     <li class="nav-link">
                         <a href="index.html" class="nav-link__item">Home</a>
                     </li>
@@ -41,11 +47,26 @@
                     <li class="nav-link">
                         <a href="#" class="nav-link__item">Gallery</a>
                     </li>
+                    <li class="nav-link nav-link--mobile nav-link--item-group">
+                        <a href="login.html" class="nav-link__item nav-link__item--login nav-link__item--btn">Login</a>
+                        <a href="signup.html" class="nav-link__item nav-link__item--sign-up nav-link__item--btn btn btn--md btn-default">Sign Up</a>
+                    </li>
+                    <li class="nav-link nav-link--mobile nav-link--item-close">
+                        <a href="#" class="nav-link__close js-nav-link__close">
+                            <img src="assets/images/close-black.svg" alt="collector-x">
+                        </a>
+                    </li>
                 </div>
                 <div class="navbar__account-box nav justify-content-end">
-                    <a href="login.html" class="nav-link">Login</a>
-                    <a href="signup.html" class="btn btn--md btn-default">Sign Up</a>
+                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" class="btn btn--md btn-default">Sign Up</a>
                 </div>
+                <div class="navbar__humberger js-navbar__humberger">
+                    <hr class="navbar__humberger-line navbar__humberger-line--top">
+                    <hr class="navbar__humberger-line navbar__humberger-line--middle">
+                    <hr class="navbar__humberger-line navbar__humberger-line--bottom">
+                </div>
+
             </div>
         </div>
     </nav>
@@ -208,16 +229,18 @@
     </section>
     <section class="section-upcoming">
         <div class="container">
-            <div class="section-upcoming__header d-flex justify-content-between align-items-center mt-32 mb-24">
-                <div class="section-upcoming__header--left d-flex align-items-center">
-                    <h3>Project List</h3>
-                    <div class="search-box">
-                        <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
-                        <input type="text" class="search-box__input" style="width: 90%;" placeholder="Search Collection">
+            <div class="section-upcoming__header mt-32">
+                <div class="row section-upcoming__row align-items-center">
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 section-upcoming__col section-upcoming__col--title">
+                        <h3>More Upcoming NFT</h3>
                     </div>
-                </div>
-                <div class="section-upcoming__header--right d-flex align-items-center">
-                    <div class="prolist-btb pcflex content-right">
+                    <div class="col-10 col-xl-5 col-lg-6 col-sm-6 section-upcoming__col section-upcoming__col--search">
+                        <div class="search-box search-custom-1">
+                            <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                            <input type="text" class="search-box__input" placeholder="Search Project">
+                        </div>
+                    </div>
+                    <div class="prolist-btb pcflex content-right pc">
                         <div class="prolist-bt-day prolist-bt5 pbday-active content-center">
                             <span>1d</span>
                         </div>
@@ -228,85 +251,78 @@
                             <span>1m</span>
                         </div>
                     </div>
-                    <div class="dropdown" id="dropdown-filter">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" id="categoryDropdown" style="min-width: 150px; text-align: left;" data-name="Category" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                            <span class="plbt1-text">Category</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right" style="min-width: 150px;" aria-labelledby="categoryDropdown">
-                            <div class="dropdown-title">
+                    <div class="col-6 col-xl col-lg-4 col-sm-4 order-3 order-lg-2 order-sm-2 order-sm-2 section-upcoming__col section-upcoming__col--category">
+                        <div class="dropdown" id="dropdown-filter">
+                            <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1" type="button" id="categoryDropdown" data-name="Category" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
                                 Category
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="categoryDropdown">
+                                <div class="dropdown-title">
+                                    Category
+                                </div>
+                                <label for="category1" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category1" value="1">
+                                    Art
+                                </label>
+                                <label for="category2" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category2" value="2">
+                                    Games
+                                </label>
+                                <label for="category3" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category3" value="3">
+                                    Avatar
+                                </label>
+                                <label for="category4" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="category" id="category4" value="4">
+                                    Photography
+                                </label>
                             </div>
-                            <label for="category1" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category1" value="1">
-                                Art
-                            </label>
-                            <label for="category2" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category2" value="2">
-                                Games
-                            </label>
-                            <label for="category3" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category3" value="3">
-                                Avatar
-                            </label>
-                            <label for="category4" class="dropdown-item d-flex align-items-center">
-                                <input type="checkbox" name="category" id="category4" value="4">
-                                Photography
-                            </label>
                         </div>
                     </div>
-                    <div class="dropdown" id="dropdown-sort">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" id="sortByDropdown" style="min-width: 175px; text-align: left;" data-name="Sort by" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                            <span class="plbt2-text">Sort by</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right" style="min-width: 175px;" aria-labelledby="sortByDropdown">
-                            <div class="dropdown-title">
+                    <div class="col-6 col-xl col-lg-4 col-sm-4 order-2 order-lg-1 order-sm-1 order-sm-1 section-upcoming__col section-upcoming__col--platform">
+                        <div class="dropdown" id="dropdown-filter">
+                            <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1" type="button" id="platformDropdown" data-name="Platform" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
                                 Sort by
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="platformDropdown">
+                                <div class="dropdown-title">
+                                    Sort by
+                                </div>
+                                <label for="platform1" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform1" value="1">
+                                    Highest avg price
+                                </label>
+                                <label for="platform2" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform2" value="2">
+                                    Lowest avg price
+                                </label>
+                                <label for="platform3" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform3" value="3">
+                                    Highest Holders
+                                </label>
+                                <label for="platform4" class="dropdown-item d-flex align-items-center">
+                                    <input type="checkbox" name="platform" id="platform4" value="4">
+                                    Lowest Holders
+                                </label>
                             </div>
-                            <label for="sort1" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort1" value="1" data-value="Recently added">
-                                Recently added
-                            </label>
-                            <label for="sort2" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort2" value="2" data-value="Highest avg price">
-                                Highest avg price
-                            </label>
-                            <label for="sort3" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort3" value="3" data-value="Lowest avg price">
-                                Lowest avg price
-                            </label>
-                            <label for="sort4" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort4" value="4" data-value="Highest Holders">
-                                Highest Holders
-                            </label>
-                            <label for="sort4" class="dropdown-item d-flex align-items-center">
-                                <input type="radio" name="sort" id="sort4" value="4" data-value="Lowest Holders">
-                                Lowest Holders
-                            </label>
                         </div>
                     </div>
-                    <div class="prolist-btb pcflex mflex mabs content-right">
-                        <div class="prolist-bt prolist-bt3 content-center" id="prolist-bt-table" onclick="showProlist('prolist-tab-table');">
-                            <i class="fas fa-list-ul"></i>
+                    <div class="col-2 col-xl col-lg-4 col-sm-4 order-1 order-lg-3 order-sm-3 order-sm-3 section-upcoming__col section-upcoming__col--sort">
+                        <div class="prolist-btb pcflex mflex mabs content-right m-content-right">
+                            <div class="prolist-bt prolist-bt3 content-center" id="prolist-bt-table" onclick="showProlist('prolist-tab-table');">
+                                <i class="fas fa-list-ul"></i>
+                            </div>
+                            <div class="prolist-bt prolist-bt4 content-center" id="prolist-bt-card" onclick="showProlist('prolist-tab-card');">
+                                <img src="assets/images/bt4img.png" alt="">
+                            </div>
                         </div>
-                        <div class="prolist-bt prolist-bt4 content-center" id="prolist-bt-card" onclick="showProlist('prolist-tab-card');">
-                            <img src="assets/images/bt4img.png" alt="">
-                        </div>
-                        <!-- <div class="prolist-bt-day prolist-bt5 pbday-active content-center" id="prolist-bt-card">
-                            <span>1d</span>
-                        </div>
-                        <div class="prolist-bt-day prolist-bt6 content-center" id="prolist-bt-card">
-                            <span>7d</span>
-                        </div>
-                        <div class="prolist-bt-day prolist-bt7 content-center" id="prolist-bt-card">
-                            <span>1m</span>
-                        </div> -->
                     </div>
                 </div>
             </div>
             <div class="section-upcoming__body">
                 <div class="prolist-tab" id="prolist-tab-table">
                     <div class="prolist-table">
-                        <div class="rtab-head">
+                        <div class="rtab-head pc">
                             <div class="rtab-head-row pcflex mflex">
                                 <div class="rtab-th rtab-bn pcflex mflex">
                                     <div class="rtab-th-text ptths">#</div>
@@ -1064,530 +1080,87 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="section-upcoming__body">
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="pills-upcoming-tab" data-toggle="pill" href="#pills-upcoming" role="tab" aria-controls="pills-upcoming" aria-selected="true">Upcoming</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-launched-tab" data-toggle="pill" href="#pills-launched" role="tab" aria-controls="pills-launched" aria-selected="false">Launched</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-upcoming" role="tabpanel" aria-labelledby="pills-upcoming-tab">
-                        <div class="table-responsive">
-                            <table class="table custom-table-2">
-                                <thead>
-                                    <tr>
-                                        <th>NFT Project</th>
-                                        <th>Status</th>
-                                        <th>Date</th>
-                                        <th>Platform</th>
-                                        <th>Artist</th>
-                                        <th>Cost</th>
-                                        <th>Twitter Followers</th>
-                                        <th>Discord Members</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/pltdi1.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#1</span>
-                                                    <span class="caption-desc">Art</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Upcoming
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">KungfuBoy24</td>
-                                        <td class="align-middle">Ξ 0.55</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl2.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#2</span>
-                                                    <span class="caption-desc">Art</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Upcoming
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">Moreno234</td>
-                                        <td class="align-middle">Ξ 0.52</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl3.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#3</span>
-                                                    <span class="caption-desc">Games</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Upcoming
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">Rarible</td>
-                                        <td class="align-middle">Ξ 2.5</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl4.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#4</span>
-                                                    <span class="caption-desc">Games</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Upcoming
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">Lee Ellis</td>
-                                        <td class="align-middle">Ξ 2.5</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl5.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#5</span>
-                                                    <span class="caption-desc">Games</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Upcoming
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">NikileSunshine</td>
-                                        <td class="align-middle">Ξ 2.5</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-launched" role="tabpanel" aria-labelledby="pills-launched-tab">
-                        <div class="table-responsive">
-                            <table class="table custom-table-2">
-                                <thead>
-                                    <tr>
-                                        <th>NFT Project</th>
-                                        <th>Status</th>
-                                        <th>Date</th>
-                                        <th>Platform</th>
-                                        <th>Artist</th>
-                                        <th>Cost</th>
-                                        <th>Twitter Followers</th>
-                                        <th>Discord Members</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/pltdi1.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#1</span>
-                                                    <span class="caption-desc">Art</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Launched
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">KungfuBoy24</td>
-                                        <td class="align-middle">Ξ 0.55</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl2.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#2</span>
-                                                    <span class="caption-desc">Art</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Launched
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">Moreno234</td>
-                                        <td class="align-middle">Ξ 0.52</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl3.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#3</span>
-                                                    <span class="caption-desc">Games</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Launched
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">Rarible</td>
-                                        <td class="align-middle">Ξ 2.5</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl4.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#4</span>
-                                                    <span class="caption-desc">Games</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Launched
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">Lee Ellis</td>
-                                        <td class="align-middle">Ξ 2.5</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle">
-                                            <figure class="picture picture-sm d-flex flex-row">
-                                                <img src="assets/images/calentbl5.png" alt="collector-x" class="picture__img img-fluid">
-                                                <figcaption class="picture__caption d-flex flex-column justify-content-between">
-                                                    <span class="caption-title">Wonderful Digital Artwork#5</span>
-                                                    <span class="caption-desc">Games</span>
-                                                    <span class="caption-rating"><i class="fas fa-star"></i>4.0</span>
-                                                </figcaption>
-                                            </figure>
-                                        </td>
-                                        <td class="align-middle">
-                                            <span class="badge badge-upcoming">
-                                                Launched
-                                            </span>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="date mb-1">22/06/2021</div>
-                                                <span class="text-success">Add to iCal <img src="assets/images/Calendar-color.svg" alt="collector-x"></span>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">
-                                            <div class="d-flex flex-column">
-                                                <div class="platform mb-1">Known Origin</div>
-                                                <a href="">Visit Link</a>
-                                            </div>
-                                        </td>
-                                        <td class="align-middle">NikileSunshine</td>
-                                        <td class="align-middle">Ξ 2.5</td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                            32,345
-                                        </td>
-                                        <td class="align-middle">
-                                            <img src="assets/images/discord-color.svg" alt="collector-x">
-                                            123,345
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center my-24">
-                    <div class="btn btn--md btn-outline-default">Load More</div>
-                </div>
-            </div> -->
         </div>
     </section>
-    <footer class="container-footer">
-        <div class="container">
-            <div class="footer d-flex flex-column my-32">
-                <div class="footer__box d-flex flex-row justify-content-between align-items-center">
-                    <div class="footer__box--left">
-                        <a href="#">
-                            <img src="assets/images/cx-logo-footer.png" class="img-fluid" alt="collector-x">
-                        </a>
-                    </div>
-                    <div class="footer__box--middle" id="copyrightFooter">
-                        <p>Copyright © 2021. CollectorX. All rights reserved.</p>
-                    </div>
-                    <div class="footer__box--right">
-                        <button class="btn btn-dropdown" type="button" data-toggle="collapse" data-target="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse">Expand Footer</button>
-                    </div>
-                </div>
-                <div class="collapse mt-24" id="footerCollapse">
-                    <div class="footer__box d-flex flex-row justify-content-between align-items-start">
-                        <div class="footer__box--left d-flex flex-column">
-                            <p class="footer__box--left-desc">
-                                CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way
-                            </p>
-                            <div class="footer__box--left-social d-flex flex-row align-items-center">
-                                <a href="" class="mr-32">
-                                    <img src="assets/images/facebook.svg" alt="collector-x">
-                                </a>
-                                <a href="" class="mr-32">
-                                    <img src="assets/images/twitter.svg" alt="collector-x">
-                                </a>
-                                <a href="" class="mr-32">
-                                    <img src="assets/images/instagram.svg" alt="collector-x">
-                                </a>
-                                <a href="" class="">
-                                    <img src="assets/images/discord.svg" alt="collector-x">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="footer__box--right d-flex flex-row">
-                            <ul class="footer__box--right-link">
-                                <li class="footer__box--right-link-title">Platform</li>
-                                <li><a href="">Collectors</a></li>
-                                <li><a href="">Galleries</a></li>
-                                <li><a href="">Collections</a></li>
-                                <li><a href="">Markets (Coming Soon)</a></li>
-                            </ul>
-                            <ul class="footer__box--right-link">
-                                <li class="footer__box--right-link-title">Resources</li>
-                                <li><a href="">Sign Up</a></li>
-                                <li><a href="">Login</a></li>
-                                <li><a href="">Terms of use</a></li>
-                                <li><a href="">Privacy policy</a></li>
-                            </ul>
-                            <ul class="footer__box--right-link">
-                                <li class="footer__box--right-link-title">Support</li>
-                                <li><a href="">Wallets</a></li>
-                                <li><a href="">Community</a></li>
-                                <li><a href="">Guidelines</a></li>
-                                <li><a href="">Help</a></li>
-                            </ul>
-                            <ul class="footer__box--right-link">
-                                <li class="footer__box--right-link-title">Company</li>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Carrers</a></li>
-                                <li><a href="">Guidelines</a></li>
-                                <li><a href="">Help</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__box d-flex justify-content-center mt-32">
-                        <div class="footer__box--middle">
-                            <p>Copyright © 2021. CollectorX. All rights reserved.</p>
-                        </div>
+    <div class="section footer" id="footer">
+        <div class="footer-inner pcflex mflex">
+            <div class="footer-logo flex-10">
+                <img src="assets/images/cx-logo.png" alt="collector-x">
+            </div>
+            <div class="flex-45 content-center pc">
+                <p class="footer-cr" id="footer-crtop">Copyright © 2021. CollectorX. All rights reserved.</p>
+            </div>
+            <div class="flex-10 content-right m-content-right">
+                <div class="cf-button content-right" id="cf-button" onclick="cfooter();">
+                    <div class="cf-text pc" id="cf-text">Expand Footer</div>
+                    <div class="cf-icon" id="cf-icon">
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="footer-inner footer-collapse" id="footer-inner-2">
+            <div class="footer-content pcflex mflex mflex-wrap">
+                <div class="footer-left">
+                    <p class="footer-p">CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way</p>
+                    <div class="footer-socials content-left">
+                        <a href="">
+                            <img src="assets/images/facebook.png" alt="collector-x">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/twitter.png" alt="collector-x">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/instagram.png" alt="collector-x">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/discord.png" alt="collector-x">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right pcflex mflex mflex-wrap">
+                    <div class="fr-part flex-10">
+                        <h5 class="fr-part-title">Platform</h5>
+                        <ul class="footer-ul">
+                            <li class="footer-link"><a href="">Collectors</a></li>
+                            <li class="footer-link"><a href="">Galleries</a></li>
+                            <li class="footer-link"><a href="">Collections</a></li>
+                            <li class="footer-link"><a href="">Markets (Coming Soon)</a></li>
+                        </ul>
+                    </div>
+                    <div class="fr-part flex-10 ftprg">
+                        <h5 class="fr-part-title">Resources</h5>
+                        <ul class="footer-ul">
+                            <li class="footer-link"><a href="">Sign Up</a></li>
+                            <li class="footer-link"><a href="">Login</a></li>
+                            <li class="footer-link"><a href="">Terms of use</a></li>
+                            <li class="footer-link"><a href="">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="fr-part flex-10 ftprb">
+                        <h5 class="fr-part-title">Support</h5>
+                        <ul class="footer-ul">
+                            <li class="footer-link"><a href="wallet.html">Wallets</a></li>
+                            <li class="footer-link"><a href="">Community</a></li>
+                            <li class="footer-link"><a href="">Guidelines</a></li>
+                            <li class="footer-link"><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="fr-part flex-10 ftprg ftprb">
+                        <h5 class="fr-part-title">Company</h5>
+                        <ul class="footer-ul">
+                            <li class="footer-link"><a href="">About Us</a></li>
+                            <li class="footer-link"><a href="">Carrers</a></li>
+                            <li class="footer-link"><a href="">Guidelines</a></li>
+                            <li class="footer-link"><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-cr content-center pc">Copyright © 2021. CollectorX. All rights reserved.</p>
+        </div>
+        <p class="footer-cr m-content-center mobile">Copyright © 2021. CollectorX. All rights reserved.</p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="assets/javascript/vendor.js"></script>

@@ -7,46 +7,71 @@
     <title>Collector X - Home</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/index-mobile.css">
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
 </head>
 <body>
     <div class="page">
-        <div class="navbar">
-            <div class="navbar-inner pcflex mflex">
-                <div class="logo content-left">
-                    <a href="index.html">
-                        <img src="assets/images/cx-logo.png" alt="collector-x">
-                    </a>
-                </div>
-                <div class="search pc">
-                    <div class="cov-search">
-                        <img src="assets/images/searchicon.png" alt="collector-x">
-                        <input type="text" placeholder="Search Collections" />
+        <nav class="container-navbar js-container-navbar">
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__logo-box">
+                        <a href="index.html">
+                            <img src="assets/images/collectorx-logo.png" alt="collector-x">
+                        </a>
                     </div>
-                </div>
-                <div class="menu pcflex pc">
-                    <div class=""><a class="menu-button menu-button-active" id="menu-button-home" onclick="menuButton('menu-button-home');" href="index.html">Home</a></div>
-                    <div class=""><a class="menu-button" id="menu-button-market" onclick="menuButton('menu-button-market');" href="market.html">Market</a></div>
-                    <div class=""><a class="menu-button" id="menu-button-callendar" onclick="menuButton('menu-button-callendar');" href="calendar.html">Callendar</a></div>
-                    <div class=""><a class="menu-button" id="menu-button-collection" onclick="menuButton('menu-button-collection');" href="">Collector</a></div>
-                    <div class=""><a class="menu-button" id="menu-button-gallery" onclick="menuButton('menu-button-gallery');" href="">Gallery</a></div>
-                </div>
-                <div class="account pc">
-                    <div class="account-inner pcflex">
-                        <a class="account-button flex-10 login-button" href="login.html">Login</a>
-                        <a class="account-button flex-10 signup-button" href="signup.html">Sign Up</a>
+                    <div class="navbar__search-box">
+                        <div class="search-mob-button">
+                            <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                        </div>
+                        <div class="search-box">
+                            <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                            <input type="text" class="search-box__input" placeholder="Search Collections">
+                        </div>
                     </div>
-                </div>
-                <div class="srmenu m-content-right mobile">
-                    <div class="srmenu-sr m-content-right">
-                        <img src="assets/images/srmob.png" alt="collector-x">
+                    <div class="navbar__menu-box js-navbar__menu-box nav">
+                        <li class="nav-link nav-link--logo">
+                            <a href="#" class="nav-link__item"><img src="assets/images/collectorx-logo.png" alt="collector-x"></a>
+                        </li>
+                        <li class="nav-link active">
+                            <a href="index.html" class="nav-link__item">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="market.html" class="nav-link__item">Market</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link__item">Calendar</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link__item">Collector</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#" class="nav-link__item">Gallery</a>
+                        </li>
+                        <li class="nav-link nav-link--mobile nav-link--item-group">
+                            <a href="login.html" class="nav-link__item nav-link__item--login nav-link__item--btn">Login</a>
+                            <a href="signup.html" class="nav-link__item nav-link__item--sign-up nav-link__item--btn btn btn--md btn-default">Sign Up</a>
+                        </li>
+                        <li class="nav-link nav-link--mobile nav-link--item-close">
+                            <a href="#" class="nav-link__close js-nav-link__close">
+                                <img src="assets/images/close-black.svg" alt="collector-x">
+                            </a>
+                        </li>
                     </div>
-                    <div class="srmenu-bar m-content-right">
-                        <img src="assets/images/mbmenu.png" alt="collector-x">
+                    <div class="navbar__account-box nav justify-content-end">
+                        <a href="#" class="nav-link">Login</a>
+                        <a href="#" class="btn btn--md btn-default">Sign Up</a>
                     </div>
+                    <div class="navbar__humberger js-navbar__humberger">
+                        <hr class="navbar__humberger-line navbar__humberger-line--top">
+                        <hr class="navbar__humberger-line navbar__humberger-line--middle">
+                        <hr class="navbar__humberger-line navbar__humberger-line--bottom">
+                    </div>
+    
                 </div>
             </div>
-        </div>
+        </nav>
         <div class="content">
             <div class="section carousel" id="home">
                 <div class="carousel-inner relative">
@@ -1502,5 +1527,9 @@
         </div>
     </div>
     <script src="assets/javascript/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/vendor.js"></script>
+    <script type="text/javascript" src="assets/javascript/custom.js"></script>
 </body>
 </html>
