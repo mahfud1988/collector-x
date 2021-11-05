@@ -1933,4 +1933,7 @@
     .w25{
         width: 25%;
     }
+    .mobile{
+        display: none;
+    }
 }

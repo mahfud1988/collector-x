@@ -329,8 +329,8 @@
     .prolist-bt{
         cursor: pointer;
         font-size: 16px;
-        margin-left: 4px;
-        margin-right: 4px;
+        /* margin-left: 4px; */
+        /* margin-right: 4px; */
         user-select: none;
     }
     .prolist-bt1{
@@ -348,6 +348,23 @@
         font-family: poppins;
         font-weight: 400;
         font-size: 14px;
+    }
+    .dropdown-toggle{
+        /* box-sizing: border-box !important; */
+    }
+    .dropdown-toggle::after{
+        float: right;
+    }
+    .plbt1-text{
+        /* box-sizing: border-box; */
+    }
+    .badge{
+        width: 25px;
+        height: 25px;
+        /* padding-top: 5px; */
+        /* padding-right: 9px; */
+        text-align: center;
+        line-height: 1;
     }
     .prolist-bt-dd{
         box-sizing: border-box;
