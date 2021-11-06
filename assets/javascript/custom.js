@@ -10,16 +10,9 @@ $(document).ready(function () {
     // Trigger change input radio image
     $(document).find('.wallet-radio__input').trigger('change')
 
-    // Interval background change
-    const walletSidebar = $(document).find('.wallet-sidebar')
-    let walletSidebarIterator = 1
-    setInterval(() => {
-        if (walletSidebarIterator >= 5) walletSidebarIterator = 1
-        else walletSidebarIterator += 1
-
-        const imageSource = walletSidebar.data(`src-${walletSidebarIterator}`)
-        walletSidebar.css('background-image', `url(${imageSource})`)
-    }, 60000) // 60 second
+    $(document).on('click', '.project-detail__item-header', function () {
+        $(this).toggleClass('show')
+    })
 })
 
 $('.dropdown-menu').on("click.bs.dropdown", function (e) {
@@ -39,7 +32,7 @@ dropdownFilter.forEach((value, index) => {
             if($(dropdown).find('input:checked').length > 0) {
                 $(dropdown).addClass('filtered');
                 $(btn).html(`${nameDropdown} <span class="badge badge-success">${$(dropdown).find('input:checked').length}</span>`);
-            }else{
+            } else {
                 $(dropdown).removeClass('filtered');
                 $(btn).html(`${nameDropdown}`);
             }
@@ -105,3 +98,19 @@ $('.js-navbar__close').on('click', function(){
     $('.js-space').show();
 });
 */
+
+if($(window).width() < 845){
+    $('table.section-upcoming__table td:nth-child(1)').click(function (e) {
+        $(this).toggleClass('selected');
+        var parentTd = $(this).parent();
+        var firstTd = $(this);
+        var dataTitle = $(firstTd).data('title-table');
+        var sibling = $(this).siblings();
+        var siblingPos = $(this).siblings().position();
+        if($(firstTd).hasClass('selected')){
+            $(firstTd).after(`<td class="align-middle">${dataTitle}</td>`);
+        }else{
+            $(firstTd).next().remove();
+        }
+    })
+}

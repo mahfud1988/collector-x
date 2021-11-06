@@ -257,6 +257,7 @@
                     border-bottom: none;
                     display: flex;
                     flex-direction: row;
+                    margin-bottom: 16px;
                 }
 
                 & > *:not(:last-child){
@@ -298,15 +299,159 @@
                 
             }
         }
+
+        &__table {
+            margin-bottom: 0;
+            thead {
+                @include media-query(md-1){
+                    display: none;
+                }
+            }
+
+            tbody {
+                & > tr > td:not(:first-child) {
+                    @include media-query(md-1){
+                        display: none;
+                    }
+                }
+                tr {
+                    &:last-child > td.selected ~ td:last-child {
+                        @include media-query(md-1){
+                            border-bottom: 1px solid $color-neutral-20;
+                        }
+                    }
+                    td:first-child {
+                        @include media-query(md-1){
+                            padding: toRem(12) toRem(16);
+                            position: relative;
+                            display: block;
+                        }
+
+                        &::after {
+                            @include media-query(md-1){
+                                border: none;
+                                font-family: 'Font Awesome 5 Free';
+                                content: '\f078';
+                                font-weight: 900;
+                                color: $color-neutral-100;
+                                font-size: 12px;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: 14px;
+                                display: inline-block;
+                                box-sizing: border-box;
+                                transition: all .5s ease;
+                                backface-visibility: hidden;
+                                margin: 0;
+                            }
+                        }
+
+                        &.selected{
+                            @include media-query(md-1){
+                                background-color: $color-light-accent-green;
+                            }
+
+                            &::after {
+                                @include media-query(md-1){
+                                    transform: translateY(-50%) rotate(-180deg);
+                                }
+                            }
+
+                            & ~ td {
+                                @include media-query(md-1){
+                                    border: none;
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            @include media-query(md-1){
+                                background-color: $color-light-accent-green;
+                            }
+                        }
+                    }
+                    td:nth-child(2)::before {
+                        @include media-query(md-1){
+                            content: 'Name\0009\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                    td:nth-child(3)::before {
+                        @include media-query(md-1){
+                            content: 'NFT ID\0009\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                    td:nth-child(4)::before {
+                        @include media-query(md-1){
+                            content: 'Date\0009\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                    td:nth-child(5)::before {
+                        @include media-query(md-1){
+                            content: 'Platform\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                    td:nth-child(6)::before {
+                        @include media-query(md-1){
+                            content: 'Artist\0009\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                    td:nth-child(7)::before {
+                        @include media-query(md-1){
+                            content: 'Cost\0009\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                    td:nth-child(8)::before {
+                        @include media-query(md-1){
+                            content: 'Twitter\0009\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                    td:nth-child(9)::before {
+                        @include media-query(md-1){
+                            content: 'Discord\0009\0009:\0009';
+                            color: $color-neutral-60;
+                            white-space: pre;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__button-pagination {
+            .custom-pagination {
+                display: none;
+                @include media-query(md-1){
+                    display: flex;
+                }
+            }
+            .btn {
+                @include media-query(md-1){
+                    display: none;
+                }
+            }
+        }
     }
 }
 
 .picture {
     position: relative;
 
-    &__img{
-        margin-bottom: toRem(16);
-    }
 
     .caption-title {
         font-family: 'Poppins-Medium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
@@ -321,10 +466,13 @@
     }
 
     &__caption--text-1 {
+        margin-top: toRem(16);
+        z-index: 5;
         @include media-query(md) {
+            margin-top: 0;
             position: absolute;
-            bottom: toRem(24);
-            left: toRem(24);
+            bottom: toRem(16);
+            left: toRem(16);
             color: $color-neutral-0;
         }
 
@@ -350,14 +498,28 @@
     }
 
     &__caption--text-2 {
+        z-index: 5;
         position: absolute;
         top: toRem(24);
         left: toRem(24);
         color: $color-neutral-0;
+        @include media-query(md-2) {
+            top: toRem(16);
+            left: toRem(16);
+        }
 
         .caption-time {
-            font-family: 'Poppins-Medium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-            font-weight: 500;
+            font-family: 'Poppins-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+        }
+
+        img{
+            vertical-align: top;
+        }
+
+        .launch-text {
+            @include media-query(md){
+                display: none;
+            }
         }
     }
 }
@@ -380,13 +542,11 @@
     &__img{
         width: 100%;
         max-height: toRem(243);
-        margin-bottom: toRem(16);
         @include media-query(md) {
             width: 100%;
             height: 100%;
             max-height: toRem(194);
             min-width: 199px;
-            margin-bottom: 0;
         }
     }
 
@@ -403,7 +563,10 @@
     }
 
     &__caption--text-1 {
+        margin-top: toRem(16);
+        z-index: 5;
         @include media-query(md) {
+            margin-top: 0;
             position: absolute;
             bottom: toRem(16);
             left: toRem(16);
@@ -432,18 +595,22 @@
     }
 
     &__caption--text-2 {
+        z-index: 5;
         position: absolute;
         top: toRem(24);
         left: toRem(24);
         color: $color-neutral-0;
-        @include media-query(md) {
+        @include media-query(md-2) {
             top: toRem(16);
             left: toRem(16);
         }
 
         .caption-time {
-            font-family: 'Poppins-Medium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-            font-weight: 500;
+            font-family: 'Poppins-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+        }
+
+        img{
+            vertical-align: top;
         }
     }
 }
@@ -452,10 +619,14 @@
     position: relative;
     margin: 0;
 
+    .img-overlay::after {
+        width: toRem(64);
+        height: toRem(64);
+    }
+
     .picture__img {
         width: toRem(64);
         height: toRem(64);
-        margin-right: toRem(24);
         margin-bottom: 0;
     }
 
@@ -471,15 +642,21 @@
         color: $color-brand-tertiary;
     }
 
-    .picture__caption--text-2 {
-        position: absolute;
-        top: toRem(24);
-        left: toRem(24);
-        color: $color-neutral-0;
+    .picture__caption{
+        margin-left: toRem(24);
+    }
+}
 
-        .caption-time {
-            font-family: 'Poppins-Medium', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
-            font-weight: 500;
-        }
+.img-overlay {
+    z-index: 1;
+    position:relative;
+    &::after{
+        content:'';
+        position:absolute;
+        left: 0; top: 0;
+        width:100%;
+        height:100%;
+        display: inline-block;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%); /* W3C */
     }
 }
