@@ -5,77 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collector X - Home</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.min.css">
     <link rel="stylesheet" href="assets/css/index-mobile.css">
-    <link rel="stylesheet" href="assets/css/vendor.css">
-    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
 </head>
 <body>
     <div class="page">
-        <nav class="container-navbar js-container-navbar">
-            <div class="container">
-                <div class="navbar">
-                    <div class="navbar__logo-box">
-                        <a href="index.html">
-                            <img src="assets/images/collectorx-logo.png" alt="collector-x">
-                        </a>
+        <div class="navbar">
+            <div class="navbar-inner pcflex">
+                <div class="logo content-left">
+                    <a href="index.html">
+                        <img src="assets/images/cx-logo.png" alt="collector-x">
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="cov-search">
+                        <img src="assets/images/searchicon.png" alt="collector-x">
+                        <input type="text" placeholder="Search Collections" />
                     </div>
-                    <div class="navbar__search-box">
-                        <div class="search-mob-button">
-                            <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
-                        </div>
-                        <div class="search-box">
-                            <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
-                            <input type="text" class="search-box__input" placeholder="Search Collections">
-                        </div>
+                </div>
+                <div class="menu pcflex">
+                    <div class=""><a class="menu-button menu-button-active" id="menu-button-home" onclick="menuButton('menu-button-home');" href="index.html">Home</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-market" onclick="menuButton('menu-button-market');" href="market.html">Market</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-callendar" onclick="menuButton('menu-button-callendar');" href="calendar.html">Callendar</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-collection" onclick="menuButton('menu-button-collection');" href="">Collector</a></div>
+                    <div class=""><a class="menu-button" id="menu-button-gallery" onclick="menuButton('menu-button-gallery');" href="">Gallery</a></div>
+                </div>
+                <div class="account">
+                    <div class="account-inner pcflex">
+                        <a class="account-button flex-10 login-button" href="login.html">Login</a>
+                        <a class="account-button flex-10 signup-button" href="signup.html">Sign Up</a>
                     </div>
-                    <div class="navbar__menu-box js-navbar__menu-box nav">
-                        <li class="nav-link nav-link--logo">
-                            <a href="#" class="nav-link__item"><img src="assets/images/collectorx-logo.png" alt="collector-x"></a>
-                        </li>
-                        <li class="nav-link active">
-                            <a href="index.html" class="nav-link__item">Home</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="market.html" class="nav-link__item">Market</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#" class="nav-link__item">Calendar</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#" class="nav-link__item">Collector</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#" class="nav-link__item">Gallery</a>
-                        </li>
-                        <li class="nav-link nav-link--mobile nav-link--item-group">
-                            <a href="login.html" class="nav-link__item nav-link__item--login nav-link__item--btn">Login</a>
-                            <a href="signup.html" class="nav-link__item nav-link__item--sign-up nav-link__item--btn btn btn--md btn-default">Sign Up</a>
-                        </li>
-                        <li class="nav-link nav-link--mobile nav-link--item-close">
-                            <a href="#" class="nav-link__close js-nav-link__close">
-                                <img src="assets/images/close-black.svg" alt="collector-x">
-                            </a>
-                        </li>
-                    </div>
-                    <div class="navbar__account-box nav justify-content-end">
-                        <a href="#" class="nav-link">Login</a>
-                        <a href="#" class="btn btn--md btn-default">Sign Up</a>
-                    </div>
-                    <div class="navbar__humberger js-navbar__humberger">
-                        <hr class="navbar__humberger-line navbar__humberger-line--top">
-                        <hr class="navbar__humberger-line navbar__humberger-line--middle">
-                        <hr class="navbar__humberger-line navbar__humberger-line--bottom">
-                    </div>
-    
                 </div>
             </div>
-        </nav>
+        </div>
         <div class="content">
             <div class="section carousel" id="home">
                 <div class="carousel-inner relative">
-                    <div class="carousel-control absolute content-center m-content-left">
+                    <div class="carousel-control absolute content-center">
                         <div class="cc-circle cc-circle-active" onclick="showCarousel(0);"></div>
                         <div class="cc-circle" onclick="showCarousel(1);"></div>
                         <div class="cc-circle" onclick="showCarousel(2);"></div>
@@ -136,39 +103,39 @@
             </div>
             <div class="section step">
                 <div class="step-inner">
-                    <h2 class="step-title content-center"><span class="font-normal">Easy </span><span class="px10">1-2-3 steps</span><span class="font-normal"><br class="mobile"/>to get started</span></h2>
-                    <p class="step-p content-center">Our platform make sure you don't miss your<br class="mobile"/> chance to become a popular collector</p>
+                    <h2 class="step-title content-center"><span class="font-normal">Easy </span><span class="px10">1-2-3 steps</span><span class="font-normal">to get started</span></h2>
+                    <p class="step-p content-center">Our platform make sure you don't miss your chance to become a popular collector</p>
                     <div class="step-content-inner content-center">
-                        <div class="step-part stpart1">
+                        <div class="step-part">
                             <div class="step-icon content-center">
                                 <img class="" src="assets/images/stepdash.png" alt="collector-x" />
                             </div>
-                            <div class="step-part-text">Dashboard to track <br class="mobile"/>your NFT</div>
+                            <div class="step-part-text">Dashboard to track your NFT</div>
                         </div>
                         <div class="step-part-icon">
                             <div class="step-icon step-conn content-center">
                                 <img class="" src="assets/images/stepconn.png" alt="collector-x" />
                             </div>
                         </div>
-                        <div class="step-part stpart2">
+                        <div class="step-part">
                             <div class="step-icon content-center">
                                 <img src="assets/images/stepgal.png" alt="collector-x" />
                             </div>
-                            <div class="step-part-text">Show your NFT in art <br class="mobile"/>gallery</div>
+                            <div class="step-part-text">Show your NFT in art gallery</div>
                         </div>
                         <div class="step-part-icon">
                             <div class="step-icon step-conn content-center">
                                 <img class="" src="assets/images/stepconn.png" alt="collector-x" />
                             </div>
                         </div>
-                        <div class="step-part stpart3">
+                        <div class="step-part">
                             <div class="step-icon content-center">
                                 <img src="assets/images/stepcom.png" alt="collector-x" />
                             </div>
-                            <div class="step-part-text">Join a great <br class="mobile"/>community</div>
+                            <div class="step-part-text">Join a great community</div>
                         </div>
                     </div>
-                    <div class="step-button content-center m-content-center">
+                    <div class="step-button content-center">
                         <a class="step-button-a" href="">Connect Wallet</a>
                     </div>
                 </div>
@@ -176,10 +143,10 @@
             <div class="section explore">
                 <div class="explore-head pcflex">
                     <div class="flex-45">
-                        <h2 class="explore-title"><span class="m-font-normal">Featured collection</span> <span class="font-normal"><span class="m-font-normal">on</span> <br class="mobile"/>marketplace</span></h2>
+                        <h2 class="explore-title">Featured collection <span class="font-normal">on marketplace</span></h2>
                         <p class="explore-p">Monitor and get the best prices from featured collections</p>
                     </div>
-                    <div class="cov-explore-view flex-10 pc">
+                    <div class="cov-explore-view flex-10">
                         <a class="explore-view float-r" href="">
                             <div class="pcflex">
                                 <div class="ev-text pr10">View All</div>
@@ -336,18 +303,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="explore-vm mobile">
-                    <a class="evm-button" href="">View Market</a>
-                </div>
             </div>
             <div class="section realtime" id="market">
-                <div class="space pc"></div>
+                <div class="space"></div>
                 <div class="realtime-head pcflex">
                     <div class="flex-45">
                         <h2 class="realtime-title"><span class="font-normal">Real-time </span>floor price</h2>
                         <p class="realtime-p">Last Update : 9/8/2021 - 15:45 PM</p>
                     </div>
-                    <div class="flex-10 pc">
+                    <div class="flex-10">
                         <a class="realtime-view float-r mx10" href="">
                             <div class="pcflex">
                                 <div class="ev-text pr10">View All</div>
@@ -358,7 +322,7 @@
                 </div>
                 <div class="realtime-body">
                     <div class="realtime-table">
-                        <div class="rtab-head pc">
+                        <div class="rtab-head">
                             <div class="rtab-head-row pcflex mflex">
                                 <div class="rtab-th rtab-bx pcflex mflex">
                                     <div class="rtab-th-text ptths">#</div>
@@ -797,31 +761,29 @@
                 <div class="portfolio-inner pcflex">
                     <div class="ptfi-left">
                         <h2 class="portfolio-title"><span class="font-normal">Portfolio </span>Analysis</h2>
-                        <div class="cov-ptfi-check">
-                            <div class="ptfi-check pcflex">
-                                <div class="ptfi-icon">
-                                    <img src="assets/images/checkcircle.png" alt="collector-x">
-                                </div>
-                                <div class="ptfi-text">Real-Time porfolio performance</div>
+                        <div class="ptfi-check pcflex">
+                            <div class="ptfi-icon">
+                                <img src="assets/images/checkcircle.png" alt="collector-x">
                             </div>
-                            <div class="ptfi-check pcflex">
-                                <div class="ptfi-icon">
-                                    <img src="assets/images/checkcircle.png" alt="collector-x">
-                                </div>
-                                <div class="ptfi-text">Real-Time asset price</div>
+                            <div class="ptfi-text">Real-Time porfolio performance</div>
+                        </div>
+                        <div class="ptfi-check pcflex">
+                            <div class="ptfi-icon">
+                                <img src="assets/images/checkcircle.png" alt="collector-x">
                             </div>
-                            <div class="ptfi-check pcflex">
-                                <div class="ptfi-icon">
-                                    <img src="assets/images/checkcircle.png" alt="collector-x">
-                                </div>
-                                <div class="ptfi-text">Auto organized projects</div>
+                            <div class="ptfi-text">Real-Time asset price</div>
+                        </div>
+                        <div class="ptfi-check pcflex">
+                            <div class="ptfi-icon">
+                                <img src="assets/images/checkcircle.png" alt="collector-x">
                             </div>
-                            <div class="ptfi-check pcflex">
-                                <div class="ptfi-icon">
-                                    <img src="assets/images/checkcircle.png" alt="collector-x">
-                                </div>
-                                <div class="ptfi-text">Portfolio insight </div>
+                            <div class="ptfi-text">Auto organized projects</div>
+                        </div>
+                        <div class="ptfi-check pcflex">
+                            <div class="ptfi-icon">
+                                <img src="assets/images/checkcircle.png" alt="collector-x">
                             </div>
+                            <div class="ptfi-text">Portfolio insight </div>
                         </div>
                         <div class="ptfi-button pcflex">
                             <div class="ptfi-button-connect">Connect Wallet</div>
@@ -838,8 +800,8 @@
             <div class="section upcoming">
                 <div class="upcoming-head">
                     <div class="">
-                        <h2 class="upcoming-title content-center"><span class="m-font-normal px10">Keep an eye on </span><br class="mobile"/>upcoming NFT</h2>
-                        <p class="upcoming-p content-center">Our platform ensures you never miss again the <br class="mobile"/>best NFTs that will be released</p>
+                        <h2 class="upcoming-title content-center"><span class="font-normal px10">Keep an eye on </span>upcoming NFT</h2>
+                        <p class="upcoming-p content-center">Our platform ensures you never miss again the best NFTs that will be released</p>
                     </div>
                 </div>
                 <br/>
@@ -892,18 +854,14 @@
                     </div>
                 </div>
             </div>
-            <div class="section topco" id="topco">
+            <div class="topco" id="topco">
                 <div class="topco-inner pcflex">
                     <div class="topco-left">
-                        <div class="ctopco-title pc" id="ctopco-title">
+                        <div class="ctopco-title" id="ctopco-title">
                             <div class="" id="ctopco-sticky-inner">
                                 <h2 class="topco-title"><span class="font-normal">Get inspired from <br/></span>Top collectors</h2>
                                 <p class="topco-p">You can get inspired & insight from <br/>+100 top collectors on our platform</p>
                             </div>
-                        </div>
-                        <div class="mobile">
-                            <h2 class="topco-title"><span class="m-font-normal">Get inspired from <br class="mobile"/></span>Top collectors</h2>
-                            <p class="topco-p">You can get inspired & insight from +100 top collectors on our platform</p>
                         </div>
                     </div>
                     <div class="topco-right">
@@ -1068,7 +1026,7 @@
                     <div class="flex-45">
                         <h2 class="galleries-title"><span class="font-normal">Our inspiration </span>galleries</h2>
                     </div>
-                    <div class="flex-10 pc">
+                    <div class="flex-10">
                         <a class="galleries-view float-r mx10" href="">
                             <div class="pcflex">
                                 <div class="ev-text pr10">View All</div>
@@ -1078,21 +1036,21 @@
                     </div>
                 </div>
                 <div class="galleries-body">
-                    <div class="galleries-content pcflex mflex">
+                    <div class="galleries-content pcflex">
                         <div class="galleries-left relative">
                             <div class="gleft-top relative">
-                                <div class="gleft-top-text absolute mabs">
+                                <div class="gleft-top-text absolute">
                                     <p class="gleft-top-p">Abstract Crypto</p>
                                     <p class="gleft-top-p2">189 collections</p>
                                 </div>
                                 <img src="assets/images/glimg1.png" alt="collector-x">
                             </div>
-                            <div class="gleft-bottom absolute pcflex mflex mabs">
+                            <div class="gleft-bottom absolute pcflex">
                                 <div class="glbt-left">
                                     <img src="assets/images/glimg2.png" alt="collector-x">
                                 </div>
                                 <div class="glbt-right">
-                                    <div class="glbt-right-top pcflex mflex">
+                                    <div class="glbt-right-top pcflex">
                                         <div class="glbt-right-top-part">
                                             <img src="assets/images/glimg3.png" alt="collector-x">
                                         </div>
@@ -1103,7 +1061,7 @@
                                             <img src="assets/images/glimg5.png" alt="collector-x">
                                         </div>
                                     </div>
-                                    <div class="glbt-right-bottom pcflex mflex">
+                                    <div class="glbt-right-bottom pcflex">
                                         <div class="glbt-right-bottom-part">
                                             <img src="assets/images/glimg6.png" alt="collector-x">
                                         </div>
@@ -1111,7 +1069,7 @@
                                             <img src="assets/images/glimg7.png" alt="collector-x">
                                         </div>
                                         <div class="glbt-right-bottom-part relative">
-                                            <div class="galleries-more-text absolute mabs">
+                                            <div class="galleries-more-text absolute">
                                                 <p class="galleries-more-p content-center">+20</p>
                                             </div>
                                             <img src="assets/images/glimg8.png" alt="collector-x">
@@ -1121,16 +1079,16 @@
                             </div>
                         </div>
                         <div class="galleries-right">
-                            <div class="gr-top pcflex mflex">
+                            <div class="gr-top pcflex">
                                 <div class="gr-content gr-left">
                                     <div class="gr-content-top relative">
-                                        <div class="gr-content-top-text absolute mabs">
+                                        <div class="gr-content-top-text absolute">
                                             <p class="gr-content-top-p">Wonderfull Colors</p>
                                             <p class="gr-content-top-p2">189 collections</p>
                                         </div>
                                         <img src="assets/images/graimg1.png" alt="collector-x">
                                     </div>
-                                    <div class="gr-content-bottom pcflex mflex">
+                                    <div class="gr-content-bottom pcflex">
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/graimg2.png" alt="collector-x">
                                         </div>
@@ -1138,7 +1096,7 @@
                                             <img src="assets/images/graimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
-                                            <div class="galleries-more-text galleries-more-right absolute mabs">
+                                            <div class="galleries-more-text absolute">
                                                 <p class="galleries-more-p content-center">+20</p>
                                             </div>
                                             <img src="assets/images/graimg4.png" alt="collector-x">
@@ -1147,13 +1105,13 @@
                                 </div>
                                 <div class="gr-content gr-right">
                                     <div class="gr-content-top relative">
-                                        <div class="gr-content-top-text absolute mabs">
+                                        <div class="gr-content-top-text absolute">
                                             <p class="gr-content-top-p">Wonderfull Colors</p>
                                             <p class="gr-content-top-p2">189 collections</p>
                                         </div>
                                         <img src="assets/images/grbimg1.png" alt="collector-x">
                                     </div>
-                                    <div class="gr-content-bottom pcflex mflex">
+                                    <div class="gr-content-bottom pcflex">
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/grbimg2.png" alt="collector-x">
                                         </div>
@@ -1161,7 +1119,7 @@
                                             <img src="assets/images/grbimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
-                                            <div class="galleries-more-text galleries-more-right absolute mabs">
+                                            <div class="galleries-more-text absolute">
                                                 <p class="galleries-more-p content-center">+20</p>
                                             </div>
                                             <img src="assets/images/grbimg4.png" alt="collector-x">
@@ -1169,16 +1127,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gr-bottom pcflex mflex">
+                            <div class="gr-bottom pcflex">
                                 <div class="gr-left">
                                     <div class="gr-content-top relative">
-                                        <div class="gr-content-top-text absolute mabs">
+                                        <div class="gr-content-top-text absolute">
                                             <p class="gr-content-top-p">Wonderfull Colors</p>
                                             <p class="gr-content-top-p2">189 collections</p>
                                         </div>
                                         <img src="assets/images/grcimg1.png" alt="collector-x">
                                     </div>
-                                    <div class="gr-content-bottom pcflex mflex">
+                                    <div class="gr-content-bottom pcflex">
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/grcimg2.png" alt="collector-x">
                                         </div>
@@ -1186,7 +1144,7 @@
                                             <img src="assets/images/grcimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
-                                            <div class="galleries-more-text galleries-more-right absolute mabs">
+                                            <div class="galleries-more-text absolute">
                                                 <p class="galleries-more-p content-center">+20</p>
                                             </div>
                                             <img src="assets/images/grcimg4.png" alt="collector-x">
@@ -1195,13 +1153,13 @@
                                 </div>
                                 <div class="gr-right">
                                     <div class="gr-content-top relative">
-                                        <div class="gr-content-top-text absolute mabs">
+                                        <div class="gr-content-top-text absolute">
                                             <p class="gr-content-top-p">Wonderfull Colors</p>
                                             <p class="gr-content-top-p2">189 collections</p>
                                         </div>
                                         <img src="assets/images/grdimg1.png" alt="collector-x">
                                     </div>
-                                    <div class="gr-content-bottom pcflex mflex">
+                                    <div class="gr-content-bottom pcflex">
                                         <div class="grc-bottom-part">
                                             <img src="assets/images/grdimg2.png" alt="collector-x">
                                         </div>
@@ -1209,7 +1167,7 @@
                                             <img src="assets/images/grdimg3.png" alt="collector-x">
                                         </div>
                                         <div class="grc-bottom-part relative">
-                                            <div class="galleries-more-text galleries-more-right absolute mabs">
+                                            <div class="galleries-more-text absolute">
                                                 <p class="galleries-more-p content-center">+20</p>
                                             </div>
                                             <img src="assets/images/grdimg4.png" alt="collector-x">
@@ -1225,13 +1183,13 @@
                 <div class="inspiration-head">
                     <h2 class="inspiration-title"><span class="font-normal">More NFTs </span>inspiration</h2>
                     <div class="inspiration-button pcflex">
-                        <div class="insbt-part fearec flex-10 pcflex mflex">
-                            <div class="fearec-part content-left">
-                                <div class="insbt insbt2 fc-button-active">
+                        <div class="insbt-part flex-10 pcflex">
+                            <div class="content-left">
+                                <div class="insbt insbt2">
                                     <span>Featured</span>
                                 </div>
                             </div>
-                            <div class="fearec-part content-left">
+                            <div class="content-left">
                                 <div class="insbt insbt3">
                                     <span>Recent</span>
                                 </div>
@@ -1241,7 +1199,7 @@
                             <div class="relative btselect">
                                 <div class="insbt insbt4" id="filter-cb" onclick="insort();">
                                     <span class="pr10">Filter</span>
-                                    <span class="filter-cbtxt" id="filter-cbtxt">
+                                    <span id="filter-cbtxt">
                                         <i class="fas fa-chevron-down"></i>
                                     </span>
                                 </div>
@@ -1447,16 +1405,16 @@
             </div>
         </div>
         <div class="section footer" id="footer">
-            <div class="footer-inner pcflex mflex">
+            <div class="footer-inner pcflex">
                 <div class="footer-logo flex-10">
                     <img src="assets/images/cx-logo.png" alt="collector-x">
                 </div>
-                <div class="flex-45 content-center pc">
+                <div class="flex-45 content-center">
                     <p class="footer-cr" id="footer-crtop">Copyright © 2021. CollectorX. All rights reserved.</p>
                 </div>
-                <div class="flex-10 content-right m-content-right">
+                <div class="flex-10 content-right">
                     <div class="cf-button content-right" id="cf-button" onclick="cfooter();">
-                        <div class="cf-text pc" id="cf-text">Expand Footer</div>
+                        <div class="cf-text" id="cf-text">Expand Footer</div>
                         <div class="cf-icon" id="cf-icon">
                             <i class="fas fa-chevron-up"></i>
                         </div>
@@ -1464,7 +1422,7 @@
                 </div>
             </div>
             <div class="footer-inner footer-collapse" id="footer-inner-2">
-                <div class="footer-content pcflex mflex mflex-wrap">
+                <div class="footer-content pcflex">
                     <div class="footer-left">
                         <p class="footer-p">CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way</p>
                         <div class="footer-socials content-left">
@@ -1482,7 +1440,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="footer-right pcflex mflex mflex-wrap">
+                    <div class="footer-right pcflex">
                         <div class="fr-part flex-10">
                             <h5 class="fr-part-title">Platform</h5>
                             <ul class="footer-ul">
@@ -1492,7 +1450,7 @@
                                 <li class="footer-link"><a href="">Markets (Coming Soon)</a></li>
                             </ul>
                         </div>
-                        <div class="fr-part flex-10 ftprg">
+                        <div class="fr-part flex-10">
                             <h5 class="fr-part-title">Resources</h5>
                             <ul class="footer-ul">
                                 <li class="footer-link"><a href="">Sign Up</a></li>
@@ -1501,7 +1459,7 @@
                                 <li class="footer-link"><a href="">Privacy policy</a></li>
                             </ul>
                         </div>
-                        <div class="fr-part flex-10 ftprb">
+                        <div class="fr-part flex-10">
                             <h5 class="fr-part-title">Support</h5>
                             <ul class="footer-ul">
                                 <li class="footer-link"><a href="wallet.html">Wallets</a></li>
@@ -1510,7 +1468,7 @@
                                 <li class="footer-link"><a href="">Help</a></li>
                             </ul>
                         </div>
-                        <div class="fr-part flex-10 ftprg ftprb">
+                        <div class="fr-part flex-10">
                             <h5 class="fr-part-title">Company</h5>
                             <ul class="footer-ul">
                                 <li class="footer-link"><a href="">About Us</a></li>
@@ -1521,15 +1479,10 @@
                         </div>
                     </div>
                 </div>
-                <p class="footer-cr content-center pc">Copyright © 2021. CollectorX. All rights reserved.</p>
+                <p class="footer-cr content-center">Copyright © 2021. CollectorX. All rights reserved.</p>
             </div>
-            <p class="footer-cr m-content-center mobile">Copyright © 2021. CollectorX. All rights reserved.</p>
         </div>
     </div>
     <script src="assets/javascript/index.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/vendor.js"></script>
-    <script type="text/javascript" src="assets/javascript/custom.js"></script>
 </body>
 </html>

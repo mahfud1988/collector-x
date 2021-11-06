@@ -62,24 +62,24 @@ function showProlist(id){
     }
     document.getElementById(id).style.display = 'block';
 }
-function cfooter(){
-    var ftctp = document.getElementById('footer-crtop');
-    var footerc = document.getElementById('footer-inner-2');
-    var cftext = document.getElementById('cf-text');
-    var cficon = document.getElementById('cf-icon');
-    if (footerc.style.maxHeight) {
-        footerc.style.maxHeight = null;
-        cftext.innerHTML = 'Expand Footer';
-        cficon.innerHTML = '<i class="fas fa-chevron-up"></i>';
-        ftctp.style.display = 'block';
-    }else{
-        footerc.style.maxHeight = footerc.scrollHeight + "px";
-        cftext.innerHTML = 'Collapse Footer';
-        cficon.innerHTML = '<i class="fas fa-chevron-down"></i>';
-        ftctp.style.display = 'none';
-    }
-}
+// function cfooter(){
+//     var ftctp = document.getElementById('footer-crtop');
+//     var footerc = document.getElementById('footer-inner-2');
+//     var cftext = document.getElementById('cf-text');
+//     var cficon = document.getElementById('cf-icon');
+//     if (footerc.style.maxHeight) {
+//         footerc.style.maxHeight = null;
+//         cftext.innerHTML = 'Expand Footer';
+//         cficon.innerHTML = '<i class="fas fa-chevron-up"></i>';
+//         ftctp.style.display = 'block';
+//     }else{
+//         footerc.style.maxHeight = footerc.scrollHeight + "px";
+//         cftext.innerHTML = 'Collapse Footer';
+//         cficon.innerHTML = '<i class="fas fa-chevron-down"></i>';
+//         ftctp.style.display = 'none';
+//     }
+// }
 window.onload = function(){
     document.getElementById('prolist-bt-table').click();
-    document.getElementById('cf-button').click();
+    // document.getElementById('cf-button').click();
 }
