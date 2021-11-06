@@ -1,5 +1,8 @@
 @import url('../css/satoshi.css');
 @media screen and (max-width: 949px){
+    *{
+        box-sizing: border-box;
+    }
     html{
         scroll-behavior: smooth;
     }
@@ -24,7 +27,7 @@
     .main-title{
         margin: 0;
         padding-top: 32px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
         padding-bottom: 32px;
         font-family: Satoshi-Regular;
         font-weight: 400;
@@ -140,11 +143,13 @@
         padding-bottom: 72px;
     }
     .prolist-head{
-        box-sizing: border-box;
-        padding: 50px;
-        padding-top: 0px;
-        padding-bottom: 25px;
-        width: 100%;
+        /* box-sizing: border-box; */
+        /* padding: 50px; */
+        /* padding-top: 0px; */
+        /* padding-bottom: 25px; */
+        /* width: 100%; */
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .prolist-head-part{
         box-sizing: border-box;
@@ -407,7 +412,7 @@
         padding-bottom: 32px;
     }
     .prolist-table{
-        border: 1px solid lightgrey;
+        /* border: 1px solid lightgrey; */
         border-radius: 5px;
         width: 100%;
         overflow: auto;
@@ -603,9 +608,12 @@
         margin-right: 5px;
         text-align: center;
         cursor: pointer;
+        height: 40px;
+        min-width: 40px;
+        padding: 7px;
     }
     .rtab-ft-bt-prevnext{
-        padding: 5px;
+        /* padding: 5px; */
         padding-left: 10px;
         padding-right: 10px;
         color: #52AFB2;
@@ -613,8 +621,8 @@
         border: 1px solid #52AFB2;
     }
     .rtab-ft-bt-num{
-        min-width: 35px;
-        padding: 5px;
+        /* min-width: 40px; */
+        /* padding: 5px; */
         border: 1px solid lightgrey;
         color: #230604;
     }
@@ -630,17 +638,17 @@
     }
     .prolist-tab-card{
         width: 100%;
-        overflow: auto;
+        /* overflow: auto; */
     }
     .prolist-card{
-        min-width: 1200px;
+        /* min-width: 1200px; */
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: auto;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* overflow: auto; */
     }
     .prolist-card-part{
-        width: 23%;
+        /* width: 23%; */
         margin-left: 12px;
         margin-right: 12px;
         margin-bottom: 24px;
@@ -963,6 +971,12 @@
         box-sizing: border-box;
         width: 100%;
     }
+    .cntpc {
+        width: 100%;
+        max-width: 1374px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .content{
         box-sizing: border-box;
         width: 100%;
@@ -1008,7 +1022,7 @@
     }
     .explore-body-inner{
         box-sizing: border-box;
-        padding-bottom: 50px;
+        padding-bottom: 32px;
         width: 100%;
         user-select: none;
         border-bottom: 1px solid lightgrey;
@@ -1093,11 +1107,14 @@
         padding-bottom: 72px;
     }
     .prolist-head{
-        box-sizing: border-box;
+        /* box-sizing: border-box;
         padding: 50px;
         padding-top: 0px;
-        padding-bottom: 25px;
-        width: 100%;
+        padding-bottom: 25px; */
+        /* width: 100%; */
+    }
+    #prolist-head{
+        /*  */
     }
     .prolist-head-part{
         box-sizing: border-box;
@@ -1315,6 +1332,12 @@
         box-sizing: border-box;
         width: 41px;
         height: 41px;
+    }
+    .prolist-btb{
+        /* margin-right: 10px; */
+        /* position: absolute;
+        top: 0;
+        left: 31%; */
     }
     .prolist-bt-day{
         border: 1px solid #D3CDCD;
@@ -1543,10 +1566,11 @@
         margin-right: 10px;
         border: 1px solid lightgrey;
         border-radius: 5px;
-        padding: 5px;
+        padding: 7px;
         padding-left: 15px;
         padding-right: 15px;
         cursor: pointer;
+        height: 40px;
     }
     .rtab-footer-button i{
         padding-left: 10px;
@@ -1561,9 +1585,10 @@
         margin-right: 5px;
         text-align: center;
         cursor: pointer;
+        height: 40px;
     }
     .rtab-ft-bt-prevnext{
-        padding: 5px;
+        padding: 7px;
         padding-left: 10px;
         padding-right: 10px;
         color: #52AFB2;
@@ -1571,10 +1596,11 @@
         border: 1px solid #52AFB2;
     }
     .rtab-ft-bt-num{
-        min-width: 35px;
-        padding: 5px;
+        min-width: 40px;
+        padding: 7px;
         border: 1px solid lightgrey;
         color: #230604;
+        text-align: center;
     }
     .rtab-ft-bt-active{
         background: #52AFB2;
@@ -1869,51 +1895,3 @@
         width: 25%;
     }
 }
-@media only screen and (max-width: 1199.98px) {
-    .section-upcoming__col--title-nc, .sucsnc {
-      margin-bottom: 16px;
-    }
-  }
-  @media only screen and (max-width: 575.98px) {
-    .sucsnc {
-      padding-right: 0;
-    }
-  }
-  @media only screen and (max-width: 424.98px) {
-    .sucsnc {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 79.333333%;
-              flex: 0 0 79.333333%;
-      max-width: 79.333333%;
-    }
-  }
-  .sucsnc .search-box-nc {
-    margin-left: 0;
-  }
-  @media only screen and (max-width: 1199.98px) {
-    .sucsnc .search-box-nc {
-      width: 100%;
-      max-width: none;
-    }
-  }
-  @media only screen and (max-width: 1399.98px) {
-    .sucsnc .search-box__input-nc {
-      width: 90%;
-    }
-  }
-  @media only screen and (max-width: 767.98px) {
-    .sucsnc .search-box__input-nc {
-      width: 85%;
-    }
-  }
-  @media only screen and (min-width: 1200px) {
-    .sucsnc {
-      padding: 0;
-      margin-right: auto;
-    }
-  }
-  @media only screen and (max-width: 575.98px) {
-    .section-upcoming__col--sort, .sucsnc {
-      margin-bottom: 8px;
-    }
-  }

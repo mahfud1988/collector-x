@@ -59,10 +59,34 @@ function insort(){
     var fcbtx = document.getElementById('filter-cbtxt');
     if (insort.style.maxHeight) {
         insort.style.maxHeight = null;
+        insort.style.overflow = 'hidden';
         fcbtx.innerHTML = '<i class="fas fa-chevron-down"></i>';
     }else{
         insort.style.maxHeight = insort.scrollHeight + "px";
+        insort.style.overflow = 'visible';
         fcbtx.innerHTML = '<i class="fas fa-chevron-up"></i>';
+    }
+}
+var insbtn = document.getElementsByClassName('insort-button');
+var i;
+for(i = 0; i < insbtn.length; i++){
+    insbtn[i].addEventListener('click', function(){
+    var dd = this.nextElementSibling;
+    if(dd.classList.contains('insbt-op')){
+        dd.classList.remove('insbt-op');
+        this.children[1].innerHTML = '<i class="fas fa-chevron-down"></i>';
+    }else{
+        dd.classList.add('insbt-op');
+        this.children[1].innerHTML = '<i class="fas fa-chevron-up"></i>';
+    }
+    });
+}
+function insbtnClose(){
+    // var insbtn = document.getElementsByClassName('insort-button');
+    var btopt = document.getElementsByClassName('btoption');
+    for(i = 0; i < btopt.length; i++){
+        btopt[i].classList.remove('insbt-op');
+        insbtn[i].children[1].innerHTML = '<i class="fas fa-chevron-down"></i>';
     }
 }
 window.onscroll = function() {scrollFunction()};
@@ -102,4 +126,13 @@ function cfooter(){
 }
 window.onload = function(){
     document.getElementById('cf-button').click();
+}
+window.onclick = function(event) {
+    var btopt = document.getElementsByClassName('btoption');
+    for(i = 0; i < btopt.length; i++){
+        if (event.target == btopt[i]) {
+            btopt[i].classList.remove('insbt-op');
+            insbtn[i].children[1].innerHTML = '<i class="fas fa-chevron-down"></i>';
+        }
+    }
 }

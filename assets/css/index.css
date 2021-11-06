@@ -1371,6 +1371,7 @@
     }
     .inspiration-head{
         margin-bottom: 24px;
+        z-index: 5;
     }
     .inspiration-title{
         font-size: 32px;
@@ -1419,16 +1420,17 @@
         padding-right: 15px;
     }
     .btoption{
-        top: 97%;
+        display: none;
+        top: 110%;
         left: 0;
         box-sizing: border-box;
         width: 100%;
         background: white;
         border: 1px solid lightgrey;
-        border-top: none;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 5px;
         padding: 10px;
+        z-index: 10;
+        user-select: none;
     }
     .btoptlist{
         cursor: pointer;
@@ -1484,6 +1486,9 @@
         font-weight: 500;
         font-size: 14px;
     }
+    .insbt-op{
+        display: block;
+    }
     .insort-range{
         width: 100%;
     }
@@ -1521,6 +1526,7 @@
         box-sizing: border-box;
         min-height: 500px;
         width: 100%;
+        z-index: 1;
     }
     .inspiration-content{
         width: 100%;
