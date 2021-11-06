@@ -1,35 +1,11 @@
 @import url('../css/satoshi.css');
-@font-face {
-    font-family: 'poppins-medium';
-    src: url('../fonts/Poppins-Medium.eot');
-    src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Medium.woff2') format('woff2'),
-        url('../fonts/Poppins-Medium.woff') format('woff'),
-        url('../fonts/Poppins-Medium.ttf') format('truetype'),
-        url('../fonts/Poppins-Medium.svg#poppins-medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'poppins-regular';
-    src: url('../fonts/Poppins-Regular.eot');
-    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Poppins-Regular.woff2') format('woff2'),
-        url('../fonts/Poppins-Regular.woff') format('woff'),
-        url('../fonts/Poppins-Regular.ttf') format('truetype'),
-        url('../fonts/Poppins-Regular.svg#poppins-regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 @media screen and (min-width: 950px){
     html{
         scroll-behavior: smooth;
     }
     body{
         margin: 0;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         box-sizing: border-box;
         color: #230604;
     }
@@ -37,130 +13,6 @@
         box-sizing: border-box;
         width: 100%;
     }
-    /* navbar */
-    .navbar{
-        box-sizing: border-box;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        color: #4F3836;
-    }
-    .navbar-inner{
-        box-sizing: border-box;
-        height: 74px;
-        min-width: 1000px;
-        /* max-width: 1750px; */
-        border-bottom: 1px solid lightgrey;
-        padding-top: 15px;
-        background: white;
-        box-sizing: border-box;
-        z-index: 10;
-        user-select: none;
-        white-space: nowrap;
-        margin: auto;
-    }
-    .logo{
-        box-sizing: border-box;
-        width: 20%;
-        padding-left: 50px;
-    }
-    .logo img{
-        height: 66%;
-        width: 100%;
-    }
-    .search{
-        box-sizing: border-box;
-        width: 25%;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .cov-search{
-        display: flex;
-        border: 1px solid lightgrey;
-        border-radius: 5px;
-        width: 90%;
-        height: 35px;
-        padding: 5px;
-        padding-top: 0;
-    }
-    .search img{
-        padding: 5px;
-        padding-top: 10px;
-    }
-    .search input{
-        border: none;
-        width: 90%;
-        height: 35px;
-        outline: none;
-        font-size: 100%;
-        color: grey;
-        font-size: 14px;
-        font-family: poppins;
-        font-weight: 400;
-    }
-    .menu{
-        box-sizing: border-box;
-        width: 40%;
-        height: 45px;
-        margin-top: 10px;
-        font-size: 14px;
-        font-family: poppins;
-        font-weight: 500;
-        padding-left: 50px;
-    }
-    .menu-button{
-        color: #4F3836;
-        cursor: pointer;
-        margin-right: 24px;
-        font-weight: 500;
-        font-family: poppins;
-        font-size: 14px;
-        transition: 0.2s;
-        text-decoration: none;
-        padding-bottom: 26px;
-    }
-    .menu-button:hover{
-        color: #52AFB2;
-    }
-    .menu-button-active{
-        color: #52AFB2;
-        border-bottom: 2px solid #52AFB2;
-    }
-    .account{
-        width: 20%;
-    }
-    .account-button{
-        padding: 10px;
-        margin: 10px;
-        margin-top: 0px;
-        cursor: pointer;
-        text-align: center;
-        font-weight: 500;
-        font-family: poppins;
-        font-size: 14px;
-    }
-    .login-button{
-        color: #52AFB2;
-        text-decoration: none;
-    }
-    .login-button:hover{
-        color: #52AFB2;
-    }
-    .signup-button{
-        background: #52AFB2;
-        color: white;
-        margin-right: 50px;
-        border-radius: 4px;
-        text-decoration: none;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .signup-button:hover{
-        background: #52BFAA;
-    }
-    /* Content */
     .content{
         box-sizing: border-box;
         width: 100%;
@@ -290,7 +142,7 @@
         right: 0;
         width: 100%;
         padding-left: 75px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
     }
     .ccr-p{
         color: white;
@@ -307,9 +159,9 @@
         cursor: pointer;
         border-radius: 5px;
         transition: 0.2s;
-        text-decoration: none;
+        text-decoration: none !important;
         font-size: 16px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
     }
     .ccr-button:hover{
@@ -350,7 +202,7 @@
     .step-p{
         margin: 0;
         margin-bottom: 35px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 400;
         font-style: normal;
         font-size: 18px;
@@ -382,7 +234,7 @@
     .step-button{
         margin-top: 35px;
         font-size: 14px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         border-radius: 4px;
     }
@@ -392,7 +244,7 @@
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
-        text-decoration: none;
+        text-decoration: none !important;
         border-radius: 2px;
         transition: 0.2s;
     }
@@ -421,7 +273,7 @@
     .explore-p{
         margin: 0;
         color: #4F3836;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 14px;
         font-weight: 400;
     }
@@ -431,9 +283,9 @@
     }
     .explore-view{
         color: #52AFB2;
-        text-decoration: none;
+        text-decoration: none !important;
         margin-top: 50px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
     }
@@ -482,7 +334,7 @@
         left: 0;
         box-sizing: border-box;
         color: white;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         width: 100%;
         padding: 15px;
     }
@@ -492,7 +344,7 @@
     }
     .feabp-p{
         font-size: 14px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         margin: 0;
         margin-top: 10px;
@@ -509,7 +361,7 @@
         width: 50%;
         font-size: 14px;
         font-weight: 400;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         color: #4F3836;
     }
     .fepch{
@@ -517,7 +369,7 @@
         width: 50%;
         font-size: 12px;
         font-weight: 400;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         padding-top: 1px;
     }
     .portfolio{
@@ -547,7 +399,7 @@
         margin-bottom: 24px;
     }
     .ptfi-check{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 14px;
         font-weight: 400;
     }
@@ -560,7 +412,7 @@
         height: 41px;
         line-height: 2.5;
         margin-top: 35px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 400;
         font-size: 14px;
         cursor: pointer;
@@ -583,7 +435,7 @@
         color: #EB5749;
         border: 1px solid #EB5749;
         border-radius: 5px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
         padding-top: 2px;
@@ -641,13 +493,13 @@
     }
     .pchco-p{
         margin: 0;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 11.11px;
         font-weight: 400;
     }
     .ptfi-chart-p{
         margin: 0;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 8.34px;
         font-weight: 400;
     }
@@ -723,7 +575,7 @@
         font-weight: 400;
     }
     .tcv-text{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 6.06px;
         font-weight: 400;
     }
@@ -762,12 +614,12 @@
         background: #17C3EB;
     }
     .tnkt-title{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 6.06px;
         font-weight: 400;
     }
     .tnkt-pc{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 4.05px;
         font-weight: 400;
     }
@@ -809,7 +661,7 @@
         height: 10.35px;
     }
     .ptapr-text{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 9.06px;
         font-weight: 400;
         padding-top: 5px;
@@ -817,7 +669,7 @@
     .ptasimg-prctx{
         margin: 0;
         color: white;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 10.35px;
         padding-left: 5px;
@@ -826,7 +678,7 @@
     .ptasimg-p{
         margin: 0;
         margin-top: 5px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 9.77px;
         font-weight: 400;
     }
@@ -846,16 +698,16 @@
     .upcoming-p{
         margin: 0;
         font-size: 18px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 400;
     }
     .upcoming-view{
         color: #52AFB2;
-        text-decoration: none;
+        text-decoration: none !important;
         padding: 10px;
         margin-top: 50px;
         margin-right: 35px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
     }
@@ -891,7 +743,7 @@
     .upcoming-body-caption-text2{
         margin: 0;
         padding: 0;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 400;
         font-size: 14px;
         white-space: nowrap;
@@ -914,16 +766,16 @@
     }
     .realtime-p{
         margin: 0;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 14px;
         font-weight: 400;
     }
     .realtime-view{
         color: #52AFB2;
-        text-decoration: none;
+        text-decoration: none !important;
         padding: 10px;
         margin-top: 35px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
     }
@@ -1028,7 +880,7 @@
         margin-top: 2px;
     }
     .rtab-td-text{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 14px;
         padding-top: 5px;
         padding-left: 10px;
@@ -1144,26 +996,17 @@
         width: 33%;
         padding-right: 50px;
     }
-    .ctopco-title{
-        /* max-width: 410px; */
-    }
     .ctopco-sticky{
         position: fixed;
         top: 50px;
         left: 0;
         width: 100vw;
-        /* max-width: 28%; */
-        /* border: 1px solid green; */
-        /* margin: auto; */
-        /* display: flex; */
-        /* justify-content: center; */
     }
     .ctopco-sticky-inner{
         box-sizing: border-box;
         width: 100%;
         max-width: 1750px;
         margin: auto;
-        /* border: 1px solid yellow; */
         padding-left: 50px;
     }
     .topco-title{
@@ -1175,7 +1018,7 @@
         color: #4F3836;
     }
     .topco-p{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 400;
         font-size: 18px;
         color: #4F3836;
@@ -1211,7 +1054,7 @@
         margin: 0;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
         white-space: nowrap;
@@ -1239,7 +1082,7 @@
         border-radius: 4px;
         padding: 10px;
         padding-left: 19px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
         cursor: pointer;
@@ -1268,11 +1111,11 @@
     }
     .bestcoll-view{
         color: #52AFB2;
-        text-decoration: none;
+        text-decoration: none !important;
         padding: 10px;
         margin-top: 100px;
         margin-right: 35px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
     }
@@ -1336,11 +1179,11 @@
     }
     .galleries-view{
         color: #52AFB2;
-        text-decoration: none;
+        text-decoration: none !important;
         padding: 10px;
         margin-top: 10px;
         margin-right: 35px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 500;
         font-size: 14px;
     }
@@ -1388,7 +1231,6 @@
         bottom: 0;
         width: 100%;
         height: 250px;
-        /* border: 1px solid green; */
     }
     .glbt-left{
         box-sizing: border-box;
@@ -1406,13 +1248,11 @@
         height: 100%;
         width: 64%;
         background: white;
-        /* border:  1px solid blue; */
     }
     .glbt-right-top{
         box-sizing: border-box;
         height: 50%;
         width: 100%;
-        /* border: 1px solid yellow; */
     }
     .glbt-right-top-part{
         box-sizing: border-box;
@@ -1429,7 +1269,6 @@
         box-sizing: border-box;
         height: 50%;
         width: 100%;
-        /* border: 1px solid red; */
     }
     .glbt-right-bottom-part{
         box-sizing: border-box;
@@ -1462,9 +1301,7 @@
         box-sizing: border-box;
         width: 100%;
         height: 50%;
-        /* padding-bottom: 15px; */
         margin-bottom: 15px;
-        /* border: 1px solid blue; */
     }
     .gr-content{
         height: 100%;
@@ -1473,12 +1310,10 @@
     .gr-left{
         width: 47.5%;
         margin-right: 5%;
-        /* border: 1px solid red; */
     }
     .gr-content-top{
         width: 100%;
         height: 65%;
-        /* border:  1px solid yellow; */
     }
     .gr-content-top-text{
         top: 15px;
@@ -1507,7 +1342,6 @@
         height: 30%;
         padding-top: 2px;
         background: white;
-        /* border: 1px solid green; */
     }
     .grc-bottom-part{
         box-sizing: border-box;
@@ -1528,8 +1362,6 @@
     .gr-bottom{
         box-sizing: border-box;
         height: 50%;
-        /* padding-top: 15px; */
-        /* border: 1px solid green; */
     }
     .inspiration{
         padding-top: 72px;
@@ -1566,7 +1398,7 @@
     }
     .insbt2{
         border-radius: 5px;
-        padding: 7px;
+        padding: 8px;
         padding-left: 15px;
         padding-right: 15px;
         background: #52AFB2;
@@ -1627,7 +1459,7 @@
         margin-bottom: 5px;
         font-weight: 600;
         font-size: 14px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         color: #230604;
     }
     .insort-button{
@@ -1707,7 +1539,7 @@
         margin: 0;
         font-weight: 500;
         font-size: 14px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         color: #230604;
     }
     .instext-s{
@@ -1734,7 +1566,6 @@
     .insmore-button:hover{
         background: whitesmoke;
     }
-    /* footer */
     .footer{
         box-sizing: border-box;
         padding: 50px;
@@ -1755,7 +1586,7 @@
     }
     .cf-text{
         font-size: 14px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
     }
     .cf-icon{
         padding-left: 10px;
@@ -1772,7 +1603,7 @@
     .footer-p{
         width: 325px;
         font-size: 14px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 400;
         margin-top: 24px;
         margin-bottom: 89px;
@@ -1790,7 +1621,7 @@
         white-space: nowrap;
     }
     .fr-part-title{
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 14px;
         font-weight: 600;
         margin: 0;
@@ -1802,13 +1633,13 @@
     }
     .footer-link{
         list-style-type: none;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-size: 14px;
         font-weight: 400;
         margin-bottom: 16px;
     }
     .footer-link a{
-        text-decoration: none;
+        text-decoration: none !important;
         color: #4F3836;
     }
     .footer-link a:hover{
@@ -1820,13 +1651,12 @@
     .footer-cr{
         color: #A79B9B;
         font-size: 14px;
-        font-family: poppins;
+        font-family: Poppins-Medium;
         font-weight: 400;
     }
     .footer-bottom{
         padding-top: 35px;
     }
-    /* extra */
     .absolute{
         position: absolute;
     }
@@ -1942,5 +1772,8 @@
     }
     .w25{
         width: 25%;
+    }
+    .mobile{
+        display: none;
     }
 }
