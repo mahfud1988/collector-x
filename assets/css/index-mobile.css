@@ -214,7 +214,7 @@
     .step-title{
         font-size: 28px;
         font-family: Satoshi-Regular;
-        font-weight: 700;
+        font-weight: 400;
         color: #230604;
         margin: 0;
         margin-bottom: 10px;
@@ -309,7 +309,7 @@
     }
     .explore-title{
         font-size: 28px;
-        font-weight: 700;
+        font-weight: 400;
         font-family: Satoshi-Regular;
         margin: 0;
         margin-bottom: 5px;
@@ -463,7 +463,7 @@
         height: 399px;
     }
     .portfolio-title{
-        font-weight: 700;
+        font-weight: 400;
         font-size: 32px;
         font-family: Satoshi-Regular;
         margin: 0;
@@ -780,7 +780,7 @@
     .upcoming-title{
         font-size: 28px;
         font-family: Satoshi-Regular;
-        font-weight: 700;
+        font-weight: 400;
         margin: 0;
         text-align: center;
         color: #230604;
@@ -862,7 +862,7 @@
     .realtime-title{
         font-size: 28px;
         font-family: Satoshi-Regular;
-        font-weight: 700;
+        font-weight: 400;
         margin: 0;
         margin-bottom: 5px;
         text-align: center;
@@ -988,7 +988,7 @@
         /* padding-top: 7px; */
         padding-left: 10px;
         height: 50%;
-        margin-top: 2px;
+        /* margin-top: 2px; */
     }
     .rtab-td-text{
         font-family: Poppins-Medium;
@@ -1123,7 +1123,7 @@
         margin: 0;
         margin-bottom: 8px;
         font-family: Satoshi-Regular;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 28px;
         color: #230604;
         text-align: center;
@@ -1300,7 +1300,7 @@
     }
     .galleries-title{
         font-size: 28px;
-        font-weight: 700;
+        font-weight: 400;
         font-family: Satoshi-Regular;
         margin: 0;
         margin-bottom: 0;
@@ -1534,7 +1534,7 @@
     }
     .inspiration-title{
         font-size: 28px;
-        font-weight: 700;
+        font-weight: 400;
         font-family: Satoshi-Regular;
         margin: 0;
     }

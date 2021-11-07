@@ -504,6 +504,9 @@
     }
 }
 @media screen and (min-width: 1750px){
+    .page{
+        min-height: 100vh;
+    }
     .page-left{
         width: 15%;
     }

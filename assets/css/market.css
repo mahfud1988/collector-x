@@ -16,6 +16,12 @@
         box-sizing: border-box;
         width: 100%;
     }
+    .cntpc{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .content{
         box-sizing: border-box;
         width: 100%;
@@ -528,7 +534,7 @@
         /* padding-top: 7px; */
         padding-left: 10px;
         height: 50%;
-        margin-top: 2px;
+        /* margin-top: 2px; */
     }
     .rtab-td-text{
         font-family: Poppins-Medium;
@@ -607,7 +613,7 @@
         padding-left: 10px;
     }
     .rtab-footer-right{
-        padding-right: 10px;
+        /* padding-right: 10px; */
         width: 100%;
         display: flex;
         justify-content: center;
