@@ -325,6 +325,16 @@
                             border-bottom: 1px solid $color-neutral-20;
                         }
                     }
+                    .img-table {
+                        margin-right: 4px;
+                    }
+                    button {
+                        display: inline;
+                    }
+                    .button-img {
+                        vertical-align: unset;
+                        margin-left: 4px;
+                    }
                     td:first-child {
                         @include media-query(md-1){
                             padding: toRem(12) toRem(16);
@@ -635,6 +645,11 @@
 
         img{
             vertical-align: top;
+        }
+        .launch-text {
+            @include media-query(md){
+                display: none;
+            }
         }
     }
 }
