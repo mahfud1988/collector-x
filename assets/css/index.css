@@ -196,6 +196,7 @@
     .step-title{
         font-size: 32px;
         font-family: Satoshi-Regular;
+        font-weight: 700;
         margin: 0;
         margin-bottom: 10px;
     }
@@ -371,6 +372,7 @@
         font-weight: 400;
         font-family: Poppins-Medium;
         padding-top: 1px;
+        text-align: right;
     }
     .portfolio{
         padding-left: 50px;
@@ -874,10 +876,12 @@
         width: 56px;
     }
     .rtab-td-icon{
-        padding-top: 7px;
+        /* padding-top: 7px; */
         padding-left: 10px;
+        /* padding-bottom: 5px; */
         height: 50%;
         margin-top: 2px;
+        /* margin-bottom: 2px; */
     }
     .rtab-td-text{
         font-family: Poppins-Medium;
@@ -1666,6 +1670,9 @@
     .absolute{
         position: absolute;
     }
+    .cl-blue{
+        color: #44A1F5;
+    }
     .cl-dark{
         color: #4F3836;
     }
@@ -1675,8 +1682,11 @@
     .cl-error{
         color: #DF496E;
     }
+    .cl-green{
+        color: #40B78D;
+    }
     .cl-stg{
-        color: #F3CE17;
+        color: #44A1F5;
     }
     .cl-upblue{
         color: #44A1F5;

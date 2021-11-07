@@ -371,3 +371,11 @@
         font-size: 14px;
     }
 }
+@media screen and (min-width: 1750px){
+    .page-left{
+        width: 15%;
+    }
+    .page-right{
+        width: 85%;
+    }
+}

@@ -421,6 +421,7 @@
         font-weight: 400;
         font-family: Poppins-Medium;
         padding-top: 1px;
+        text-align: right;
     }
     .explore-vm{
         display: flex;
