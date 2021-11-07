@@ -67,6 +67,29 @@ a.btn, .btn {
         }
     }
 
+    &-no-outline-default {
+        padding: 0;
+        color: $color-action-default;
+        background-color: transparent;
+        border: none;
+        vertical-align: middle;
+
+        &:hover{
+            color: $color-action-hover;
+        }
+
+        &:active{
+            color: $color-action-press;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+
+        &.disabled, &:disabled{
+            color: $color-neutral-0;
+        }
+    }
+
     &-dropdown{
         background-color: $color-neutral-0;
         border: 1px solid $color-neutral-20;
