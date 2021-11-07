@@ -1,5 +1,6 @@
 .breadcrumb {
     background-color: transparent;
+    align-items: center;
 
     padding-left: 0;
     padding-right: 0;
@@ -32,8 +33,7 @@
         display: inline-block;
         vertical-align: middle;
         color: $color-neutral-100;
-        padding: toRem(3) toRem(14) !important;
-        padding-left: toRem(7) !important;
+        padding: 0 toRem(14) !important;
 
         @include media-query(md-2) {
             display: none;
@@ -41,7 +41,9 @@
         }
     }
 
-    &-item + &-item {
+    &-item {
+        display: flex;
+        align-items: center;
         padding-left: 0 !important;
     }
 
@@ -52,18 +54,18 @@
                 display: none;
             }
         }
-        &:first-child{
-            a::before{
-                @include media-query(md-2) {
-                    content: url('../images/backArrow.svg');
-                    font-weight: 900;
-                    font-size: 16px;
-                    display: inline;
-                    vertical-align: middle;
-                    color: $color-neutral-100;
-                    padding: toRem(3) toRem(14) !important;
-                    padding-left: toRem(7) !important;
-                }
+    }
+    .prev{
+        a::before{
+            @include media-query(md-2) {
+                content: url('../images/backArrow.svg');
+                font-weight: 900;
+                font-size: 16px;
+                display: inline;
+                vertical-align: middle;
+                color: $color-neutral-100;
+                padding: 0 toRem(14) !important;
+                padding-left: 0 !important;
             }
         }
     }
