@@ -368,7 +368,59 @@
         line-height: 1.2;
     }
     .remem{
-        padding-left: 10px;
+        display: block;
+        position: relative;
+        padding: 0;
+        padding-left: 29px;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: poppins;
+        font-weight: 400;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: none;
+        line-height: 1;
+        shadow: none;
+    }
+    .remem input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border: 1px solid #A79B9B;
+        border-radius: 2px;
+    }
+    .remem input:checked ~ .checkmark {
+        background-color: #52AFB2;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .remem input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .remem .checkmark:after {
+        top: -1px;
+        left: 4px;
+        width: 3px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
     .fgpass{
         color: #52AFB2;
