@@ -5,11 +5,16 @@
     padding-right: 0;
 
     &-item {
+        display: inline;
         color: $color-neutral-100;
 
         &.active {
             a{
                 color: $color-neutral-60;
+
+                @include media-query(md-2){
+                    color: $color-neutral-100;
+                }
             }
         }
 
@@ -27,7 +32,39 @@
         display: inline-block;
         vertical-align: middle;
         color: $color-neutral-100;
-        padding: toRem(3) toRem(14);
-        padding-left: toRem(7);
+        padding: toRem(3) toRem(14) !important;
+        padding-left: toRem(7) !important;
+
+        @include media-query(md-2) {
+            display: none;
+            padding: 0;
+        }
+    }
+
+    &-item + &-item {
+        padding-left: 0 !important;
+    }
+
+    &-item:not(.active) {
+        display: inline;
+        span{
+            @include media-query(md-2) {
+                display: none;
+            }
+        }
+        &:first-child{
+            a::before{
+                @include media-query(md-2) {
+                    content: url('../images/backArrow.svg');
+                    font-weight: 900;
+                    font-size: 16px;
+                    display: inline;
+                    vertical-align: middle;
+                    color: $color-neutral-100;
+                    padding: toRem(3) toRem(14) !important;
+                    padding-left: toRem(7) !important;
+                }
+            }
+        }
     }
 }

@@ -99,6 +99,36 @@ $('.js-navbar__close').on('click', function(){
 });
 */
 
+$(window).resize(function(e) {
+    var heightNav = $('.container-navbar').outerHeight();
+    $('.space').height(heightNav);
+})
+
+$(document).ready(function(e) {
+    if($(window).width() < 992) {
+        var elem = $(`#descReadMore`);
+        var childElem = $(elem).find('p');
+        var sizeElem = $(childElem).length;
+        var button = $(elem).find('button');
+        $(childElem).hide();
+        var perLoad = 3;
+        var x;
+        $(`#descReadMore p:lt(${perLoad})`).show();
+        console.log(sizeElem)
+        $(button).click(function(){
+            if(!$(elem).hasClass('show')){
+                $(button).text('Read Less');
+                $(`#descReadMore p:lt(${sizeElem})`).show();
+                $(elem).addClass('show');
+            }else{
+                $(button).text('Read More');
+                $(`#descReadMore p`).not(`:lt(${perLoad})`).hide();
+                $(elem).removeClass('show');
+            }
+        })
+    }
+});
+
 if($(window).width() < 845){
     $('table.section-upcoming__table td:nth-child(1)').click(function (e) {
         $(this).toggleClass('selected');

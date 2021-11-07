@@ -10,26 +10,32 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <nav class="container-navbar">
+    <nav class="container-navbar js-container-navbar">
         <div class="container">
             <div class="navbar">
                 <div class="navbar__logo-box">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="assets/images/collectorx-logo.png" alt="collector-x">
                     </a>
                 </div>
                 <div class="navbar__search-box">
+                    <div class="search-mob-button">
+                        <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                    </div>
                     <div class="search-box">
                         <img src="assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
                         <input type="text" class="search-box__input" placeholder="Search Collections">
                     </div>
                 </div>
-                <div class="navbar__menu-box nav">
-                    <li class="nav-link">
-                        <a href="#" class="nav-link__item">Home</a>
+                <div class="navbar__menu-box js-navbar__menu-box nav">
+                    <li class="nav-link nav-link--logo">
+                        <a href="#" class="nav-link__item"><img src="assets/images/collectorx-logo.png" alt="collector-x"></a>
                     </li>
                     <li class="nav-link">
-                        <a href="#" class="nav-link__item">Market</a>
+                        <a href="index.html" class="nav-link__item">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="market.html" class="nav-link__item">Market</a>
                     </li>
                     <li class="nav-link active">
                         <a href="#" class="nav-link__item">Calendar</a>
@@ -40,21 +46,35 @@
                     <li class="nav-link">
                         <a href="#" class="nav-link__item">Gallery</a>
                     </li>
+                    <li class="nav-link nav-link--mobile nav-link--item-group">
+                        <a href="#" class="nav-link__item nav-link__item--login nav-link__item--btn">Login</a>
+                        <a href="#" class="nav-link__item nav-link__item--sign-up nav-link__item--btn btn btn--md btn-default">Sign Up</a>
+                    </li>
+                    <li class="nav-link nav-link--mobile nav-link--item-close">
+                        <a href="#" class="nav-link__close js-nav-link__close">
+                            <img src="assets/images/close-black.svg" alt="collector-x">
+                        </a>
+                    </li>
                 </div>
                 <div class="navbar__account-box nav justify-content-end">
                     <a href="#" class="nav-link">Login</a>
                     <a href="#" class="btn btn--md btn-default">Sign Up</a>
                 </div>
+                <div class="navbar__humberger js-navbar__humberger">
+                    <hr class="navbar__humberger-line navbar__humberger-line--top">
+                    <hr class="navbar__humberger-line navbar__humberger-line--middle">
+                    <hr class="navbar__humberger-line navbar__humberger-line--bottom">
+                </div>
 
             </div>
         </div>
     </nav>
-    <div class="space"></div>
+    <div class="space js-space"></div>
     <section class="section-breadcrumb my-40">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="calendar.html">Calendar</a></li>
+                    <li class="breadcrumb-item"><a href="calendar.html"><span>Calendar</span></a></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#">Art Collector</a></li>
                 </ol>
             </nav>
@@ -62,61 +82,80 @@
     </section>
     <section class="section-project-detail">
         <div class="container">
-            <div class="row row-cols-2 section-project-detail__row">
-                <div class="col section-project-detail__col">
+            <div class="row section-project-detail__row">
+                <div class="col-12 col-xl-6 col-lg-6 section-project-detail__col">
                     <img src="assets/images/featimg1.png" class="img-fluid section-project-detail__img" alt="collector-x">
                 </div>
-                <div class="col section-project-detail__col">
+                <div class="col-12 col-xl-6 col-lg-6 section-project-detail__col">
                     <div class="section-project-detail__desc d-flex flex-column">
                         <div class="section-project-detail__header mb-28">
                             <h2 class="mb-16">Art Collector</h2>
-                            <div class="section-project-detail__details d-flex flex-row align-items-center">
+                            <div class="section-project-detail__details section-project-detail__details--1 d-flex flex-row align-items-center">
                                 <div class="section-project-detail__details-rating text-rating">
-                                    <i class="fas fa-star"></i> 4.0 <span class="text-muted">(124 Ratings)</span>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i> 
+                                        4.0 
+                                    </div>
+                                    <span class="text-muted">(124 Ratings)</span>
                                 </div>
                                 <i class="fas fa-circle separator"></i>
                                 <div class="section-project-detail__details-twitter">
-                                    <img src="assets/images/twitter-color.svg" alt="collector-x">
-                                    <span>32,345</span>
+                                    <div class="twitter">
+                                        <img src="assets/images/twitter-color.svg" alt="collector-x">
+                                        <span>32,345</span>
+                                    </div>
                                     Followers
                                 </div>
                                 <i class="fas fa-circle separator"></i>
                                 <div class="section-project-detail__details-discord">
-                                    <img src="assets/images/discord-color.svg" alt="collector-x">
-                                    <span>123,345</span>
+                                    <div class="discord">
+                                        <img src="assets/images/discord-color.svg" alt="collector-x">
+                                        <span>123,345</span>
+                                    </div>
                                     Members
                                 </div>
                             </div>
+                            <a class="btn btn-outline-default btn--md section-project-detail__button mt-16 w-50">Follow</a>
                         </div>
+                        <hr class="my-0 section-project-detail__header-hr">
                         <div class="section-project-detail__body">
                             <div class="section-project-detail__project mb-24">
-                                <p class="section-project-detail__project-title mb-16">Project Summary</p>
-                                <div class="table-responsive">
-                                    <table class="table custom-table-3">
-                                        <thead>
-                                            <tr>
-                                                <th>Artist</th>
-                                                <th>Category</th>
-                                                <th>Platform</th>
-                                                <th>Project Link</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>KungfuBoy</td>
-                                                <td>Digital Art</td>
-                                                <td>KnownOrigin</td>
-                                                <td><a href="#">Visit Link</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="d-flex justify-content-between">
+                                    <p class="section-project-detail__project-title mb-16">Project Summary</p>
+                                    <a href="#" class="section-project-detail__project-link">Visit Link</a>
+                                </div>
+                                <div class="section-project-detail__project-summary d-flex flex-row align-items-center">
+                                    <div class="section-project-detail__project-item">
+                                        <div class="section-project-detail__project-item-title">
+                                            Artist
+                                        </div>
+                                        KungfuBoy
+                                    </div>
+                                    <div class="section-project-detail__project-item">
+                                        <div class="section-project-detail__project-item-title">
+                                            Category
+                                        </div>
+                                        Digital Art
+                                    </div>
+                                    <div class="section-project-detail__project-item">
+                                        <div class="section-project-detail__project-item-title">
+                                            Platform
+                                        </div>
+                                        KnownOrigin
+                                    </div>
+                                    <div class="section-project-detail__project-item">
+                                        <div class="section-project-detail__project-item-title">
+                                            Project Link
+                                        </div>
+                                        <a href="#">Visit Link</a>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="my-0">
                             <div class="section-project-detail__project my-24">
                                 <p class="section-project-detail__project-title mb-16">Project Rating</p>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                         <div class="d-flex flex-column">
                                             <div class="d-flex flex-row">
                                                 <div class="section-project-detail__project-rating d-flex flex-row">
@@ -131,10 +170,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="btn btn-outline-default btn--md mt-20">Add your rating</a>
+                                            <a class="btn btn-outline-default btn--md section-project-detail__button mt-20">Add your rating</a>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                         <div class="section-project-detail__rating d-flex flex-column">
                                             <div class="d-flex flex-row justify-content-between">
                                                 <p class="section-project-detail__rating-title">Art</p>
@@ -188,9 +227,9 @@
                             <div class="section-project-detail__upcoming mt-24">
                                 <div class="card custom-card-1">
                                     <div class="card-body">
-                                        <div class="section-project-detail__upcoming-header d-flex flex-row mb-16">
+                                        <div class="section-project-detail__upcoming-header d-flex flex-row align-items-center mb-16">
                                             <span class="badge badge-success mr-16">Upcoming</span>
-                                            <div class="section-project-detail__details d-flex align-items-center">
+                                            <div class="section-project-detail__details section-project-detail__details--2 d-flex align-items-center">
                                                 <div class="section-project-detail__details-time">
                                                     Launch in 
                                                     <span>1 hours 20 mins</span>
@@ -199,12 +238,16 @@
                                                 <p>22/06/2021</p>
                                             </div>
                                         </div>
-                                        <div class="section-project-detail__upcoming-body d-flex flex-row justify-content-between">
-                                            <div class="section-project-detail__price d-flex flex-row align-items-end">
-                                                <h2>Ξ 0.55</h2>
-                                                <p>($1.200)</p>
+                                        <div class="row align-items-end">
+                                            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                <div class="section-project-detail__price d-flex flex-row align-items-end">
+                                                    <h2>Ξ 0.55</h2>
+                                                    <p>($1.200)</p>
+                                                </div>
                                             </div>
-                                            <a class="btn btn-default btn--md mt-20">Add to iCal</a>
+                                            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                <a class="btn btn-default btn--md w-100">Add to iCal</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -215,7 +258,98 @@
             </div>
         </div>
     </section>
-    <br>
+    <hr class="my-0">
+    <section class="section-nft-detail mb-32">
+        <div class="container">
+            <h3 class="my-32">NFT Details</h3>
+            <div class="row">
+                <div class="col-12 col-xl-5 col-lg-5">
+                    <div class="section-nft-detail__gallery d-flex flex-row">
+                        <div class="section-nft-detail__gallery--left d-flex flex-column align-items-end">
+                            <img src="assets/images/featimg2.png" alt="collector-x" class="img-fluid">
+                            <img src="assets/images/featimg4.png" alt="collector-x" class="img-fluid">
+                        </div>
+                        <div class="section-nft-detail__gallery--right d-flex flex-column align-items-start">
+                            <img src="assets/images/featimg3.png" alt="collector-x" class="img-fluid">
+                            <img src="assets/images/featimg5.png" alt="collector-x" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-7 col-lg-7">
+                    <div class="section-nft-detail__desc" id="descReadMore">
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam 
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        </p>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam 
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        </p>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam 
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        </p>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco 
+                        </p>
+                        <button class="btn btn-no-outline-default section-nft-detail__desc-btn" id="readMore">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="my-0">
+    <section class="section-other">
+        <div class="container">
+            <div class="section-other__header d-flex align-items-center justify-content-between">
+                <h3 class="my-32">Other Featured Projects</h3>
+                <a href="#">View All  <img src="assets/images/linkarrow.svg" alt="collector-x"></a>
+            </div>
+            <div class="section-other__gallery">
+                <figure class="picture">
+                    <div class="img-overlay">
+                        <img src="assets/images/feacoimg1.png" alt="collector-x" class="picture__img img-fluid">
+                    </div>
+                    <figcaption class="picture__caption">
+                        Wonderfull Artwork #1
+                    </figcaption>
+                </figure>
+                <figure class="picture">
+                    <div class="img-overlay">
+                        <img src="assets/images/feacoimg2.png" alt="collector-x" class="picture__img img-fluid">
+                    </div>
+                    <figcaption class="picture__caption">
+                        Wonderfull Artwork #2
+                    </figcaption>
+                </figure>
+                <figure class="picture">
+                    <div class="img-overlay">
+                        <img src="assets/images/feacoimg3.png" alt="collector-x" class="picture__img img-fluid">
+                    </div>
+                    <figcaption class="picture__caption">
+                        Wonderfull Artwork #3
+                    </figcaption>
+                </figure>
+                <figure class="picture">
+                    <div class="img-overlay">
+                        <img src="assets/images/feacoimg4.png" alt="collector-x" class="picture__img img-fluid">
+                    </div>
+                    <figcaption class="picture__caption">
+                        Wonderfull Artwork #4
+                    </figcaption>
+                </figure>
+                <figure class="picture">
+                    <div class="img-overlay">
+                        <img src="assets/images/feacoimg5.png" alt="collector-x" class="picture__img img-fluid">
+                    </div>
+                    <figcaption class="picture__caption">
+                        Wonderfull Artwork #5
+                    </figcaption>
+                </figure>
+            </div>
+            <a href="" class="btn btn-outline-default btn--md w-100 mt-24">View All</a>
+        </div>
+    </section>
     <footer class="container-footer">
         <div class="container">
             <div class="footer d-flex flex-column my-32">
