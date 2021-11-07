@@ -48,17 +48,20 @@
         width: 100%;
     }
     .carousel-a{
+        position: absolute;
         width: 100%;
         top: 0;
         left: 0;
     }
     .carousel-x{
+        position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         transition: 0.5s;
     }
     .carousel-control{
+        position: absolute;
         bottom: 50px;
         left: 16px;
         width: 100%;
@@ -86,6 +89,7 @@
         height: 100%;
     }
     .carousel-content{
+        position: absolute;
         box-sizing: border-box;
         height: 100%;
         width: 100%;
@@ -131,6 +135,7 @@
         padding-left: 16px;
     }
     .carousel-part{
+        position: absolute;
         width: 100%;
         height: 363px;
         transition: 0.5s;
@@ -142,6 +147,7 @@
         height: 100px;
     }
     .ccr-inner{
+        position: absolute;
         box-sizing: border-box;
         top: 0;
         left: 0;
@@ -208,6 +214,8 @@
     .step-title{
         font-size: 28px;
         font-family: Satoshi-Regular;
+        font-weight: 700;
+        color: #230604;
         margin: 0;
         margin-bottom: 10px;
         text-align: center;
@@ -229,9 +237,12 @@
     }
     .stpart1{
         padding-left: 16.25px;
+        margin-bottom: 27px;
+        /* border: 1px solid green; */
     }
     .stpart2{
         padding-left: 80px;
+        margin-bottom: 27px;
     }
     .stpart3{
         padding-left: 144.75px;
@@ -468,6 +479,7 @@
         font-family: Poppins-Medium;
         font-size: 14px;
         font-weight: 400;
+        margin-bottom: 12px;
     }
     .ptfi-icon{
         margin-right: 10px;
@@ -475,7 +487,7 @@
     .ptfi-button{
         display: flex;
         position: absolute;
-        top: 345px;
+        top: 360px;
         left: 0;
         box-sizing: border-box;
         text-align: center;
@@ -514,7 +526,7 @@
     }
     .ptfi-right{
         position: absolute;
-        top: 50px;
+        top: 60px;
         left: 0;
         box-sizing: border-box;
         width: 100%;
@@ -827,6 +839,7 @@
     .upcoming-body-caption-text{
         margin: 0;
         padding: 0;
+        padding-left: 6px;
     }
     .upcoming-body-caption-text2{
         margin: 0;
@@ -835,6 +848,9 @@
         font-weight: 400;
         font-size: 14px;
         white-space: nowrap;
+    }
+    .launch-in{
+        display: none;
     }
     .realtime{
         box-sizing: border-box;
@@ -1080,8 +1096,8 @@
     .topco{
         box-sizing: border-box;
         width: 100%;
-        padding-top: 41px;
-        padding-bottom: 72px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     .topco-inner{
         box-sizing: border-box;
@@ -1126,12 +1142,12 @@
     .topco-row{
         box-sizing: border-box;
         border-bottom: 1px solid #D3CDCD;
-        padding-top: 31px;
+        padding-top: 17.5px;
     }
     .tcrpt{
         display: flex;
         padding-left: 16px;
-        margin-bottom: 8.5px;
+        margin-bottom: 15px;
     }
     .tcrph{
         box-sizing: border-box;
@@ -1165,13 +1181,14 @@
         overflow: auto;
         padding-left: 6px;
         padding-right: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
     .tcrim::-webkit-scrollbar{
         display: none;
     }
     .tcrim-part{
         margin-left: 10px;
+        padding-bottom: 17.5px;
     }
     .tcrim-part img{
         height: 88px;
@@ -1270,9 +1287,9 @@
         border-radius: 200px;
     }
     .galleries{
-        padding-top: 72px;
+        padding-top: 32px;
         padding-left: 16px;
-        padding-bottom: 72px;
+        padding-bottom: 32px;
         background: #FAFAFA;
     }
     .galleries-head{
@@ -1299,6 +1316,7 @@
         box-sizing: border-box;
         padding-bottom: 24px;
         width: 100%;
+        /* height: 395px; */
         overflow: auto;
     }
     .galleries-body::-webkit-scrollbar {
@@ -1312,14 +1330,15 @@
         background: #EB5749;
     }
     .galleries-content{
-        height: 750px;
-        width: 1400px;
+        height: 395px;
+        /* min-width: 1500px; */
     }
     .galleries-left{
         position: relative;
-        width: 49%;
-        height: 100%;
-        margin-right: 2%;
+        width: 295px;
+        height: 395px;
+        margin-right: 16px;
+        /* border: 1px solid red; */
     }
     .gleft-top{
         position: relative;
@@ -1345,17 +1364,18 @@
     }
     .gleft-top img{
         height: 100%;
-        width: 100%;
+        width: 295px;
     }
     .gleft-bottom{
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 276px;
+        height: 101px;
+        /* border: 1px solid green; */
     }
     .glbt-left{
         box-sizing: border-box;
-        height: 276px;
+        height: 101px;
         width: 36%;
         padding-top: 2px;
         background: white;
@@ -1366,13 +1386,13 @@
     }
     .glbt-right{
         box-sizing: border-box;
-        height: 276px;
+        height: 101px;
         width: 64%;
         background: white;
     }
     .glbt-right-top{
         box-sizing: border-box;
-        height: 138px;
+        height: 50%;
         width: 100%;
     }
     .glbt-right-top-part{
@@ -1386,7 +1406,7 @@
         height: 100%;
     }
     .glbt-right-bottom{
-        height: 138px;
+        height: 50%;
         width: 100%;
     }
     .glbt-right-bottom-part{
@@ -1420,27 +1440,32 @@
         cursor: pointer;
     }
     .galleries-right{
-        width: 49%;
+        /* width: 49%; */
         height: 100%;
+        display: flex;
     }
     .gr-top{
         box-sizing: border-box;
-        width: 100%;
-        height: 50%;
-        padding-bottom: 15px;
+        /* width: 100%; */
+        /* height: 100%; */
+        /* padding-bottom: 15px; */
     }
     .gr-content{
-        height: 100%;
+        /* height: 395px; */
+        width: 295px;
         box-sizing: border-box;
+        /* border: 1px solid gold; */
     }
     .gr-left{
-        width: 47.5%;
-        margin-right: 5%;
+        width: 295px;
+        height: 395px;
+        margin-right: 16px;
     }
     .gr-content-top{
         position: relative;
         width: 100%;
-        height: 70%;
+        height: 293px;
+        /* border: 1px solid green; */
     }
     .gr-content-top-text{
         top: 15px;
@@ -1466,7 +1491,7 @@
     .gr-content-bottom{
         box-sizing: border-box;
         width: 100%;
-        height: 30%;
+        height: 101px;
         padding-top: 2px;
         background: white;
     }
@@ -1485,18 +1510,21 @@
         height: 100%;
     }
     .gr-right{
-        width: 47.5%;
+        width: 295px;
+        height: 395px;
+        margin-right: 16px;
     }
     .gr-bottom{
         box-sizing: border-box;
-        height: 50%;
-        padding-top: 15px;
+        height: 295px;
+        /* padding-top: 15px; */
+        /* border: 1px solid red; */
     }
     .inspiration{
-        padding-top: 72px;
+        padding-top: 32px;
         padding-left: 16px;
         padding-right: 16px;
-        padding-bottom: 72px;
+        padding-bottom: 32px;
     }
     .inspiration-head{
         margin-bottom: 24px;
@@ -1564,16 +1592,43 @@
         float: right;
     }
     .btoption{
-        top: 97%;
+        position: fixed;
+        display: none;
+        top: 0;
         left: 0;
-        box-sizing: border-box;
         width: 100%;
+        height: 100%;
+        z-index: 10;
+        user-select: none;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+    }
+    .btoption-inner{
+        position: relative;
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        box-sizing: border-box;
         background: white;
         border: 1px solid lightgrey;
-        border-top: none;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-radius: 5px;
         padding: 10px;
+        animation: fromTop;
+        animation-duration: 0.5s;
+    }
+    @keyframes fromTop {
+        from {bottom: -300px; opacity: 0}
+        to {bottom: 0; opacity: 1}
+    }
+    .btoption-close i{
+        float: right;
+        margin: 10px;
+        padding: 10px;
+        color: #52AFB2;
+    }
+    .insbt-op{
+        display: block;
     }
     .btoptlist{
         cursor: pointer;
@@ -1588,7 +1643,7 @@
         max-height: 0;
         width: 100%;
         transition: max-height 0.2s ease-out;
-        padding-top: 25px;
+        padding-top: 45px;
     }
     .inspiration-sort-inner{
         border: 1px solid lightgrey;
@@ -1841,7 +1896,7 @@
     .footer-bottom{
         padding-top: 35px;
     }
-    .absolute{
+    .mabs{
         position: absolute;
     }
     .cl-dark{

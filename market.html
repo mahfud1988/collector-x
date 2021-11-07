@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="assets/css/market.css">
     <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        @media only screen and (max-width: 579px){
+            .search-box.search-custom-1{
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="container-navbar js-container-navbar">
@@ -228,8 +235,9 @@
         </div>
     </section>
     <section class="section-upcoming">
-        <div class="container">
-            <div class="section-upcoming__header mt-32">
+        <div class="cntpc">
+            <div class="section-upcoming__header mt-32 prolist-head" id="prolist-head">
+                
                 <div class="row section-upcoming__row align-items-center">
                     <div class="col-12 col-xl-3 col-lg-6 col-sm-6 section-upcoming__col section-upcoming__col--title">
                         <h3>More Upcoming NFT</h3>
@@ -240,7 +248,7 @@
                             <input type="text" class="search-box__input" placeholder="Search Project">
                         </div>
                     </div>
-                    <div class="prolist-btb pcflex content-right pc">
+                    <div class="prolist-btb pcflex pc">
                         <div class="prolist-bt-day prolist-bt5 pbday-active content-center">
                             <span>1d</span>
                         </div>
@@ -307,6 +315,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-2 col-xl col-lg-4 col-sm-4 order-1 order-lg-3 order-sm-3 order-sm-3 section-upcoming__col section-upcoming__col--sort">
                         <div class="prolist-btb pcflex mflex mabs content-right m-content-right">
                             <div class="prolist-bt prolist-bt3 content-center" id="prolist-bt-table" onclick="showProlist('prolist-tab-table');">
