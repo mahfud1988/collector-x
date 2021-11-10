@@ -7,26 +7,99 @@
     .footer {
         width: auto;
 
+        &__box--desc {
+            color: $color-neutral-80;
+            @include media-query(md-2){
+                margin-bottom: 24px;
+            }
+        }
+
+        &__box--social {
+            @include media-query(md-2){
+                margin-top: 24px;
+                justify-content: center;
+            }
+        }
+
         &__box--middle {
             color: $color-neutral-40;
+            &-1 {
+                @include media-query(md){
+                    display: none;
+                }
+            }
         }
 
         &__box--left {
-            max-width: toRem(320);
             color: $color-neutral-80;
 
-            &-desc{
-                margin-bottom: toRem(90);
+            img {
+                max-width: toRem(320);
+                @include media-query(md-2){
+                    max-width: toRem(191);
+                }
             }
         }
 
         &__box--right {
 
+            button {
+                @include media-query(md){
+                    width: 40px;
+                    height: 40px;
+                }
+                span {
+                    @include media-query(md){
+                        display: none;
+                    }
+                }
+
+                &::after{
+                    @include media-query(md){
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            justify-content: flex-end;
+            flex-wrap: wrap;
+
+            @include media-query(md-2){
+                justify-content: space-between;
+            }
+
+            @include media-query(sm) {
+                justify-content: flex-start;
+            }
+
             &-link:not(:last-child) {
                 margin-right: toRem(80);
+                @include media-query(md){
+                    margin-right: 0;
+                }
+            }
+
+            &-link:nth-child(1),
+            &-link:nth-child(2){
+                @include media-query(sm-2){
+                    margin-bottom: 16px;
+                }
+            }
+
+            &-link:nth-child(2),
+            &-link:nth-child(4){
+                @include media-query(sm-2){
+                    padding-left: 32px;
+                }
             }
 
             &-link {
+                flex: 0 0 auto;
+                @include media-query(sm-2) {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+                margin-bottom: 0;
                 &-title {
                     font-family: 'Poppins-SemiBold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
                 }

@@ -39,35 +39,38 @@ a.btn, .btn {
         }
     }
 
-    &-outline-default {
-        color: $color-action-default;
-        background-color: transparent;
-        border-color: $color-action-default;
-        vertical-align: middle;
-
-        &:hover{
-            color: $color-action-hover;
-            background-color: $color-action-outline-hover;
-            border-color: $color-action-hover;
-        }
-
-        &:active{
-            color: $color-action-press;
-            background-color: $color-action-outline-press;
-            border-color: $color-action-press;
-        }
-        &:focus {
-            box-shadow: none;
-        }
-
-        &.disabled, &:disabled{
-            color: $color-neutral-0;
-            background-color: $color-action-disable;
-            border-color: $color-action-disable;
+    &-outline {
+        &-default{
+            color: $color-action-default;
+            background-color: transparent;
+            border-color: $color-action-default;
+            vertical-align: middle;
+    
+            &:hover{
+                color: $color-action-hover;
+                background-color: $color-action-outline-hover;
+                border-color: $color-action-hover;
+            }
+    
+            &:active{
+                color: $color-action-press;
+                background-color: $color-action-outline-press;
+                border-color: $color-action-press;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+    
+            &.disabled, &:disabled{
+                color: $color-neutral-0;
+                background-color: $color-action-disable;
+                border-color: $color-action-disable;
+            }
         }
     }
 
     &-no-outline-default {
+        width: fit-content;
         padding: 0;
         color: $color-action-default;
         background-color: transparent;
@@ -91,10 +94,11 @@ a.btn, .btn {
     }
 
     &-dropdown{
-        background-color: $color-neutral-0;
+        background-color: transparent;
         border: 1px solid $color-neutral-20;
         border-radius: 5px;
         padding: toRem(10) toRem(14);
+        display: inline;
         &::after{
             border: none;
             font-family: 'Font Awesome 5 Free';
@@ -107,11 +111,13 @@ a.btn, .btn {
             transition: all .5s ease;
             backface-visibility: hidden;
             margin-left: 14px;
+            vertical-align: middle;
         }
 
         &.show{
             &::after{
                 transform: rotate(-180deg);
+                backface-visibility: hidden;
             }
         }
 

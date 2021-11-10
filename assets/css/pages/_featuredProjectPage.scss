@@ -1,9 +1,4 @@
 .section {
-    &-breadcrumb{
-        @include media-query(md-2){
-            margin: 16px 0;
-        }
-    }
     &-project-detail {
         @include media-query(md-2){
             margin-bottom: 24px;

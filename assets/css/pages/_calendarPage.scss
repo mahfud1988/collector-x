@@ -255,16 +255,15 @@
                 }
             }
         }
-
         &__body {
-            .nav.nav-pills {
+            .nav.nav-pills{
                 @include media-query(sm) {
                     border-bottom: none;
                     display: flex;
                     flex-direction: row;
                     margin-bottom: 16px;
                 }
-
+            
                 & > *:not(:last-child){
                     @include media-query(sm){
                         padding-right: 8px;
@@ -284,27 +283,27 @@
                         border-radius: 5px;
                         text-align: center;
                     }
-    
+            
                     &.active {
                         @include media-query(sm) {
                             border-bottom: none;
                             background-color: $color-action-default;
                             color: $color-neutral-0;
+                            border-color: $color-action-default;
                         }
                     }
-    
+            
                     &:hover {
                         @include media-query(sm) {
                             border-bottom: none;
                             background-color: $color-action-default;
                             color: $color-neutral-0;
+                            border-color: $color-action-default;
                         }
                     }
                 }
-                
             }
         }
-
         &__table {
             margin-bottom: 0;
             thead {
