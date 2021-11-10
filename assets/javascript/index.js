@@ -49,7 +49,7 @@ console.log(walk);
 document.querySelectorAll(".inrange").forEach(function(el) {       
 el.oninput =function(){            
 var valPercent = (el.valueAsNumber  - parseInt(el.min)) / (parseInt(el.max) - parseInt(el.min));
-    var style = 'background-image: -webkit-gradient(linear, 1% 0%, 100% 0%, color-stop('+ valPercent+', #EB5749), color-stop('+ valPercent+', #E9E6E6));';
+    var style = 'background-image: -webkit-gradient(linear, 1% 0%, 100% 0%, color-stop('+ valPercent+', #52AFB2), color-stop('+ valPercent+', #E9E6E6));';
     el.style = style;
 };
 el.oninput();
