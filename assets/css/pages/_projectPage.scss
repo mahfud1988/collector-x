@@ -50,10 +50,30 @@
         line-height: 150%;
         border: 1px solid $color-neutral-20;
 
+        >* {
+            &:first-child {
+                display: block;
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+
         &.active {
             background-color: $color-action-default;
             color: $color-neutral-0;
             border-color: $color-action-default;
+
+            >* {
+                &:first-child {
+                    display: none;
+                }
+
+                &:last-child {
+                    display: block;
+                }
+            }
         }
 
         &-icon {

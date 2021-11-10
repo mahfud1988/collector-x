@@ -70,3 +70,10 @@
         }
     }
 }
+
+.section-breadcrumb{
+    margin: 32px 0;
+    @include media-query(md-2){
+        margin: 16px 0;
+    }
+}

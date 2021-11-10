@@ -1,9 +1,9 @@
 var options = {
-    series: [{
-    name: "Ξ",
+  series: [{
+    name: "",
     data: [10, 5, 15, 14, 17, 25, 23, 29, 25, 31, 35, 39, 40, 39, 35, 32, 35, 40, 45, 50, 66, 69, 75, 70]
   }],
-    chart: {
+  chart: {
     type: 'area',
     height: '100%',
     width: '100%',
@@ -11,7 +11,7 @@ var options = {
       enabled: false
     },
     toolbar: {
-        show: false
+      show: false
     }
   },
   dataLabels: {
@@ -29,56 +29,83 @@ var options = {
   yaxis: {
     opposite: false,
     labels: {
-        show: false
-    }
+      show: true,
+      formatter: function (val, index) {
+        return val ? 'Ξ ' + val : '';
+      }
+    },
   },
   legend: {
     horizontalAlign: 'left'
   }
-  };
+};
 
-  // var chart = new ApexCharts(document.querySelector("#avchart"), options);
-  // chart.render();
+var chart = new ApexCharts(document.querySelector("#avchart"), options);
+chart.render();
 
-  var tnoptions = {
-    series: [44, 55, 41, 17, 15],
-    colors: ['#57E1FF', '#ED3DD1', '#FFAD10', '#FF5290', '#71F2BC', '#17C3EB'],
-    chart: {
-        type: 'donut',
-    },
-    plotOptions: {
-        pie: {
-            donut: {
-                size: '75%',
-                labels: {
-                    show: false
-                }
-            }
+var tnoptions = {
+  series: [10, 15, 20, 35, 10, 10],
+  labels: ["ASTRO", "BAYC", "Punk", "AXIE", "VEE", "Others"],
+  colors: ['#57E1FF', '#ED3DD1', '#FFAD10', '#FF5290', '#71F2BC', '#17C3EB'],
+  chart: {
+    type: 'donut',
+    width: '100%',
+    height: '100%'
+  },
+  plotOptions: {
+    pie: {
+      donut: {
+        size: '80%',
+        labels: {
+          show: true,
+          total: {
+            show: true,
+            showAlways: true,
+            label: 'Collections',
+          }
         }
+      }
+    }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  legend: {
+    show: true,
+    position: 'bottom',
+    fontSize: '14px',
+    fontFamily: 'Poppins-Regular',
+    fontWeight: 400,
+    formatter: function (seriesName, opts) {
+      const total = opts.w.globals.series.reduce((accumulator, a) => accumulator + a, 0)
+      const value = opts.w.globals.series[opts.seriesIndex]
+      const percentage = ((value / total) * 100).toFixed(0)
+      return `<div class="apexcharts-legend-text__name">${seriesName}</div><div class="apexcharts-legend-text__percentage">${percentage}%</div>`
     },
-    dataLabels: {
-        enabled: false
+    markers: {
+      width: 20,
+      height: 20,
+      fillColors: undefined,
+      radius: 0,
+      customHTML: undefined,
+      onClick: undefined,
+      offsetX: 0,
+      offsetY: 0
     },
-    legend: {
-        show: false
-    },
-    stroke: {
-        with: 5
-    },
-    responsive: [{
+  },
+  stroke: {
+    with: 5
+  },
+  responsive: [{
     breakpoint: 480,
     options: {
       chart: {
         width: '100%',
         height: '100%'
       },
-      legend: {
-        show: false,
-        position: 'bottom'
-      }
     }
   }]
-  };
+};
 
-  var tnchart = new ApexCharts(document.querySelector("#tnchart"), tnoptions);
-  tnchart.render();
+var tnchart = new ApexCharts(document.querySelector("#tnchart"), tnoptions);
+tnchart.render();

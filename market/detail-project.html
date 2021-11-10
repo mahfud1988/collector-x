@@ -6,218 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collector X - Market</title>
     <!-- <link rel="stylesheet" href="../assets/css/market.min.css"> -->
-    <link rel="stylesheet" href="../assets/css/detail-project.css">
-    <link href="https://api.fontshare.com/css?f[]=satoshi@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="../assets/css/detail-project.css"> -->
     <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/vendor.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-    <div class="page">
-        <div class="navbar pcflex mflex">
-            <div class="logo content-left">
-                <a href="../index.html">
-                    <img src="../assets/images/cx-logo.png" alt="collector-x">
-                </a>
-            </div>
-            <div class="search pc">
-                <div class="cov-search">
-                    <img src="../assets/images/searchicon.png" alt="collector-x">
-                    <input type="text" placeholder="Search Collections" />
-                </div>
-            </div>
-            <div class="menu pcflex pc">
-                <div class=""><a class="menu-button" id="menu-button-home" onclick="menuButton('menu-button-home');" href="index.html">Home</a></div>
-                <div class=""><a class="menu-button menu-button-active" id="menu-button-market" onclick="menuButton('menu-button-market');" href="market.html">Market</a></div>
-                <div class=""><a class="menu-button" id="menu-button-callendar" onclick="menuButton('menu-button-callendar');" href="">Callendar</a></div>
-                <div class=""><a class="menu-button" id="menu-button-collection" onclick="menuButton('menu-button-collection');" href="">Collector</a></div>
-                <div class=""><a class="menu-button" id="menu-button-gallery" onclick="menuButton('menu-button-gallery');" href="">Gallery</a></div>
-            </div>
-            <div class="account pc">
-                <div class="account-inner pcflex">
-                    <a class="account-button flex-10 mflex-10 login-button" href="login.html">Login</a>
-                    <a class="account-button flex-10 mflex-10 signup-button" href="signup.html">Sign Up</a>
-                </div>
-            </div>
-            <div class="srmenu mobile mflex">
-                <div class="srmenu-sr flex-10 mflex-10">
-                    <img src="../assets/images/srmob.png" alt="collector-x">
-                </div>
-                <div class="srmenu-bar flex-10 mflex-10">
-                    <img src="../assets/images/mbmenu.png" alt="collector-x">
-                </div>
-            </div>
-        </div>
-        <div class="space"></div>
-        <div class="section section1">
-            <div class="section1-head">
-                <div class="breadcrumb">
-                    <a href="">
-                        <span class="bc-text1">Market</span>
+    <nav class="container-navbar js-container-navbar">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar__logo-box">
+                    <a href="../index.html">
+                        <img src="../assets/images/collectorx-logo.png" alt="collector-x">
                     </a>
-                    <span>
-                        <i class="fas fa-chevron-right"></i>
-                    </span>
-                    <span class="bc-text2">Wondeful artwork#1</span>
                 </div>
-                <div class="section1-content pcflex">
-                    <div class="section1-content-left pcflex">
-                        <div class="scl-image">
-                            <img src="../assets/images/pltdi1.png" alt="collector-x">
-                        </div>
-                        <div class="scl-detail">
-                            <div class="section1-title">
-                                <h1>Wonderful Artwork#1</h1>
-                            </div>
-                            <div class="section1-rfm pcflex">
-                                <div class="sfm-ratings pcflex">
-                                    <div class="sfm-icon sfm-ratings-icon">
-                                        <img src="../assets/images/glstar.png" alt="collector-x">
-                                    </div>
-                                    <div class="sfm-text1 sfm-ratings-value">4.0</div>
-                                    <div class="sfm-text2 sfm-ratings-count">(124 Ratings)</div>
-                                </div>
-                                <div class="sfm-space"></div>
-                                <div class="sfm-followers pcflex">
-                                    <div class="sfm-icon sfm-followers-icon">
-                                        <img src="../assets/images/twitterhl.png" alt="">
-                                    </div>
-                                    <div class="sfm-text1 sfm-followers-value">32,345</div>
-                                    <div class="sfm-text2 sfm-followers-text">Followers</div>
-                                </div>
-                                <div class="sfm-space"></div>
-                                <div class="sfm-members pcflex">
-                                    <div class="sfm-icon sfm-members-icon">
-                                        <img src="../assets/images/discord2.png" alt="collector-x">
-                                    </div>
-                                    <div class="sfm-text1 sfm-members-value">123,345</div>
-                                    <div class="sfm-text2 sfm-members-text">Members</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="navbar__search-box">
+                    <div class="search-mob-button">
+                        <img src="../assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
                     </div>
-                    <div class="section1-content-right content-right">
-                        <div class="cov-scr-inner">
-                            <div class="scr-inner scr-inner-tt content-right">Current Floor</div>
-                            <div class="scr-inner scr-inner-prcch pcflex">
-                                <div class="scr-price content-right">Ξ 368</div>
-                                <div class="scr-prchange content-right">
-                                    <span class="scr-prchange-text">+1,49%</span>
-                                </div>
-                            </div>
-                            <div class="scr-inner scr-inner-bottom content-right">$124.23</div>
-                        </div>
+                    <div class="search-box">
+                        <img src="../assets/images/searchicon.svg" class="search-box__img" alt="collector-x">
+                        <input type="text" class="search-box__input" placeholder="Search Collections">
                     </div>
                 </div>
+                <div class="navbar__menu-box js-navbar__menu-box nav">
+                    <li class="nav-link nav-link--logo">
+                        <a href="#" class="nav-link__item"><img src="../assets/images/collectorx-logo.png" alt="collector-x"></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../index.html" class="nav-link__item">Home</a>
+                    </li>
+                    <li class="nav-link active">
+                        <a href="../market.html" class="nav-link__item">Market</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../calendar.html" class="nav-link__item">Calendar</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="nav-link__item">Collector</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="nav-link__item">Gallery</a>
+                    </li>
+                    <li class="nav-link nav-link--mobile nav-link--item-group">
+                        <a href="#" class="nav-link__item nav-link__item--login nav-link__item--btn">Login</a>
+                        <a href="#" class="nav-link__item nav-link__item--sign-up nav-link__item--btn btn btn--md btn-default">Sign Up</a>
+                    </li>
+                    <li class="nav-link nav-link--mobile nav-link--item-close">
+                        <a href="#" class="nav-link__close js-nav-link__close">
+                            <img src="../assets/images/close-black.svg" alt="collector-x">
+                        </a>
+                    </li>
+                </div>
+                <div class="navbar__account-box nav justify-content-end">
+                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" class="btn btn--md btn-default">Sign Up</a>
+                </div>
+                <div class="navbar__humberger js-navbar__humberger">
+                    <hr class="navbar__humberger-line navbar__humberger-line--top">
+                    <hr class="navbar__humberger-line navbar__humberger-line--middle">
+                    <hr class="navbar__humberger-line navbar__humberger-line--bottom">
+                </div>
+
             </div>
-            <div class="section1-body">
-                <div class="section1-tab">
-                    <div class="section1-tab-nav">
-                        <div class="stn-inner pcflex">
-                            <div class="stn-part stn-part-active">
-                                <span class="stn-part-text">Info</span>
+        </div>
+    </nav>
+    <div class="space js-space"></div>
+    <section class="section-breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item prev"><a href="../market.html"><span>Market</span></a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#"><span>Wondeful artwork#1</span></a></li>
+                    <!-- <li class="breadcrumb-item"><a href="calendar.html"><span>Market</span></a></li>
+                    <li class="breadcrumb-item prev"><a href="calendar.html"><span>Market</span></a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#"><span>Wondeful artwork#1</span></a></li> -->
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section-project mb-32">
+        <div class="container">
+            <div class="row section-project__row align-items-center">
+                <div class="col-12 col-xl-9 col-lg-9 section-project__col section-project__col--1">
+                    <h2 class="section-project__title section-project__title--1">Wonderful Artwork#1</h2>
+                    <div class="d-flex flex-row align-items-center section-project__picture">
+                        <div class="section-project__picture--left">
+                            <img src="../assets/images/graimg1.png" alt="collector-x" class="img-fluid">
+                        </div>
+                        <div class="section-project__picture--right">
+                            <h2 class="section-project__title section-project__title--2">Wonderful Artwork#1</h2>
+                            <div class="follower mb-16">
+                                <div class="follower-item text-rating">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i> 
+                                        4.0 
+                                    </div>
+                                    <span class="text-muted">(124 Ratings)</span>
+                                </div>
+                                <i class="fas fa-circle follower-separator"></i>
+                                <div class="follower-item">
+                                    <div class="twitter">
+                                        <img src="../assets/images/twitter-color.svg" alt="collector-x">
+                                        <span>32,345</span>
+                                    </div>
+                                    Followers
+                                </div>
+                                <i class="fas fa-circle follower-separator"></i>
+                                <div class="follower-item">
+                                    <div class="discord">
+                                        <img src="../assets/images/discord-color.svg" alt="collector-x">
+                                        <span>123,345</span>
+                                    </div>
+                                    Members
+                                </div>
                             </div>
-                            <div class="stn-part">
-                                <span class="stn-part-text">Listing</span>
-                            </div>
-                            <div class="stn-part">
-                                <span class="stn-part-text">Insight</span>
-                            </div>
-                            <div class="stn-part">
-                                <span class="stn-part-text">Floor by Traits</span>
-                            </div>
-                            <div class="stn-part">
-                                <span class="stn-part-text">Rarity Traits</span>
-                            </div>
-                            <div class="stn-part">
-                                <span class="stn-part-text">Sales History</span>
+                            <div class="section-project__button section-project__button--1 d-flex flex-row">
+                                <button class="btn btn-default btn--md">Follow Project</button>
+                                <div class="dropdown dropdown-watchlist">
+                                    <button class="btn btn-outline-default btn--md dropdown-toggle dropdown-toggle-1" type="button" id="watchlistDropdown" data-name="watchlist" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
+                                        <span class="text">Add to watchlist</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="watchlistDropdown">
+                                        <label for="watchlist1" class="dropdown-item d-flex align-items-center justify-content-between">
+                                            My Portfolio
+                                            <input type="checkbox" name="watchlist" id="watchlist1" value="1">
+                                        </label>
+                                        <label for="watchlist2" class="dropdown-item d-flex align-items-center justify-content-between">
+                                            Collection
+                                            <input type="checkbox" name="watchlist" id="watchlist2" value="1">
+                                        </label>
+                                        <label for="watchlist3" class="dropdown-item d-flex align-items-center justify-content-between">
+                                            My project
+                                            <input type="checkbox" name="watchlist" id="watchlist3" value="1">
+                                        </label>
+                                        <hr class="my-0">
+                                        <button type="button" class="dropdown-item d-flex align-items-center justify-content-between" data-toggle="modal" data-target="#watchlistModal">
+                                            New Watchlist
+                                            <img src="../assets/images/checkbox.svg" alt="collector-x">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section1-tab-content">
-                        <div class="stc-inner">
-                            <div class="stc-part">
-                                <div class="stcp-inner pcflex">
-                                    <div class="stcp-prosu pcflex">
-                                        <div class="prosu-image">
-                                            <img src="../assets/images/prosuimg.png" alt="collector-x">
-                                        </div>
-                                        <div class="prosu-detail">
-                                            <h2 class="prosu-title">Project Summary</h2>
-                                            <div class="prosu-ac pcflex">
-                                                <div class="prosu-ac-part">
-                                                    <h3 class="prosu-subtitle">Artist</h3>
-                                                    <p class="prosu-subval">KungfuBoy</p>
-                                                </div>
-                                                <div class="prosu-ac-part">
-                                                    <h3 class="prosu-subtitle">Category</h3>
-                                                    <p class="prosu-subval">Art</p>
-                                                </div>
-                                            </div>
-                                            <div class="prosu-ratings pcflex">
-                                                <div class="prosu-ratings-l">
-                                                    <div class="prl-inner">
-                                                        <div class="prl-numtext pcflex">
-                                                            <div class="prl-num">
-                                                                <div class="prl-num-val">4.0</div>
-                                                            </div>
-                                                            <div class="prl-detail">
-                                                                <p class="prl-p1">Good</p>
-                                                                <p class="prl-p2">based on 124 ratings</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="prl-button content-center">Add your rating</div>
-                                                    </div>
-                                                </div>
-                                                <div class="prosu-ratings-r">
-                                                    <div class="prr-inner pcflex">
-                                                        <div class="prr-param">Art</div>
-                                                        <div class="prr-value">
-                                                            <span class="prr-valnum">4.0</span>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="prr-inner pcflex">
-                                                        <div class="prr-param">Community</div>
-                                                        <div class="prr-value">
-                                                            <span class="prr-valnum">4.0</span>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="prr-inner pcflex">
-                                                        <div class="prr-param">Team</div>
-                                                        <div class="prr-value">
-                                                            <span class="prr-valnum">4.0</span>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="prr-inner pcflex">
-                                                        <div class="prr-param">Road Map</div>
-                                                        <div class="prr-value">
-                                                            <span class="prr-valnum">4.0</span>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="stcp-procom"></div>
+                    <div class="section-project__button section-project__button--2 d-flex flex-row">
+                        <button class="btn btn-default btn--md">Follow Project</button>
+                        <div class="dropdown dropdown-watchlist">
+                            <button class="btn btn-outline-default btn--md dropdown-toggle dropdown-toggle-1" type="button" id="watchlistDropdown" data-name="watchlist" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
+                                <span class="text">Add to watchlist</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="watchlistDropdown">
+                                <!-- please use different 'id' and 'for' attribute for mobile responsive -->
+                                <label for="watchlistMobile1" class="dropdown-item d-flex align-items-center justify-content-between">
+                                    My Portfolio
+                                    <input type="checkbox" name="watchlistMobile" id="watchlistMobile1" value="1">
+                                </label>
+                                <label for="watchlistMobile2" class="dropdown-item d-flex align-items-center justify-content-between">
+                                    Collection
+                                    <input type="checkbox" name="watchlistMobile" id="watchlistMobile2" value="1">
+                                </label>
+                                <label for="watchlistMobile3" class="dropdown-item d-flex align-items-center justify-content-between">
+                                    My project
+                                    <input type="checkbox" name="watchlistMobile" id="watchlistMobile3" value="1">
+                                </label>
+                                <hr class="my-0">
+                                <button type="button" class="dropdown-item d-flex align-items-center justify-content-between" data-toggle="modal" data-target="#watchlistModal">
+                                    New Watchlist
+                                    <img src="../assets/images/checkbox.svg" alt="collector-x">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 section-project__col section-project__col--2">
+                    <div class="section-project__price">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-xl-12 col-lg-12 order-1 section-project__price-col section-project__price-col--1">
+                                <div class="section-project__price-item section-project__price-item--1">
+                                    Current Floor
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-9 col-lg-8 order-3 order-xl-2 order-lg-2 section-project__price-col section-project__price-col--2">
+                                <div class="section-project__price-item section-project__price-item--2">
+                                    <h2>Ξ 368</h2>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-3 col-lg-4 order-2 order-xl-3 order-lg-3 section-project__price-col section-project__price-col--3">
+                                <div class="section-project__price-item section-project__price-item--3">
+                                    <span class="badge badge-success">
+                                        +1,49%
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-12 col-lg-12 order-4 section-project__price-col section-project__price-col--4">
+                                <div class="section-project__price-item section-project__price-item--4">
+                                    $124.23
                                 </div>
                             </div>
                         </div>
@@ -225,114 +210,271 @@
                 </div>
             </div>
         </div>
-        <div class="section footer" id="footer">
-            <div class="footer-inner pcflex mflex">
-                <div class="footer-logo flex-10 mflex-10">
-                    <img src="../assets/images/cx-logo.png" alt="collector-x">
+    </section>
+
+    <section class="section-tab mb-32">
+        <div class="container">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-info-tab" data-toggle="pill" href="#pills-info" role="tab" aria-controls="pills-info" aria-selected="true">Info</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-listing-tab" data-toggle="pill" href="#pills-listing" role="tab" aria-controls="pills-listing" aria-selected="false">Listing</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-insight-tab" data-toggle="pill" href="#pills-insight" role="tab" aria-controls="pills-insight" aria-selected="false">Insight</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-floor-by-traits-tab" data-toggle="pill" href="#pills-floor-by-traits" role="tab" aria-controls="pills-floor-by-traits" aria-selected="false">Floor by Traits</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-rarity-traits-tab" data-toggle="pill" href="#pills-rarity-traits" role="tab" aria-controls="pills-rarity-traits" aria-selected="false">Rarity Traits</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-sales-history-tab" data-toggle="pill" href="#pills-sales-history" role="tab" aria-controls="pills-sales-history" aria-selected="false">Sales History</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-tab-content">
+        <div class="container">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">
+                    <section class="section-info">
+                        <div class="row align-items-start">
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-6">
+                                <img src="../assets/images/graimg1.png" alt="collector-x" class="img-fluid section-info__summary-img">
+                            </div>
+                            <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                                <div class="section-info__summary">
+                                    <div class="section-info__summary-header">
+                                        <h3 class="mb-16">Project Summary</h3>
+                                        <div class="section-info__summary-info">
+                                            <div class="section-info__summary-item">
+                                                <div class="section-info__summary-item-title">
+                                                    Artist
+                                                </div>
+                                                KungfuBoy
+                                            </div>
+                                            <div class="section-info__summary-item">
+                                                <div class="section-info__summary-item-title">
+                                                    Category
+                                                </div>
+                                                Art
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-info__summary-body">
+                                        <div class="rating">
+                                            <div class="row rating__row">
+                                                <div class="col-12 col-xl-6 col-lg-6 col-md-12 rating__col--left">
+                                                    <div class="d-flex flex-column">
+                                                        <div class="d-flex flex-row">
+                                                            <div class="rating__box d-flex flex-row">
+                                                                <div class="badge badge-rating mr-16">
+                                                                    4.0
+                                                                </div>
+                                                                <div class="d-flex flex-column justify-content-center">
+                                                                    <div class="rating__box-title">
+                                                                        Good
+                                                                    </div>
+                                                                    <p>based on 124 ratings</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a class="btn btn-outline-default btn--md rating__button w-100 mt-20">Add your rating</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-xl-6 col-lg-6 col-md-12 rating__col--right">
+                                                    <div class="rating__star d-flex flex-column">
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <p class="rating__star-title">Art</p>
+                                                            <div class="rating__star-box d-flex flex-row align-items-baseline">
+                                                                <span>4.0</span>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <p class="rating__star-title">Community</p>
+                                                            <div class="rating__star-box d-flex flex-row align-items-baseline">
+                                                                <span>4.0</span>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <p class="rating__star-title">Team</p>
+                                                            <div class="rating__star-box d-flex flex-row align-items-baseline">
+                                                                <span>4.0</span>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex flex-row justify-content-between">
+                                                            <p class="rating__star-title">Road Map</p>
+                                                            <div class="rating__star-box d-flex flex-row align-items-baseline">
+                                                                <span>4.0</span>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-12">
+                                <div class="section-info__community">
+                                    <div class="section-info__community-header">
+                                        <h3 class="mb-16">Project Summary</h3>
+                                        <a href="#" class="btn btn-outline-primary btn--md">Follow Twitter <img src="../assets/images/twitter-color.svg" alt="collector-x"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="flex-45 content-center pc">
-                    <p class="footer-cr" id="footer-crtop">Copyright © 2021. CollectorX. All rights reserved.</p>
+                <div class="tab-pane fade" id="pills-listing" role="tabpanel" aria-labelledby="pills-listing-tab"></div>
+                <div class="tab-pane fade" id="pills-insight" role="tabpanel" aria-labelledby="pills-insight-tab"></div>
+                <div class="tab-pane fade" id="pills-floor-by-traits" role="tabpanel" aria-labelledby="pills-floor-by-traits-tab"></div>
+                <div class="tab-pane fade" id="pills-rarity-traits" role="tabpanel" aria-labelledby="pills-rarity-traits-tab"></div>
+                <div class="tab-pane fade" id="pills-sales-history" role="tabpanel" aria-labelledby="pills-sales-history-tab"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-footer">
+        <div class="container">
+            <div class="footer d-flex flex-column my-32">
+                <div class="footer__box d-flex flex-row justify-content-between align-items-center">
+                    <div class="footer__box--left">
+                        <a href="#">
+                            <img src="../assets/images/cx-logo-footer.png" class="img-fluid" alt="collector-x">
+                        </a>
+                    </div>
+                    <div class="footer__box--middle footer__box--middle-1" id="copyrightFooter">
+                        <p>Copyright © 2021. CollectorX. All rights reserved.</p>
+                    </div>
+                    <div class="footer__box--right">
+                        <button class="btn btn-dropdown" type="button" data-toggle="collapse" data-target="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse"><span>Expand Footer</span></button>
+                    </div>
                 </div>
-                <div class="footer-button flex-10 mflex-10 content-right m-content-right">
-                    <div class="cf-button content-right mflex" id="cf-button" onclick="cfooter();">
-                        <div class="cf-text pc" id="cf-text">Expand Footer</div>
-                        <div class="cf-icon" id="cf-icon">
-                            <i class="fas fa-chevron-up"></i>
+                <div class="collapse mt-24" id="footerCollapse">
+                    <div class="footer__box d-flex flex-row justify-content-between align-items-start">
+                        <div class="row">
+                            <div class="col-12 col-xl-3 col-lg-3">
+                                <p class="footer__box--desc">
+                                    CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way
+                                </p>
+                            </div>
+                            <div class="col-12 col-xl-9 col-lg-9">
+                                <div class="footer__box--right d-flex flex-row">
+                                    <ul class="footer__box--right-link">
+                                        <li class="footer__box--right-link-title">Platform</li>
+                                        <li><a href="">Collectors</a></li>
+                                        <li><a href="">Galleries</a></li>
+                                        <li><a href="">Collections</a></li>
+                                        <li><a href="">Markets (Coming Soon)</a></li>
+                                    </ul>
+                                    <ul class="footer__box--right-link">
+                                        <li class="footer__box--right-link-title">Resources</li>
+                                        <li><a href="">Sign Up</a></li>
+                                        <li><a href="">Login</a></li>
+                                        <li><a href="">Terms of use</a></li>
+                                        <li><a href="">Privacy policy</a></li>
+                                    </ul>
+                                    <ul class="footer__box--right-link">
+                                        <li class="footer__box--right-link-title">Support</li>
+                                        <li><a href="">Wallets</a></li>
+                                        <li><a href="">Community</a></li>
+                                        <li><a href="">Guidelines</a></li>
+                                        <li><a href="">Help</a></li>
+                                    </ul>
+                                    <ul class="footer__box--right-link">
+                                        <li class="footer__box--right-link-title">Company</li>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Carrers</a></li>
+                                        <li><a href="">Guidelines</a></li>
+                                        <li><a href="">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-12 col-lg-12">
+                                <div class="footer__box--social d-flex flex-row align-items-center">
+                                    <a href="" class="mr-32">
+                                        <img src="../assets/images/facebook.svg" alt="collector-x">
+                                    </a>
+                                    <a href="" class="mr-32">
+                                        <img src="../assets/images/twitter.svg" alt="collector-x">
+                                    </a>
+                                    <a href="" class="mr-32">
+                                        <img src="../assets/images/instagram.svg" alt="collector-x">
+                                    </a>
+                                    <a href="" class="">
+                                        <img src="../assets/images/discord.svg" alt="collector-x">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__box d-flex justify-content-center mt-32">
+                        <div class="footer__box--middle">
+                            <p>Copyright © 2021. CollectorX. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-inner footer-collapse" id="footer-inner-2">
-                <div class="footer-content pcflex">
-                    <div class="footer-left">
-                        <p class="footer-p">CollectorX is a platform where NFT enthusiast and art collector gather around to curate their collection in the best possible way</p>
-                        <div class="footer-socials content-left m-content-left">
-                            <a href="">
-                                <img src="../assets/images/facebook.png" alt="collector-x">
-                            </a>
-                            <a href="">
-                                <img src="../assets/images/twitter.png" alt="collector-x">
-                            </a>
-                            <a href="">
-                                <img src="../assets/images/instagram.png" alt="collector-x">
-                            </a>
-                            <a href="">
-                                <img src="../assets/images/discord.png" alt="collector-x">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-right pcflex mflex mflex-wrap">
-                        <div class="fr-part flex-10 mflex-45">
-                            <h5>Platform</h5>
-                            <ul class="footer-ul">
-                                <li class="footer-link"><a href="">Collectors</a></li>
-                                <li class="footer-link"><a href="">Galleries</a></li>
-                                <li class="footer-link"><a href="">Collections</a></li>
-                                <li class="footer-link"><a href="">Markets (Coming Soon)</a></li>
-                            </ul>
-                        </div>
-                        <div class="fr-part flex-10 mflex-45">
-                            <h5>Resources</h5>
-                            <ul class="footer-ul">
-                                <li class="footer-link"><a href="">Sign Up</a></li>
-                                <li class="footer-link"><a href="">Login</a></li>
-                                <li class="footer-link"><a href="">Terms of use</a></li>
-                                <li class="footer-link"><a href="">Privacy policy</a></li>
-                            </ul>
-                        </div>
-                        <div class="fr-part flex-10 mflex-45">
-                            <h5>Support</h5>
-                            <ul class="footer-ul">
-                                <li class="footer-link"><a href="">Wallets</a></li>
-                                <li class="footer-link"><a href="">Community</a></li>
-                                <li class="footer-link"><a href="">Guidelines</a></li>
-                                <li class="footer-link"><a href="">Help</a></li>
-                            </ul>
-                        </div>
-                        <div class="fr-part flex-10 mflex-45">
-                            <h5>Company</h5>
-                            <ul class="footer-ul">
-                                <li class="footer-link"><a href="">About Us</a></li>
-                                <li class="footer-link"><a href="">Carrers</a></li>
-                                <li class="footer-link"><a href="">Guidelines</a></li>
-                                <li class="footer-link"><a href="">Help</a></li>
-                            </ul>
-                        </div>
-                    </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="watchlistModal" tabindex="-1" aria-labelledby="watchlistModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <p class="footer-cr content-center pc">Copyright © 2021. CollectorX. All rights reserved.</p>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
             </div>
-            <p class="footer-cr m-content-center mobile">Copyright © 2021. CollectorX. All rights reserved.</p>
         </div>
     </div>
-    <script>
-        function menuButton(id){
-            var mb = document.getElementsByClassName('menu-button');
-            for(i = 0; i < mb.length; i++){
-                mb[i].classList.remove('menu-button-active');
-            }
-            document.getElementById(id).classList.add('menu-button-active');
-        }
-        function cfooter(){
-            var ftctp = document.getElementById('footer-crtop');
-            var footerc = document.getElementById('footer-inner-2');
-            var cftext = document.getElementById('cf-text');
-            var cficon = document.getElementById('cf-icon');
-            if (footerc.style.maxHeight) {
-                footerc.style.maxHeight = null;
-                cftext.innerHTML = 'Expand Footer';
-                cficon.innerHTML = '<i class="fas fa-chevron-up"></i>';
-                ftctp.style.display = 'block';
-            }else{
-                footerc.style.maxHeight = footerc.scrollHeight + "px";
-                cftext.innerHTML = 'Collapse Footer';
-                cficon.innerHTML = '<i class="fas fa-chevron-down"></i>';
-                ftctp.style.display = 'none';
-            }
-        }
-        window.onload = function(){
-            document.getElementById('cf-button').click();
-        }
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../assets/javascript/vendor.js"></script>
+    <script type="text/javascript" src="../assets/javascript/custom.js"></script>
 </body>
 </html>
