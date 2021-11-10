@@ -854,6 +854,9 @@
     .absolute{
         position: absolute;
     }
+    .cl-blue{
+        color: #44A1F5;
+    }
     .cl-dark{
         color: #4F3836;
     }
@@ -1552,12 +1555,17 @@
         /* cursor: pointer; */
         background: white;
         z-index: 5;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        -webkit-box-shadow: 0px 26px 40px rgba(0, 0, 0, 0.04), 0px 7.62913px 26.1906px rgba(0, 0, 0, 0.0322881), 0px 2.55742px 22.1562px rgba(0, 0, 0, 0.0162738), 0px 0.601544px 21.9756px rgba(0, 0, 0, 0.0101183), 0px -0.0505269px 16.2382px rgba(0, 0, 0, 0.0076663);
+        box-shadow: 0px 26px 40px rgba(0, 0, 0, 0.04), 0px 7.62913px 26.1906px rgba(0, 0, 0, 0.0322881), 0px 2.55742px 22.1562px rgba(0, 0, 0, 0.0162738), 0px 0.601544px 21.9756px rgba(0, 0, 0, 0.0101183), 0px -0.0505269px 16.2382px rgba(0, 0, 0, 0.0076663);
         padding: 16px;
+        /* padding-top: 0;
+        padding-bottom: 0; */
         /* border: 1px solid red; */
         border-radius: 5px;
         width: 202px;
         display: none;
+        user-select: none;
     }
     /* .td-star-option ul{
         width: 202px;
@@ -1573,7 +1581,12 @@
         font-size: 14px;
         font-family: Poppins-Medium;
         font-weight: 500;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .tso-oplist:hover{
+        background: #FAFAFA;
     }
     .tstbd{
         padding: 2px;
@@ -1593,17 +1606,24 @@
     /* .td-star-option ul li img{
         float: right;
     } */
-    .tdcheck{
-        position: absolute;
-        top: 8px;
-        right: 0;
-        width: 9.61px;
-        height: 7.41px;
-    }
-    .tdplus{
+    .checkplus{
+        /* border: 1px solid green; */
         position: absolute;
         top: 0;
         right: 0;
+        padding-top: 10px;
+    }
+    .tdcheck{
+        /* position: absolute;
+        top: 8px;
+        right: 0;
+        width: 9.61px;
+        height: 7.41px; */
+    }
+    .tdplus{
+        /* position: absolute;
+        top: 0;
+        right: 0; */
         /* width: 12.04px; */
         /* height: 12.04px; */
         /* border: 1px solid green; */
@@ -1651,12 +1671,15 @@
     .rtab-button{
         border: 1px solid #52AFB2;
         border-radius: 5px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content: center;
-        padding-top: 15px;
+        padding-top: 10px;
         cursor: pointer;
+    }
+    .rtab-button:hover{
+        background: #FAFAFA;
     }
     .rtab-button img{
         /* border: 1px solid blue; */
@@ -1672,7 +1695,9 @@
         top: 110%;
         right: 0;
         background: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        -webkit-box-shadow: 0px 26px 40px rgba(0, 0, 0, 0.04), 0px 7.62913px 26.1906px rgba(0, 0, 0, 0.0322881), 0px 2.55742px 22.1562px rgba(0, 0, 0, 0.0162738), 0px 0.601544px 21.9756px rgba(0, 0, 0, 0.0101183), 0px -0.0505269px 16.2382px rgba(0, 0, 0, 0.0076663);
+        box-shadow: 0px 26px 40px rgba(0, 0, 0, 0.04), 0px 7.62913px 26.1906px rgba(0, 0, 0, 0.0322881), 0px 2.55742px 22.1562px rgba(0, 0, 0, 0.0162738), 0px 0.601544px 21.9756px rgba(0, 0, 0, 0.0101183), 0px -0.0505269px 16.2382px rgba(0, 0, 0, 0.0076663);
         z-index: 5;
         padding: 16px;
         padding-bottom: 0;
@@ -1683,8 +1708,13 @@
         font-size: 14px;
         font-family: Poppins-Medium;
         font-weight: 500;
-        margin-bottom: 16px;
+        /* margin-bottom: 16px; */
         cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .rdo-oplist:hover{
+        background: #FAFAFA;
     }
     /* .rtab-button-follow{
         box-sizing: border-box;
@@ -1944,6 +1974,9 @@
     }
     .absolute{
         position: absolute;
+    }
+    .cl-blue{
+        color: #44A1F5;
     }
     .cl-dark{
         color: #4F3836;

@@ -56,45 +56,37 @@ for(i = 0; i < stbtn.length; i++){
             for(j = 0; j < bz.length; j++){
                 bz[j].style.display = 'none';
             }
+            var bt = document.getElementsByClassName('td-star-button');
+            for(k = 0; k < bt.length; k++){
+                bt[k].innerHTML = '<img src="assets/images/hbstar.png" alt="collector-x">';
+            }
             bn.style.display = 'block';
+            if(this.classList.contains('td-star-button')){
+                this.innerHTML = '<img src="assets/images/blstar.png" alt="collector-x">';
+            }
         }else{
-            // var bz = document.getElementsByClassName('td-star-option');
-            // for(j = 0; j < bz.length; j++){
-            //     bz[j].style.display = 'none';
-            // }
             bn.style.display = 'none';
+            if(this.classList.contains('td-star-button')){
+                this.innerHTML = '<img src="assets/images/hbstar.png" alt="collector-x">';
+            }
         }
     });
 }
-
-
-// var stbtn = document.getElementsByClassName('stbtn');
-// var i;
-// for(i = 0; i < stbtn.length; i++){
-//     stbtn[i].addEventListener('click', function(){
-//         var bn = this.nextElementSibling;
-//         var bz = document.getElementsByClassName('bzelem');
-//         for(j = 0; j < bz.length; bz++){
-//             bz[j].style.display = 'none';
-//         }
-//         if(bn.style.display === 'none'){
-//             bn.style.display = 'block';
-//         }else{
-//             // var bz = document.getElementsByClassName('td-star-option');
-//             // for(j = 0; j < bz.length; bz++){
-//             //     bz[j].style.display = 'none';
-//             // }
-//             bn.style.display = 'none';
-//         }
-//         // console.log(stbtn.length);
-
-//     });
-// }
-
-
-
-
-
+var tslist = document.getElementsByClassName('tso-oplist');
+var i;
+for(i = 0; i < tslist.length; i++){
+    tslist[i].addEventListener('click', function(){
+        for(j = 0; j < this.children.length; j++){
+            if(this.children[j].classList.contains('checkplus')){
+                if(this.children[j].children[0].classList.contains('tdplus')){
+                    this.children[j].innerHTML = '<img class="tdcheck" src="assets/images/tdcheck.png" alt="collector-x">';
+                }else{
+                    this.children[j].innerHTML = '<img class="tdplus" src="assets/images/tdplus.png" alt="collector-x">';
+                }
+            }
+        }
+    });
+}
 function showProlist(id){
     var prtab = document.getElementsByClassName('prolist-tab');
     for(i = 0; i < prtab.length; i++){
@@ -128,10 +120,10 @@ function cfooter(){
         ftctp.style.display = 'none';
     }
 }
+window.onclick = function(event){
+    // 
+}
 window.onload = function(){
     document.getElementById('prolist-bt-table').click();
     document.getElementById('cf-button').click();
-}
-function test(){
-    alert('test');
 }
