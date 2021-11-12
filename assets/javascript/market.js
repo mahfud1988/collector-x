@@ -24,23 +24,30 @@ const walk = (x - startX) * 1;
 slider.scrollLeft = scrollLeft - walk;
 console.log(walk);
 });
-var plbtn = document.getElementsByClassName('prolist-bt-button');
+var plbtn = document.getElementsByClassName('tf-option');
 var i;
 for(i = 0; i < plbtn.length; i++){
     plbtn[i].addEventListener('click', function(){
-        var dd = this.nextElementSibling;
-        if(dd.style.display === 'none'){
-            dd.style.display = 'block';
-            for(j = 0; j < this.children.length; j++){
-                if(this.children[j].classList.contains('prolist-bt-icon')){
-                    this.children[j].innerHTML = '<i class="fas fa-chevron-up"></i>';
+        var pbday = document.getElementsByClassName('prolist-bt-day');
+        var olable = document.getElementsByClassName('tf-olable');
+        if(this.children[0].getAttribute('data-value')){
+            document.getElementById('tf-button-text').innerHTML = this.children[0].getAttribute('data-value');
+            for(j = 0; j < pbday.length; j++){
+                pbday[j].classList.remove('pbday-active');
+            }
+            for(j = 0; j < pbday.length; j++){
+                if(pbday[j].children[0].innerHTML == this.children[0].getAttribute('data-value')){
+                    pbday[j].classList.add('pbday-active');
                 }
             }
         }else{
-            dd.style.display = 'none';
-            for(j = 0; j < this.children.length; j++){
-                if(this.children[j].classList.contains('prolist-bt-icon')){
-                    this.children[j].innerHTML = '<i class="fas fa-chevron-down"></i>';
+            for(j = 0; j < pbday.length; j++){
+                pbday[j].classList.remove('pbday-active');
+            }
+            this.classList.add('pbday-active');
+            for(j = 0; j < olable.length; j++){
+                if(olable[j].children[0].getAttribute('data-value') == this.children[0].innerHTML){
+                    olable[j].click();
                 }
             }
         }
@@ -56,17 +63,17 @@ for(i = 0; i < stbtn.length; i++){
             for(j = 0; j < bz.length; j++){
                 bz[j].style.display = 'none';
             }
-            var bt = document.getElementsByClassName('td-star-button');
+            var bt = document.getElementsByClassName('ntb-star-button');
             for(k = 0; k < bt.length; k++){
                 bt[k].innerHTML = '<img src="assets/images/hbstar.png" alt="collector-x">';
             }
             bn.style.display = 'block';
-            if(this.classList.contains('td-star-button')){
+            if(this.classList.contains('ntb-star-button')){
                 this.innerHTML = '<img src="assets/images/blstar.png" alt="collector-x">';
             }
         }else{
             bn.style.display = 'none';
-            if(this.classList.contains('td-star-button')){
+            if(this.classList.contains('ntb-star-button')){
                 this.innerHTML = '<img src="assets/images/hbstar.png" alt="collector-x">';
             }
         }
@@ -103,6 +110,24 @@ function showProlist(id){
     }
     document.getElementById(id).style.display = 'block';
 }
+window.onscroll = function() {scrollFunction()};
+function scrollFunction(){
+    var cheight = document.getElementsByClassName('cheight');
+    var heighna = cheight[0].offsetHeight + cheight[1].offsetHeight + cheight[2].offsetHeight;
+    var heighnb = heighna + cheight[3].offsetHeight - 200;
+    var nthead = document.getElementById('ntable-head');
+    var nthdr = document.getElementById('ntable-head-row');
+    var ntbody = document.getElementById('ntable-body');
+    if(document.body.scrollTop > heighna & document.body.scrollTop < heighnb || document.documentElement.scrollTop > heighna & document.documentElement.scrollTop < heighnb){
+        ntbody.style.marginTop = nthead.offsetHeight + 'px';
+        nthead.classList.add('nth-sticky');
+        nthdr.classList.add('nhr-sticky');
+    }else{
+        ntbody.style.marginTop = 0;
+        nthead.classList.remove('nth-sticky');
+        nthdr.classList.remove('nhr-sticky');
+    }
+}
 function cfooter(){
     var ftctp = document.getElementById('footer-crtop');
     var footerc = document.getElementById('footer-inner-2');
@@ -119,9 +144,6 @@ function cfooter(){
         cficon.innerHTML = '<i class="fas fa-chevron-down"></i>';
         ftctp.style.display = 'none';
     }
-}
-window.onclick = function(event){
-    // 
 }
 window.onload = function(){
     document.getElementById('prolist-bt-table').click();

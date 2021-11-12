@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collector X - Market</title>
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/market.css">
+    <link rel="stylesheet" href="assets/css/market.min.css">
     <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <nav class="container-navbar js-container-navbar">
+    <nav class="container-navbar js-container-navbar cheight">
         <div class="container">
             <div class="navbar">
                 <div class="navbar__logo-box">
@@ -71,7 +71,7 @@
         </div>
     </nav>
     <div class="space"></div>
-    <section class="section-upcoming">
+    <section class="section-upcoming cheight">
         <div class="container">
             <h1 class="main-title">NFT Market</h1>
             <div class="explore-head pcflex">
@@ -208,7 +208,7 @@
                             <div class="feabp-prchg">
                                 <div class="feprc">Ξ 3 ($12,000)</div>
                                 <div class="fepch cl-downpk">
-                                    <img src="assets/images/prup.png" alt="collector-x">
+                                    <img src="assets/images/prdown.png" alt="collector-x">
                                     <span>3% (1 days)</span>
                                 </div>
                             </div>
@@ -265,11 +265,11 @@
     </section>
     <section class="section-upcoming">
         <div class="container cntpc">
-            <div class="section-upcoming__header mt-32 prolist-head" id="prolist-head">
+            <div class="section-upcoming__header mt-32 prolist-head cheight" id="prolist-head">
                 
                 <div class="row section-upcoming__row align-items-center">
-                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 section-upcoming__col section-upcoming__col--title">
-                        <h3>More Upcoming NFT</h3>
+                    <div class="col-12 col-xl-3 col-lg-6 col-sm-6 section-upcoming__col section-upcoming__col--title" id="project-list01">
+                        <h3>Project List</h3>
                     </div>
                     <div class="col-10 col-xl-5 col-lg-6 col-sm-6 section-upcoming__col section-upcoming__col--search">
                         <div class="search-box search-custom-1" id="search-box">
@@ -279,31 +279,34 @@
                     </div>
                     <div class="prolist-btb-relative">
                         <div class="prolist-btb pcflex pc prolist-mr" id="prolist-btb">
-                            <div class="prolist-bt-day prolist-bt5 pbday-active content-center">
+                            <div class="prolist-bt-day prolist-bt5 pbday-active content-center tf-option">
                                 <span>1d</span>
                             </div>
-                            <div class="prolist-bt-day prolist-bt6 content-center">
+                            <div class="prolist-bt-day prolist-bt6 content-center tf-option">
                                 <span>7d</span>
                             </div>
-                            <div class="prolist-bt-day prolist-bt7 content-center">
+                            <div class="prolist-bt-day prolist-bt7 content-center tf-option">
                                 <span>1m</span>
                             </div>
                         </div>
                         <div class="dropdown" id="">
-                                <button style="max-width: 60px;" class="btn btn-dropdown dropdown-toggle dropdown-toggle-1 select-menu4438" type="button" id="sortByDropdown" data-name="Sort by" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                                    <span class="text pr-4">1d</span>
-                                </button>
+                            <button style="max-width: 64px;" class="btn btn-dropdown dropdown-toggle dropdown-toggle-1 select-menu4438" type="button" id="sortByDropdown" data-name="Sort by" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
+                                <span class="text pr-2" id="tf-button-text">1d</span>
+                            </button>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sortByDropdown">
                                 <div class="dropdown-title">
-                                    Times:
+                                    Time
                                 </div>
-                                <label for="sortz1" class="dropdown-item d-flex align-items-center">
+                                <label for="sortd1" class="dropdown-item d-flex align-items-center tf-olable tf-option">
+                                    <input type="radio" name="sort" id="sortd1" value="1" data-value="1d" checked>
                                     1d
                                 </label>
-                                <label for="sort2" class="dropdown-item d-flex align-items-center">
+                                <label for="sortd7" class="dropdown-item d-flex align-items-center tf-olable tf-option">
+                                    <input type="radio" name="sort" id="sortd7" value="2" data-value="7d">
                                     7d
                                 </label>
-                                <label for="sort3" class="dropdown-item d-flex align-items-center">
+                                <label for="sortm1" class="dropdown-item d-flex align-items-center tf-olable tf-option">
+                                    <input type="radio" name="sort" id="sortm1" value="3" data-value="1m">
                                     1m
                                 </label>
                             </div>
@@ -311,11 +314,9 @@
                     </div>
                     <div class="col-6 col-xl col-lg-4 col-sm-4 order-3 order-lg-2 order-sm-2 order-sm-2 section-upcoming__col section-upcoming__col--category">
                         <div class="dropdown" id="dropdown-filter">
-                            <!-- <div class="category-relative-class"> -->
-                                <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1 category-class" type="button" id="categoryDropdown" data-name="Category" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                                    Category
-                                </button>
-                            <!-- </div> -->
+                            <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1 category-class" type="button" id="categoryDropdown" data-name="Category" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
+                                Category
+                            </button>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="categoryDropdown">
                                 <div class="dropdown-title">
                                     Category
@@ -341,12 +342,10 @@
                     </div>
                     <div class="col-2 col-xl col-lg-4 col-sm-4 order-1 order-lg-3 order-sm-3 order-sm-3 section-upcoming__col section-upcoming__col--sort">
                         <div class="dropdown" id="dropdown-sort">
-                            <!-- <div class="sort-by-relative-container"> -->
                                 <button class="btn btn-dropdown dropdown-toggle-1 sort-by-class" type="button" id="sortByDropdown" data-name="Sort by" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                                    <span class="text">Sort by</span>
+                                    <span class="text pc">Sort by</span>
                                     <img src="assets/images/sortimg.svg" alt="collector-x">
                                 </button>
-                            <!-- </div> -->
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sortByDropdown">
                                 <div class="dropdown-title">
                                     Sort by
@@ -370,35 +369,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-6 col-xl col-lg-4 col-sm-4 order-2 order-lg-1 order-sm-1 order-sm-1 section-upcoming__col section-upcoming__col--platform">
-                        <div class="dropdown" id="dropdown-filter">
-                            <button class="btn btn-dropdown dropdown-toggle dropdown-toggle-1" type="button" id="platformDropdown" data-name="Platform" data-toggle="dropdown" aria-expanded="false" data-offset="0,5">
-                                Sort by
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="platformDropdown">
-                                <div class="dropdown-title">
-                                    Sort by
-                                </div>
-                                <label for="platform1" class="dropdown-item d-flex align-items-center">
-                                    <input type="radio" name="Highest avg price" id="platform1" value="1">
-                                    Highest avg price
-                                </label>
-                                <label for="platform2" class="dropdown-item d-flex align-items-center">
-                                    <input type="radio" name="Lowest avg price" id="platform2" value="2">
-                                    Lowest avg price
-                                </label>
-                                <label for="platform3" class="dropdown-item d-flex align-items-center">
-                                    <input type="radio" name="Highest Holders" id="platform3" value="3">
-                                    Highest Holders
-                                </label>
-                                <label for="platform4" class="dropdown-item d-flex align-items-center">
-                                    <input type="radio" name="Lowest Holders" id="platform4" value="4">
-                                    Lowest Holders
-                                </label>
-                            </div>
-                        </div>
-                    </div> -->
-                    
                     <div class="col-2 col-xl col-lg-4 col-sm-4 order-1 order-lg-3 order-sm-3 order-sm-3 section-upcoming__col section-upcoming__col--sort">
 
                         <div class="prolist-btb-relative">
@@ -416,129 +386,74 @@
             </div>
             <div class="section-upcoming__body">
                 <div class="prolist-tab" id="prolist-tab-table">
-                    <div class="prolist-table">
-                        <div class="rtab-head pc">
-                            <div class="rtab-head-row pcflex mflex">
-                                <div class="rtab-th rtab-bn pcflex mflex">
-                                    <div class="rtab-th-text ptths">#</div>
-                                </div>
-                                <div class="rtab-th rtab-bw pcflex mflex">
-                                    <div class="rtab-th-text ptths">Projects</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                    <div class="ntable cheight">
+                        <div class="ntable-head" id="ntable-head">
+                            <div class="nth-inner" id="nth-inner">
+                                <div class="ntable-head-row" id="ntable-head-row">
+                                    <div class="ntpart ntpart-1">
+                                        <div class="nhp-text">#</div>
+                                    </div>
+                                    <div class="ntpart ntpart-2">
+                                        <div class="nhp-text">Projects</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text ptths">Category</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                                    <div class="ntpart ntpart-3">
+                                        <div class="nhp-text">Category</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text ptths">Holders</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                                    <div class="ntpart ntpart-4">
+                                        <div class="nhp-text">Holders</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text">Avg Price <br/>(24 hrs)</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                                    <div class="ntpart ntpart-5">
+                                        <div class="nhp-text">Avg Price <br/>(24 hrs)</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text">Previous <br/>Floor</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                                    <div class="ntpart ntpart-6">
+                                        <div class="nhp-text">Previous <br/>Floor</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text">Current <br/>Floor</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                                    <div class="ntpart ntpart-7">
+                                        <div class="nhp-text">Current <br/>Floor</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text ptths">Change</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                                    <div class="ntpart ntpart-8">
+                                        <div class="nhp-text">Change</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bc pcflex mflex">
-                                    <div class="rtab-th-text ptths text-nw">Market Cap</div>
-                                    <div class="content-right">
-                                        <div class="rtab-th-icon">
-                                            <div class="rtab-th-icon-up">
-                                                <i class="fas fa-chevron-up"></i>
-                                            </div>
-                                            <div class="rtab-th-icon-down">
-                                                <i class="fas fa-chevron-down"></i>
-                                            </div>
+                                    <div class="ntpart ntpart-9">
+                                        <div class="nhp-text">Market Cap</div>
+                                        <div class="nhp-icon">
+                                            <img src="assets/images/sorticon.png" alt="collector-x">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="rtab-th rtab-bx pcflex mflex">
-                                    <div class="rtab-th-text"> </div>
+                                    <div class="ntpart ntpart-10">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="rtab-body">
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                        <div class="ntable-body" id="ntable-body">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -567,52 +482,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">1</div>
+                                    <div class="ntb-count">1</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi1.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi1.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#1</div>
-                                        <div class="rtab-td-text2 pc">10,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Art</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">1969</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 395</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 395</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 385</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prdown.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-down lhtdt rdprc">2.54%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prodown.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#1</div>
+                                        <div class="ntb-value">10,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$1,392,418.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Art</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prdown.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-red">2.54%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$1,392,418.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -632,13 +544,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -667,52 +579,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">2</div>
+                                    <div class="ntb-count">2</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi2.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi2.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#2</div>
-                                        <div class="rtab-td-text2 pc">5,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Art</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">345</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 183</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 183</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 185</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prup.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-green lhtdt rdprc">1.23%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/proup.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#2</div>
+                                        <div class="ntb-value">5,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$989,222.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Art</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prup.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-green">1.23%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$989,222.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -732,13 +641,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -767,52 +676,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">3</div>
+                                    <div class="ntb-count">3</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi3.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi3.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#3</div>
-                                        <div class="rtab-td-text2 pc">5,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Art</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">3456</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 140</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 140</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 138</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prdown.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-down lhtdt rdprc">1.54%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prodown.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#3</div>
+                                        <div class="ntb-value">5,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$880,456.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Art</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prdown.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-red">2.54%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$880,456.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -832,13 +738,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -867,52 +773,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">4</div>
+                                    <div class="ntb-count">4</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi4.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi4.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#4</div>
-                                        <div class="rtab-td-text2 pc">7,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Games</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">2341</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 100</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 100</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 102</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prup.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-green lhtdt rdprc">2.3%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/proup.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#4</div>
+                                        <div class="ntb-value">7,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$709,651.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Games</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prstg.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-blue">0.00%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$709,651.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -932,13 +835,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -967,52 +870,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">5</div>
+                                    <div class="ntb-count">5</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi5.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi5.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#5</div>
-                                        <div class="rtab-td-text2 pc">4,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Avatar</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">10</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 35</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 35</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 35</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prstg.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-blue lhtdt rdprc">0.00%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prostg.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#5</div>
+                                        <div class="ntb-value">4,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$702,651.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Art</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prdown.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-red">2.54%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$702,651.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -1032,13 +932,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -1067,52 +967,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">6</div>
+                                    <div class="ntb-count">6</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi6.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi6.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#6</div>
-                                        <div class="rtab-td-text2 pc">3,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Avatar</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">345</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 24</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 24</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 23</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prdown.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-down lhtdt rdprc">2.54%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prodown.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#6</div>
+                                        <div class="ntb-value">6,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$109,651.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Art</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prup.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-green">1.23%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$109,651.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -1132,13 +1029,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -1167,52 +1064,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">7</div>
+                                    <div class="ntb-count">7</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi7.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi7.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#7</div>
-                                        <div class="rtab-td-text2 pc">6,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Games</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">1987</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prup.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-green lhtdt rdprc">2.7%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/proup.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#7</div>
+                                        <div class="ntb-value">6,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Games</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prdown.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-red">2.54%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$69,651.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -1232,111 +1126,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
-                                            <div class="tso-oplist">
-                                                <span class="tso-oplist-text">My watchlist</span>
-                                                <span class="tstbd">Main</span>
-                                                <img class="tdcheck" src="assets/images/tdcheck.png" alt="collector-x">
-                                            </div>
-                                            <div class="tso-oplist">
-                                                <span class="tso-oplist-text">Collection</span>
-                                                <div class="tdplus">
-                                                    <img class="" src="assets/images/tdplus.png" alt="collector-x">
-                                                </div>
-                                            </div>
-                                            <div class="tso-oplist">
-                                                <span class="tso-oplist-text">My project</span>
-                                                <div class="tdplus">
-                                                    <img class="" src="assets/images/tdplus.png" alt="collector-x">
-                                                </div>
-                                            </div>
-                                            <hr/>
-                                            <div class="tso-oplist">
-                                                <span class="tso-oplist-text">New Watchlist</span>
-                                                <div class="tdplus">
-                                                    <img class="" src="assets/images/tdplus.png" alt="collector-x">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="rtab-td-text td-count lhtdt">8</div>
-                                </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi8.png" alt="collector-x">
-                                    </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#8</div>
-                                        <div class="rtab-td-text2 pc">6,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Games</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">1987</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prup.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-green lhtdt rdprc">2.7%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/proup.png" alt="collector-x">
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
-                                </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
-                                            <img src="assets/images/tdots.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
-                                            <div class="rdo-oplist">
-                                                <span>View Charts</span>
-                                            </div>
-                                            <div class="rdo-oplist">
-                                                <span>View On Sales</span>
-                                            </div>
-                                            <div class="rdo-oplist">
-                                                <span>View Rank</span>
-                                            </div>
-                                            <div class="rdo-oplist">
-                                                <span>View Rarity</span>
-                                            </div>
-                                            <div class="rdo-oplist">
-                                                <span>Delete</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
-                                            <img src="assets/images/hbstar.png" alt="collector-x">
-                                        </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -1365,52 +1161,49 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">9</div>
+                                    <div class="ntb-count">8</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi9.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi1.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#9</div>
-                                        <div class="rtab-td-text2 pc">6,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Games</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">1987</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prup.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-green lhtdt rdprc">2.7%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/proup.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#8</div>
+                                        <div class="ntb-value">9,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Games</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prup.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-green">1.23%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$19,651.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -1430,13 +1223,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="rtab-body-row pcflex mflex relative">
-                                <div class="rtab-td rtab-td-count rtab-bn pcflex mabs">
-                                    <div class="td-star">
-                                        <div class="td-star-button stbtn">
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
                                             <img src="assets/images/hbstar.png" alt="collector-x">
                                         </div>
-                                        <div class="td-star-option bzelem" style="display: none;">
+                                        <div class="ntb-star-option bzelem" style="display: none;">
                                             <div class="tso-oplist">
                                                 <span class="tso-oplist-text">My watchlist</span>
                                                 <span class="tstbd">Main</span>
@@ -1465,52 +1258,146 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rtab-td-text td-count lhtdt">10</div>
+                                    <div class="ntb-count">9</div>
                                 </div>
-                                <div class="rtab-td rtab-bw pcflex pl20">
-                                    <div class="cov-rtab-td-image">
-                                        <img class="rtab-td-image mabs" src="assets/images/pltdi10.png" alt="collector-x">
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi9.png" alt="collector-x">
                                     </div>
-                                    <div>
-                                        <div class="rtab-td-text td-title mabs">Wonderfull artwork#10</div>
-                                        <div class="rtab-td-text2 pc">6,000</div>
-                                    </div>
-                                </div>
-                                <div class="rtab-dt pcflex mflex mabs">
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Games</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">1987</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex pc">
-                                        <div class="rtab-td-text lhtdt">Ξ 17.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex">
-                                        <div class="rtab-td-text lhtdt">Ξ 19.2</div>
-                                    </div>
-                                    <div class="rtab-td rtab-dt-part pcflex mflex">
-                                        <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/prup.png" alt="collector-x">
-                                        </div>
-                                        <div class="rtab-td-text cl-green lhtdt rdprc">2.7%</div>
-                                        <!-- <div class="rtab-td-icon lhtdt">
-                                            <img src="assets/images/proup.png" alt="collector-x">
-                                        </div> -->
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#9</div>
+                                        <div class="ntb-value">12,000</div>
                                     </div>
                                 </div>
-                                <div class="rtab-td rtab-bc pcflex pc">
-                                    <div class="rtab-td-text lhtdt cl-dark">$69,651.00</div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Games</span>
                                 </div>
-                                <div class="rtab-td rtab-bx rtab-td-button rtab-td-dots content-left pc">
-                                    <div class="rtab-dots">
-                                        <div class="rtab-button stbtn">
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prdown.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-red">2.54%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$1,392,418.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
                                             <img src="assets/images/tdots.png" alt="collector-x">
                                         </div>
-                                        <div class="rtab-dots-option bzelem" style="display: none;">
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
+                                            <div class="rdo-oplist">
+                                                <span>View Charts</span>
+                                            </div>
+                                            <div class="rdo-oplist">
+                                                <span>View On Sales</span>
+                                            </div>
+                                            <div class="rdo-oplist">
+                                                <span>View Rank</span>
+                                            </div>
+                                            <div class="rdo-oplist">
+                                                <span>View Rarity</span>
+                                            </div>
+                                            <div class="rdo-oplist">
+                                                <span>Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ntable-body-row">
+                                <div class="ntpart ntpart-1 ntpart-1-b">
+                                    <div class="ntb-star">
+                                        <div class="ntb-star-button stbtn">
+                                            <img src="assets/images/hbstar.png" alt="collector-x">
+                                        </div>
+                                        <div class="ntb-star-option bzelem" style="display: none;">
+                                            <div class="tso-oplist">
+                                                <span class="tso-oplist-text">My watchlist</span>
+                                                <span class="tstbd">Main</span>
+                                                <div class="checkplus">
+                                                    <img class="tdcheck" src="assets/images/tdcheck.png" alt="collector-x">
+                                                </div>
+                                            </div>
+                                            <div class="tso-oplist">
+                                                <span class="tso-oplist-text">Collection</span>
+                                                <div class="checkplus">
+                                                    <img class="tdplus" src="assets/images/tdplus.png" alt="collector-x">
+                                                </div>
+                                            </div>
+                                            <div class="tso-oplist">
+                                                <span class="tso-oplist-text">My project</span>
+                                                <div class="checkplus">
+                                                    <img class="tdplus" src="assets/images/tdplus.png" alt="collector-x">
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="tso-oplist">
+                                                <span class="tso-oplist-text">New Watchlist</span>
+                                                <div class="checkplus">
+                                                    <img class="tdplus" src="assets/images/tdplus.png" alt="collector-x">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ntb-count">10</div>
+                                </div>
+                                <div class="ntpart ntpart-2 ntpart-2-b">
+                                    <div class="ntb-img">
+                                        <img src="assets/images/pltdi10.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-detail">
+                                        <div class="ntb-title">Wonderfull artwork#10</div>
+                                        <div class="ntb-value">4,000</div>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-3">
+                                    <span class="ntb-text">Games</span>
+                                </div>
+                                <div class="ntpart ntpart-4">
+                                    <span class="ntb-text">1969</span>
+                                </div>
+                                <div class="ntpart ntpart-5 ntpart-5-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-6 ntpart-6-b">
+                                    <span class="ntb-text">Ξ 395</span>
+                                </div>
+                                <div class="ntpart ntpart-7 ntpart-7-b">
+                                    <span class="ntb-text">Ξ 385</span>
+                                </div>
+                                <div class="ntpart ntpart-8 ntpart-8-b">
+                                    <div class="ntb-price-icon">
+                                        <img src="assets/images/prup.png" alt="collector-x">
+                                    </div>
+                                    <div class="ntb-price-value">
+                                        <span class="cl-green">1.23%</span>
+                                    </div>
+                                </div>
+                                <div class="ntpart ntpart-9">
+                                    <span class="ntb-text">$1,392,418.00</span>
+                                </div>
+                                <div class="ntpart ntpart-10">
+                                    <div class="ntb-dots">
+                                        <div class="ntb-button stbtn">
+                                            <img src="assets/images/tdots.png" alt="collector-x">
+                                        </div>
+                                        <div class="ntb-dots-option bzelem" style="display: none;">
                                             <div class="rdo-oplist">
                                                 <span>View Charts</span>
                                             </div>
@@ -1531,8 +1418,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="rtab-footer pcflex">
-                            <div class="flex-10 pcflex pc">
+                        <div class="ntable-footer">
+                            <div class="ntf-left">
                                 <div class="rtab-footer-text">Show</div>
                                 <div class="rtab-footer-button">
                                     <span>10</span>
@@ -1542,7 +1429,7 @@
                                 </div>
                                 <div class="rtab-footer-text">of 45 entries</div>
                             </div>
-                            <div class="rtab-footer-right flex-10 content-right mflex">
+                            <div class="ntf-right">
                                 <div class="rtab-ft-bt rtab-ft-bt-prevnext rtab-ft-bt-disabled">
                                     <span class="pc">Previous</span>
                                     <span class="mobile">
@@ -1800,6 +1687,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="assets/javascript/vendor.js"></script>
     <script type="text/javascript" src="assets/javascript/custom.js"></script>
-    <script src="assets/javascript/market.js"></script>
+    <script src="assets/javascript/market.min.js"></script>
 </body>
 </html>

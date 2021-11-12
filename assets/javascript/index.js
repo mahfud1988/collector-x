@@ -23,7 +23,6 @@ const slider = document.querySelector('.explore-body-inner');
 let isDown = false;
 let startX;
 let scrollLeft;
-
 slider.addEventListener('mousedown', (e) => {
 isDown = true;
 slider.classList.add('ebinn-active');
@@ -82,7 +81,6 @@ for(i = 0; i < insbtn.length; i++){
     });
 }
 function insbtnClose(){
-    // var insbtn = document.getElementsByClassName('insort-button');
     var btopt = document.getElementsByClassName('btoption');
     for(i = 0; i < btopt.length; i++){
         btopt[i].classList.remove('insbt-op');
